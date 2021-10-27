@@ -7,6 +7,7 @@ local function processStatFile(name)
 	local curDescriptor = { }
 	local prepend = ''
 	local text = convertUTF16to8(getFile("Metadata/StatDescriptions/"..name..".txt"))
+	local count = 0
 	for line in text:gmatch("[^\r\n]+") do
 		if prepend then
 			line = prepend .. line
@@ -22,8 +23,10 @@ local function processStatFile(name)
 				statDescriptor[noDesc] = #statDescriptor
 			elseif line:match("handed_description") or (line:match("description") and not line:match("_description")) then	
 				local name = line:match("description ([%w_]+)")
-				curLang = { }
-				curDescriptor = { lang = { ["English"] = curLang }, order = order, name = name }
+				-- curLang = { }
+				curLang = nil
+				curDescriptor = { lang = { ["English"] = curLang, ["Simplified Chinese"] = {} }, order = order, name = name }
+				-- curDescriptor = { lang = { ["Simplified Chinese"] = curLang }, order = order, name = name }
 				table.insert(statDescriptor, curDescriptor)
 			elseif not curDescriptor.stats then
 				local stats = line:match("%d+%s+([%w_%+%-%% ]+)")
@@ -38,9 +41,17 @@ local function processStatFile(name)
 				end
 			else
 				local langName = line:match('lang "(.+)"')
+				-- if langName == "Simplified Chinese" then
 				if langName then
-					curLang = nil--{ }
-					curDescriptor.lang[langName] = curLang
+					if langName == "Simplified Chinese" then
+						curLang = { }
+						-- curLang = { }
+						curDescriptor.lang[langName] = curLang
+					else
+						curLang = nil--{ }
+						-- curLang = { }
+						curDescriptor.lang[langName] = curLang
+					end
 				elseif curLang then
 					local statLimits, text, special = line:match('([%d%-#!| ]+) "(.-)"%s*(.*)')
 					if statLimits then
@@ -73,7 +84,9 @@ local function processStatFile(name)
 							})
 							nk[k] = v
 						end
-						table.insert(curLang, desc)
+						-- if langName == "Simplified Chinese" then
+							table.insert(curLang, desc)
+						-- end
 					end
 				end
 			end

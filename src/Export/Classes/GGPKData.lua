@@ -74,11 +74,13 @@ function GGPKClass:ExtractFiles()
 end
 
 function GGPKClass:AddDatFiles()
-	local datFiles = scanDir(self.oozPath .. "Data\\", '%w+%.dat$')
+	-- local datFiles = scanDir(self.oozPath .. "Data\\", '%w+%.dat$')
+	local datFiles = scanDir(self.oozPath .. "Data\\Simplified Chinese\\", '%w+%.dat$')
 	for _, f in ipairs(datFiles) do
 		local record = { }
 		record.name = f
-		local rawFile = io.open(self.oozPath .. "Data\\" .. f, 'rb')
+		-- local rawFile = io.open(self.oozPath .. "Data\\" .. f, 'rb')
+		local rawFile = io.open(self.oozPath .. "Data\\Simplified Chinese\\" .. f, 'rb')
 		record.data = rawFile:read("*all")
 		rawFile:close()
 		--ConPrintf("FILENAME: %s", fname)
@@ -87,11 +89,13 @@ function GGPKClass:AddDatFiles()
 end
 
 function GGPKClass:AddDat64Files()
-	local datFiles = scanDir(self.oozPath .. "Data\\", '%w+%.dat64$')
+	--local datFiles = scanDir(self.oozPath .. "Data\\", '%w+%.dat64$')
+	local datFiles = scanDir(self.oozPath .. "Data\\Simplified Chinese\\", '%w+%.dat64$')
 	for _, f in ipairs(datFiles) do
 		local record = { }
 		record.name = f
-		local rawFile = io.open(self.oozPath .. "Data\\" .. f, 'rb')
+		-- local rawFile = io.open(self.oozPath .. "Data\\" .. f, 'rb')
+		local rawFile = io.open(self.oozPath .. "Data\\Simplified Chinese\\" .. f, 'rb')
 		record.data = rawFile:read("*all")
 		rawFile:close()
 		--ConPrintf("FILENAME: %s", fname)
@@ -168,6 +172,73 @@ function GGPKClass:GetNeededFiles()
 		"Data/CostTypes.dat",
 		"Data/PassiveJewelRadii.dat",
 	}
+	local datFilesCn = {
+		"Data/Simplified Chinese/Stats.dat",
+		"Data/Simplified Chinese/BaseItemTypes.dat",
+		"Data/Simplified Chinese/WeaponTypes.dat",
+		"Data/Simplified Chinese/ArmourTypes.dat",
+		"Data/Simplified Chinese/ShieldTypes.dat",
+		"Data/Simplified Chinese/Flasks.dat",
+		"Data/Simplified Chinese/ComponentCharges.dat",
+		"Data/Simplified Chinese/ComponentAttributeRequirements.dat",
+		"Data/Simplified Chinese/PassiveSkills.dat",
+		"Data/Simplified Chinese/PassiveSkillBuffs.dat",
+		"Data/Simplified Chinese/PassiveTreeExpansionJewelSizes.dat",
+		"Data/Simplified Chinese/PassiveTreeExpansionJewels.dat",
+		"Data/Simplified Chinese/PassiveJewelSlots.dat",
+		"Data/Simplified Chinese/PassiveTreeExpansionSkills.dat",
+		"Data/Simplified Chinese/PassiveTreeExpansionSpecialSkills.dat",
+		"Data/Simplified Chinese/Mods.dat",
+		"Data/Simplified Chinese/ModType.dat",
+		"Data/Simplified Chinese/ModDomains.dat",
+		"Data/Simplified Chinese/ModGenerationType.dat",
+		"Data/Simplified Chinese/ModFamily.dat",
+		"Data/Simplified Chinese/ModAuraFlags.dat",
+		"Data/Simplified Chinese/ActiveSkills.dat",
+		"Data/Simplified Chinese/ActiveSkillTargetTypes.dat",
+		"Data/Simplified Chinese/ActiveSkillType.dat",
+		"Data/Simplified Chinese/Ascendancy.dat",
+		"Data/Simplified Chinese/ClientStrings.dat",
+		"Data/Simplified Chinese/ItemClasses.dat",
+		"Data/Simplified Chinese/SkillTotems.dat",
+		"Data/Simplified Chinese/SkillTotemVariations.dat",
+		"Data/Simplified Chinese/SkillMines.dat",
+		"Data/Simplified Chinese/Essences.dat",
+		"Data/Simplified Chinese/EssenceType.dat",
+		"Data/Simplified Chinese/Characters.dat",
+		"Data/Simplified Chinese/BuffDefinitions.dat",
+		"Data/Simplified Chinese/BuffCategories.dat",
+		"Data/Simplified Chinese/BuffVisuals.dat",
+		"Data/Simplified Chinese/HideoutNPCs.dat",
+		"Data/Simplified Chinese/NPCs.dat",
+		"Data/Simplified Chinese/CraftingBenchOptions.dat",
+		"Data/Simplified Chinese/CraftingItemClassCategories.dat",
+		"Data/Simplified Chinese/CraftingBenchUnlockCategories.dat",
+		"Data/Simplified Chinese/MonsterVarieties.dat",
+		"Data/Simplified Chinese/MonsterResistances.dat",
+		"Data/Simplified Chinese/MonsterTypes.dat",
+		"Data/Simplified Chinese/DefaultMonsterStats.dat",
+		"Data/Simplified Chinese/SkillGems.dat",
+		"Data/Simplified Chinese/GrantedEffects.dat",
+		"Data/Simplified Chinese/GrantedEffectsPerLevel.dat",
+		"Data/Simplified Chinese/ItemExperiencePerLevel.dat",
+		"Data/Simplified Chinese/EffectivenessCostConstants.dat",
+		"Data/Simplified Chinese/StatInterpolationTypes.dat",
+		"Data/Simplified Chinese/Tags.dat",
+		"Data/Simplified Chinese/GemTags.dat",
+		"Data/Simplified Chinese/ItemVisualIdentity.dat",
+		"Data/Simplified Chinese/AchievementItems.dat",
+		"Data/Simplified Chinese/MultiPartAchievements.dat",
+		"Data/Simplified Chinese/PantheonPanelLayout.dat",
+		"Data/Simplified Chinese/AlternatePassiveAdditions.dat",
+		"Data/Simplified Chinese/AlternatePassiveSkills.dat",
+		"Data/Simplified Chinese/AlternateTreeVersions.dat",
+		"Data/Simplified Chinese/GrantedEffectQualityTypes.dat",
+		"Data/Simplified Chinese/GrantedEffectQualityStats.dat",
+		"Data/Simplified Chinese/GrantedEffectGroups.dat",
+		"Data/Simplified Chinese/AegisVariations.dat",
+		"Data/Simplified Chinese/CostTypes.dat"
+	}
 	local txtFiles = {
 		"Metadata/StatDescriptions/passive_skill_aura_stat_descriptions.txt",
 		"Metadata/StatDescriptions/passive_skill_stat_descriptions.txt",
@@ -235,5 +306,6 @@ function GGPKClass:GetNeededFiles()
 		"Metadata/Items/Equipment.ot",
 		"Metadata/Items/Weapons/AbstractWeapon.ot",
 	}
-	return datFiles, txtFiles, otFiles
+	-- return datFiles, txtFiles, otFiles
+	return datFilesCn, txtFiles, otFiles
 end

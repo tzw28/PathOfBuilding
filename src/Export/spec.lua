@@ -3979,19 +3979,12 @@ return {
 	ModType={
 		[1]={
 			list=false,
-			name="Id",
-			refTo="",
-			type="String",
-			width=400
-		},
-		[2]={
-			list=false,
 			name="",
 			refTo="",
 			type="UInt",
 			width=190
 		},
-		[3]={
+		[2]={
 			list=false,
 			name="Tags",
 			refTo="Tags",
