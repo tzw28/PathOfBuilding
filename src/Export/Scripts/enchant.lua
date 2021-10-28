@@ -353,10 +353,6 @@ for _, mod in ipairs(dat("Mods"):GetRowList("GenerationType", 10)) do
 					skill = activeSkill.DisplayName
 					break
 				end
-				if activeSkill.DisplayName == "" then
-					printf("%s\n", mod.Id)
-					break
-				end
 			end
 		end
 		if not skill then

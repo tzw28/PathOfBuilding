@@ -35,7 +35,7 @@ for jewel in dat("PassiveTreeExpansionJewels"):Rows() do
 		out:write('\t\t\t\t\tstats = { "', table.concat(desc, '", "'), '" },\n')
 		out:write('\t\t\t\t\tenchant = {\n')
 		for _, line in ipairs(desc) do
-			out:write('\t\t\t\t\t\t"Added Small Passive Skills grant: ', line, '",\n')
+			out:write('\t\t\t\t\t\t"增加的小天赋获得：', line, '",\n')
 		end
 		out:write('\t\t\t\t\t},\n')
 		out:write('\t\t\t\t},\n')
