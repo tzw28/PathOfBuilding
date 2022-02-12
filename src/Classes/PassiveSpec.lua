@@ -182,7 +182,7 @@ function PassiveSpecClass:Save(xml)
 					t_insert(editedNode, modLine)
 				end
 				-- Do not save current editedNode data unless the current node is conquered
-				if self.nodes[nodeId].conqueredBy then
+				if self.nodes[nodeId] and self.nodes[nodeId].conqueredBy then
 					-- Do not save current editedNode data unless the current node is allocated
 					for allocNodeId in pairs(self.allocNodes) do
 						if nodeId == allocNodeId then
@@ -250,9 +250,41 @@ function PassiveSpecClass:ImportFromNodeList(classId, ascendClassId, hashList, m
 	end
 	wipeTable(self.masterySelections)
 	for mastery, effect in pairs(masteryEffects) do
-		self.masterySelections[mastery] = effect
+		-- ignore ggg codes from profile import
+		if (tonumber(effect) < 65536) then
+			self.masterySelections[mastery] = effect
+		end
 	end
 	self:SelectAscendClass(ascendClassId)
+end
+
+function PassiveSpecClass:AllocateDecodedNodes(nodes, isCluster)
+	for i = 1, #nodes - 1, 2 do
+		local id = nodes:byte(i) * 256 + nodes:byte(i + 1)
+		if isCluster then
+			id = id + 65536
+		end
+		local node = self.nodes[id]
+		if node then
+			node.alloc = true
+			self.allocNodes[id] = node
+		end
+	end
+end
+
+function PassiveSpecClass:AllocateMasteryEffects(masteryEffects)
+	for i = 1, #masteryEffects - 1, 4 do
+
+		local effectId = masteryEffects:byte(i) * 256 + masteryEffects:byte(i + 1)
+		local id  = masteryEffects:byte(i + 2) * 256 + masteryEffects:byte(i + 3)
+
+		self.masterySelections[id] = effectId
+		local effect = self.tree.masteryEffects[effectId]
+		self.allocNodes[id].sd = effect.sd
+		self.allocNodes[id].reminderText = { "Tip: Right click to select a different effect" }
+		self.tree:ProcessStats(self.allocNodes[id])
+		self.allocatedMasteryCount = self.allocatedMasteryCount + 1
+	end
 end
 
 -- Decode the given passive tree URL
@@ -262,7 +294,7 @@ function PassiveSpecClass:DecodeURL(url)
 		return "Invalid tree link (unrecognised format)"
 	end
 	local ver = b:byte(1) * 16777216 + b:byte(2) * 65536 + b:byte(3) * 256 + b:byte(4)
-	if ver > 4 then
+	if ver > 6 then
 		return "Invalid tree link (unknown version number '"..ver.."')"
 	end
 	local classId = b:byte(5)	
@@ -273,27 +305,77 @@ function PassiveSpecClass:DecodeURL(url)
 	self:ResetNodes()
 	self:SelectClass(classId)
 	self:SelectAscendClass(ascendClassId)
-	local nodes = b:sub(ver >= 4 and 8 or 7, -1)
-	for i = 1, #nodes - 1, 2 do
-		local id = nodes:byte(i) * 256 + nodes:byte(i + 1)
-		local node = self.nodes[id]
-		if node then
-			node.alloc = true
-			self.allocNodes[id] = node
-		end
+	
+	local nodesStart = ver >= 4 and 8 or 7
+	local nodesEnd = ver >= 5 and 7 + (b:byte(7) * 2) or -1
+	local nodes = b:sub(nodesStart, nodesEnd)
+	
+	self:AllocateDecodedNodes(nodes, false)
+
+	if ver < 5 then
+		return
 	end
+
+	local clusterStart = nodesEnd + 1
+	local clusterEnd = clusterStart + (b:byte(clusterStart) * 2)
+	local clusterNodes = b:sub(clusterStart + 1, clusterEnd)
+	
+	self:AllocateDecodedNodes(clusterNodes, true)
+	
+	if ver < 6 then
+		return
+	end
+	
+	local masteryStart = clusterEnd + 1
+	local masteryEnd = masteryStart + (b:byte(masteryStart) * 4)
+	local masteryEffects = b:sub(masteryStart + 1, masteryEnd)
+	self:AllocateMasteryEffects(masteryEffects)
 end
 
 -- Encodes the current spec into a URL, using the official skill tree's format
 -- Prepends the URL with an optional prefix
 function PassiveSpecClass:EncodeURL(prefix)
-	local a = { 0, 0, 0, 4, self.curClassId, self.curAscendClassId, 0 }
+	local a = { 0, 0, 0, 6, self.curClassId, self.curAscendClassId }
+	
+	local nodeCount = 0
+	local clusterCount = 0
+	local masteryCount = 0
+
+	local clusterNodeIds = {}
+	local masteryNodeIds = {}
+
 	for id, node in pairs(self.allocNodes) do
 		if node.type ~= "ClassStart" and node.type ~= "AscendClassStart" and id < 65536 then
 			t_insert(a, m_floor(id / 256))
 			t_insert(a, id % 256)
+			nodeCount = nodeCount + 1
+			if self.masterySelections[node.id] then
+				local effect_id = self.masterySelections[node.id]
+				t_insert(masteryNodeIds, m_floor(effect_id / 256))
+				t_insert(masteryNodeIds, effect_id % 256)
+				t_insert(masteryNodeIds, m_floor(node.id / 256))
+				t_insert(masteryNodeIds, node.id % 256)
+				masteryCount = masteryCount + 1
+			end
+		elseif id >= 65536 then
+			local clusterId = id - 65536
+			t_insert(clusterNodeIds, m_floor(clusterId / 256))
+			t_insert(clusterNodeIds, clusterId % 256)
+			clusterCount = clusterCount + 1
 		end
 	end
+	t_insert(a, 7, nodeCount)
+
+	t_insert(a, clusterCount)
+	for _, id in pairs(clusterNodeIds) do
+		t_insert(a, id)
+	end
+	
+	t_insert(a, masteryCount)
+	for _, id in pairs(masteryNodeIds) do
+		t_insert(a, id)
+	end
+	
 	return (prefix or "")..common.base64.encode(string.char(unpack(a))):gsub("+","-"):gsub("/","_")
 end
 
@@ -428,7 +510,6 @@ end
 
 -- Deallocate the given node, and all nodes which depend on it (i.e. which are only connected to the tree through this node)
 function PassiveSpecClass:DeallocNode(node)
-	local effect
 	for _, depNode in ipairs(node.depends) do
 		self:DeallocSingleNode(depNode)
 	end
@@ -720,7 +801,7 @@ function PassiveSpecClass:BuildAllDependsAndPaths()
 			self.allocatedMasteryCount = self.allocatedMasteryCount + 1
 		elseif node.type == "Mastery" then
 			self:AddMasteryEffectOptionsToNode(node)
-		elseif node.type == "Notable" then
+		elseif node.type == "Notable" and node.alloc then
 			self.allocatedNotableCount = self.allocatedNotableCount + 1
 		end
 	end
@@ -1267,9 +1348,34 @@ function PassiveSpecClass:BuildSubgraph(jewel, parentSocket, id, upSize, importe
 	assert(indicies[0], "No entrance to subgraph")
 	subGraph.entranceNode = indicies[0]
 
-	-- Correct position to account for index of proxy node
+	-- The nodes' oidx values we just calculated are all relative to the totalIndicies properties of Data/ClusterJewels,
+	-- but the PassiveTree rendering logic treats node.oidx as relative to the tree.skillsPerOrbit constants. Those used
+	-- to be the same, but as of 3.17 they can differ, so we need to translate the ClusterJewels-relative indices into
+	-- tree.skillsPerOrbit-relative indices before we invoke tree:ProcessNode or do math against proxyNode.oidx.
+	--
+	-- The specific 12<->16 mappings are derived from https://github.com/grindinggear/skilltree-export/blob/3.17.0/README.md
+	local function translateOidx(srcOidx, srcNodesPerOrbit, destNodesPerOrbit)
+		if srcNodesPerOrbit == destNodesPerOrbit then
+			return srcOidx
+		elseif srcNodesPerOrbit == 12 and destNodesPerOrbit == 16 then
+			return ({[0] = 0, 1,    3, 4, 5,    7, 8, 9,    11, 12, 13,     15})[srcOidx]
+		elseif srcNodesPerOrbit == 16 and destNodesPerOrbit == 12 then
+			return ({[0] = 0, 1, 1, 2, 3, 4, 4, 5, 6, 7, 7,  8,  9, 10, 10, 11})[srcOidx]
+		else
+			-- there is no known case where this should happen...
+			launch:ShowErrMsg("^1Error: unexpected cluster jewel node counts %d -> %d", srcNodesPerOrbit, destNodesPerOrbit)
+			-- ...but if a future patch adds one, this should end up only a little krangled, close enough for initial skill data imports:
+			return m_floor(srcOidx * destNodesPerOrbit / srcNodesPerOrbit)
+		end
+	end
+	local proxyNodeSkillsPerOrbit = self.tree.skillsPerOrbit[proxyNode.o+1]
+
+	-- Translate oidx positioning to TreeData-relative values
 	for _, node in pairs(indicies) do
-		node.oidx = (node.oidx + proxyNode.oidx) % clusterJewel.totalIndicies
+		local proxyNodeOidxRelativeToClusterIndicies = translateOidx(proxyNode.oidx, proxyNodeSkillsPerOrbit, clusterJewel.totalIndicies)
+		local correctedNodeOidxRelativeToClusterIndicies = (node.oidx + proxyNodeOidxRelativeToClusterIndicies) % clusterJewel.totalIndicies
+		local correctedNodeOidxRelativeToTreeSkillsPerOrbit = translateOidx(correctedNodeOidxRelativeToClusterIndicies, clusterJewel.totalIndicies, proxyNodeSkillsPerOrbit)
+		node.oidx = correctedNodeOidxRelativeToTreeSkillsPerOrbit
 	end
 
 	-- Perform processing on nodes to calculate positions, parse mods, and other goodies

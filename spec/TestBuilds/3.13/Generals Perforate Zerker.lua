@@ -1167,7 +1167,7 @@ Gain 50 Life when you Stun an Enemy
 	</Items>
 	<Config>
 		<Input name="conditionCritRecently" boolean="true"/>
-		<Input name="multiplierFortification" number="20"/>
+		<Input name="buffFortification" boolean="true"/>
 		<Input name="conditionOnConsecratedGround" boolean="true"/>
 		<Input name="conditionEnemyTaunted" boolean="true"/>
 		<Input name="multiplierRage" number="25"/>
@@ -1321,7 +1321,7 @@ Gain 50 Life when you Stun an Enemy
 ["TotalDot"] = 0,
 ["ColdGuardAbsorbRate"] = 75,
 ["ManaLeechGainRate"] = 134.4,
-["DoubleArmourChance"] = 0,
+["MoreArmourChance"] = 0,
 ["LightningGuardAbsorb"] = 3444.4,
 ["FireResist"] = 76,
 ["RemovableFrenzyCharges"] = 3,

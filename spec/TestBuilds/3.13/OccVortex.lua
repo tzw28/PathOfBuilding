@@ -575,7 +575,7 @@ Implicits: 0
 	<Config>
 		<Input name="conditionCritRecently" boolean="true"/>
 		<Input name="conditionEnemyChilled" boolean="true"/>
-		<Input name="multiplierFortification" number="20"/>
+		<Input name="buffFortification" boolean="true"/>
 		<Input name="useEnduranceCharges" boolean="true"/>
 		<Input name="EEIgnoreHitDamage" boolean="true"/>
 		<Input name="brandAttachedToEnemy" boolean="true"/>
@@ -758,7 +758,7 @@ Implicits: 0
 ["ChillChanceOnCrit"] = 100,
 ["ColdGuardAbsorbRate"] = 0,
 ["EnergyShieldLeechDuration"] = 2.7913,
-["DoubleArmourChance"] = 0,
+["MoreArmourChance"] = 0,
 ["IgniteFireMax"] = 130,
 ["FireResist"] = 75,
 ["RemovableFrenzyCharges"] = 0,

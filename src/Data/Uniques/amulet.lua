@@ -28,7 +28,6 @@ Implicits: 1
 ]],[[
 Araku Tiki
 Coral Amulet
-Upgrade: Upgrades to unique{Ngamahu Tiki} via prophecy{A Forest of False Idols}
 Implicits: 1
 {tags:life}(2-4) Life Regenerated per second
 {tags:jewellery_defense,life}You gain 100 Evasion Rating when on Low Life
@@ -38,7 +37,7 @@ Implicits: 1
 ]],[[
 Ngamahu Tiki
 Coral Amulet
-Source: Upgraded from unique{Araku Tiki} via prophecy{A Forest of False Idols}
+Source: No longer obtainable
 Requires Level 36
 Implicits: 1
 {tags:life}(2-4) Life Regenerated per second
@@ -50,12 +49,22 @@ Implicits: 1
 ]],[[
 The Ascetic
 Gold Amulet
-Source: prophecy{The Ambitious Bandit III}
 Requires Level 8
 Implicits: 1
 (12-20)% increased Rarity of Items found
 (80-100)% increased Rarity of Items found with a Normal Item equipped
 (10-15)% increased Quantity of Items found with a Magic Item equipped
+]],[[
+Ashes of the Stars
+Onyx Amulet
+Source: Drops from unique{The Eater of Worlds}
+Requires Level 60
+Implicits: 1
+{tags:jewellery_attribute}+(10-16) to all Attributes
+(5–10)% increased Experience Gain of Gems
+(10–20)% increased Reservation Efficiency of Skills
++1 to Level of all Skill Gems
++(20–30)% to Quality of all Skill Gems
 ]],[[
 Astramentis
 Onyx Amulet
@@ -193,6 +202,8 @@ Implicits: 1
 ]],[[
 Blightwell
 Clutching Talisman
+Variant: Pre 3.16.0
+Variant: Current
 League: Talisman Hardcore
 Talisman Tier: 2
 Requires Level 28
@@ -201,8 +212,10 @@ Implicits: 1
 +(20-30) to maximum Energy Shield
 +(15-30)% to Fire Resistance
 +(15-30)% to Lightning Resistance
-30% slower start of Energy Shield Recharge during Flask Effect
-400% increased Energy Shield Recharge Rate during Flask Effect
+{variant:1}30% slower start of Energy Shield Recharge during Flask Effect
+{variant:2}50% slower start of Energy Shield Recharge during Flask Effect
+{variant:1}400% increased Energy Shield Recharge Rate during Flask Effect
+{variant:2}(150-200)% increased Energy Shield Recharge Rate during Flask Effect
 Corrupted
 ]],[[
 Blood of Corruption
@@ -261,6 +274,17 @@ Implicits: 1
 {tags:life}{variant:2}50% increased Life Leeched per second
 Extra Gore
 ]],[[
+Crystallised Omniscience
+Onyx Amulet
+Source: Drops from unique{The Searing Exarch}
+Requires Level 61
+Implicits: 1
+{tags:jewellery_attribute}+(10-16) to all Attributes
+Modifiers to Attributes instead Apply to Omniscience
++1% to All Elemental Resistances per 10 Omniscience
+Penetrate 1% Elemental Resistances per 10 Omniscience
+Attribute Requirements can be satisfied by (15-25)% of Omniscience
+]],[[
 Daresso's Salute
 Citrine Amulet
 League: Anarchy
@@ -300,7 +324,7 @@ Implicits: 1
 {variant:2}10% chance to gain Unholy Might for 10 seconds on Kill
 {variant:1}{tags:caster,attack}5% chance to gain Onslaught for 10 seconds on Kill
 {variant:2}{tags:caster,attack}10% chance to gain Onslaught for 10 seconds on Kill
-{tags:life}Recover 1% of Maximum Life on Kill
+{tags:life}Recover 1% of Life on Kill
 ]],[[
 Eye of Chayula
 Onyx Amulet
@@ -476,13 +500,16 @@ Blind Chilled Enemies on Hit
 ]],[[
 Hinekora's Sight
 Onyx Amulet
-Source: Any prophecy{Prophecy} enemy
 Requires Level 20
+Variant: Pre 3.16.0
+Variant: Current
 Implicits: 1
 {tags:jewellery_attribute}+(10-16) to all Attributes
-{tags:attack}+1000 to Accuracy Rating
-(6-10)% chance to Dodge Attacks
-(6-10)% chance to Dodge Spell Damage
+{variant:1}{tags:attack}+1000 to Accuracy Rating
+{variant:2}{tags:attack}+(600-1000) to Accuracy Rating
+{variant:2}{tags:jewellery_defense}+(600-1000) to Evasion Rating
+{variant:1}(12-20)% chance to Suppress Spell Damage
+{variant:2}Prevent +3% of Suppressed Spell Damage
 Cannot be Blinded
 ]],[[
 Hyrri's Truth
@@ -521,7 +548,6 @@ Grants Level 22 Hatred Skill
 ]],[[
 The Ignomon
 Gold Amulet
-Upgrade: Upgrades to unique{The Effigon} via prophecy{Blind Faith}
 Requires Level 8
 Implicits: 1
 (12-20)% increased Rarity of Items found
@@ -533,7 +559,7 @@ Implicits: 1
 ]],[[
 The Effigon
 Gold Amulet
-Source: Upgraded from unique{The Ignomon} via prophecy{Blind Faith}
+Source: No longer obtainable
 Requires Level 57
 Implicits: 1
 (12-20)% increased Rarity of Items found
@@ -582,7 +608,6 @@ Elder Item
 ]],[[
 Karui Ward
 Jade Amulet
-Upgrade: Upgrades to unique{Karui Charge} via prophecy{The Karui Rebellion}
 Variant: Pre 2.6.0
 Variant: Current
 Requires Level 5
@@ -608,9 +633,9 @@ Implicits: 1
 ]],[[
 Karui Charge
 Jade Amulet
-Source: Upgraded from unique{Karui Ward} via prophecy{The Karui Rebellion}
+Source: No longer obtainable
 Variant: Pre 2.6.0
-Variant: Current
+Variant: Pre 3.17.0
 Requires Level 24
 Implicits: 1
 {tags:jewellery_attribute}+(20-30) to Dexterity
@@ -825,6 +850,7 @@ Paua Amulet
 Variant: Pre 3.0.0
 Variant: Pre 3.8.0
 Variant: Current
+Implicits: 1
 {tags:mana}(20-30)% increased Mana Regeneration Rate
 {tags:jewellery_resistance}+25% to Cold Resistance
 {variant:1,2}0.2% of Physical Attack Damage Leeched as Mana
@@ -847,7 +873,7 @@ Implicits: 1
 {tags:life}+(50-70) to maximum Life
 {variant:1}{tags:mana}(2-3) Mana Regenerated per second
 {variant:2}{tags:mana}(8-10) Mana Regenerated per second
-{tags:mana}Temporal Chains has 100% reduced Reservation if Cast as an Aura
+{tags:mana}Temporal Chains has no Reservation if Cast as an Aura
 Gain Shaper's Presence for 10 seconds when you kill a Rare or Unique Enemy
 ]],[[
 Star of Wraeclast
@@ -880,6 +906,14 @@ Implicits: 1
 {variant:2}+(12-15)% chance to Block Spell Damage
 {tags:caster}(10-15)% increased Cast Speed
 {tags:mana}+(30-50) to maximum Mana
+]],[[
+Stranglegasp
+Onyx Amulet
+Source: Drops in Blight-ravaged Maps
+Requires Level 52
+Implicits: 1
+{tags:jewellery_attribute}+(10-16) to all Attributes
+Can have 3 additional Enchantment Modifiers
 ]],[[
 Tavukai
 Coral Amulet
@@ -921,6 +955,18 @@ Implicits: 1
 {tags:mana}+(30-50) to maximum Mana
 40% increased Stun and Block Recovery
 Your Critical Strikes do not deal extra Damage
+]],[[
+Uul-Netol's Vow
+Unset Amulet
+Source: Drops from Flawless Breachlords
+Requires Level 72
+Implicits: 1
+Has 1 Socket
+Socketed Support Gems can also Support Skills from your Body Armour
+{tags:jewellery_resistance}+(-30-30)% to Fire Resistance
+{tags:jewellery_resistance}+(-30-30)% to Cold Resistance
+{tags:jewellery_resistance}+(-30-30)% to Lightning Resistance
+{tags:chaos,jewellery_resistance}+(-23-23)% to Chaos Resistance
 ]],[[
 Victario's Acuity
 Turquoise Amulet
@@ -999,6 +1045,8 @@ Implicits: 1
 ]],[[
 Willowgift
 Jade Amulet
+Variant: Pre 3.16.0
+Variant: Current
 Requires Level 52
 Implicits: 1
 {tags:jewellery_attribute}+(20-30) to Dexterity
@@ -1006,8 +1054,9 @@ Implicits: 1
 {tags:jewellery_attribute}15% increased Dexterity
 {tags:jewellery_resistance}-(30-20)% to Fire Resistance
 {tags:jewellery_resistance}+(30-40)% to Cold Resistance
-Fortify Buffs you create instead grant 30% more Evasion Rating
-{tags:caster,attack,speed}(15-25)% increased Attack and Cast Speed while you have Fortify
+You do not inherently take less Damage for having Fortification
+{variant:2}+4% chance to Suppress Spell Damage per Fortification
+{tags:caster,attack,speed}(15-25)% increased Attack and Cast Speed while at maximum Fortification
 ]],[[
 Winterheart
 Gold Amulet

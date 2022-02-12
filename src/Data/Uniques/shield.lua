@@ -71,6 +71,20 @@ Implicits: 1
 {variant:1,2}10% chance to Curse Non-Cursed Enemies with Enfeeble on Hit, with 80% increased Effect
 {variant:3,4}25% chance to Curse Non-Cursed Enemies with Enfeeble on Hit, with 80% increased Effect
 ]],[[
+Dawnbreaker
+Colossal Tower Shield
+Source: Drops from unique{The Searing Exarch}
+Requires Level 67, 159 Str
+Implicits: 1
++(10–20) to maximum Life
+(150–250)% increased Armour
++(20–25)% Chance to Block
+-1% Chance to Block Attack Damage for every 200 Fire Damage taken from Hits Recently
+(10–20)% of Cold Damage taken as Fire
+(10–20)% of Lightning Damage taken as Fire
+(10–20)% of Physical Damage taken as Fire
+Scorch Enemies in Close Range when you Block
+]],[[
 Lioneye's Remorse
 Pinnacle Tower Shield
 Variant: Pre 2.6.0
@@ -202,10 +216,10 @@ Mortal Conviction
 [[
 Atziri's Mirror
 Golden Buckler
-Upgrade: Upgrades to unique{Atziri's Reflection} via prophecy{The Queen's Sacrifice}
+Upgrade: No longer obtainable
 Variant: Pre 2.0.0
 Variant: Pre 3.0.0
-Variant: Current
+Variant: Pre 3.17.0
 Requires Level 54, 130 Dex
 Implicits: 1
 {variant:3}6% increased Movement Speed
@@ -220,7 +234,7 @@ Hex Reflection
 ]],[[
 Atziri's Reflection
 Golden Buckler
-Source: Upgraded from unique{Atziri's Mirror} via prophecy{The Queen's Sacrifice}
+Source: Drops from unique{Atziri, Queen of the Vaal} in normal{The Alluring Abyss}
 Requires Level 68, 130 Dex
 Implicits: 1
 6% increased Movement Speed
@@ -234,27 +248,28 @@ Unaffected by Curses
 ]],[[
 Chalice of Horrors
 War Buckler
-Upgrade: Upgrades to unique{Thirst for Horrors} via prophecy{Mouth of Horrors}
 Variant: Pre 2.6.0
 Variant: Pre 3.0.0
+Variant: Pre 3.17.0
 Variant: Current
 Requires Level 29, 74 Dex
 Implicits: 1
-{variant:3}9% increased Movement Speed
+{variant:3,4}9% increased Movement Speed
 +1 to Level of Socketed Curse Gems
 (30-50)% increased Evasion Rating
-{variant:2,3}+(40-50) to maximum Life
-{variant:2,3}+(50-70) to maximum Energy Shield
-100% increased Curse Duration
+{variant:2,3,4}+(40-50) to maximum Life
+{variant:2,3,4}+(50-70) to maximum Energy Shield
+{variant:1,2,3}100% increased Curse Duration
+{variant:4}1% of Damage Leeched as Life against Cursed Enemies
 +5% Chance to Block
 10% Chance to Cause Monster to Flee on Block
 ]],[[
 Thirst for Horrors
 War Buckler
-Source: Upgraded from unique{Chalice of Horrors} using prophecy{Mouth of Horrors}
+Source: No longer obtainable
 Variant: Pre 2.6.0
 Variant: Pre 3.0.0
-Variant: Current
+Variant: Pre 3.17.0
 Requires Level 32, 74 Dex
 Implicits: 1
 {variant:3}9% increased Movement Speed
@@ -296,7 +311,6 @@ Adds (8-12) to (15-20) Physical Damage to Attacks
 ]],[[
 Kaltenhalt
 Painted Buckler
-Upgrade: Upgrades to unique{Kaltensoul} via prophecy{The Snuffed Flame}
 Variant: Pre 1.0.0
 Variant: Pre 2.6.0
 Variant: Pre 3.0.0
@@ -314,10 +328,10 @@ Implicits: 1
 ]],[[
 Kaltensoul
 Painted Buckler
-Source: Upgraded from unique{Kaltenhalt} using prophecy{The Snuffed Flame}
+Source: No longer obtainable
 Variant: Pre 2.6.0
 Variant: Pre 3.0.0
-Variant: Current
+Variant: Pre 3.17.0
 Requires Level 16, 44 Dex
 Implicits: 1
 {variant:3}6% increased Movement Speed
@@ -590,7 +604,6 @@ equal to 25% of Sacrificed Mana for 4 seconds
 ]],[[
 Matua Tupuna
 Tarnished Spirit Shield
-Source: Upgrades to unique{Whakatutuki o Matua} via prophecy{The Mentor}
 Variant: Pre 3.0.0
 Variant: Current
 Requires Level 23, 60 Int
@@ -606,7 +619,7 @@ Spreads Tar when you take a Critical Strike
 ]],[[
 Whakatutuki o Matua
 Tarnished Spirit Shield
-Source: Upgraded from unique{Matua Tupuna} via prophecy{The Mentor}
+Source: Drops from any endgame map boss
 Requires Level 63, 60 Int
 Implicits: 1
 (5-10)% increased Spell Damage
@@ -715,6 +728,17 @@ Triggers Level 20 Physical Aegis when Equipped
 50% increased Critical Strike Chance while Physical Aegis is depleted
 Nearby Enemies are Blinded while Physical Aegis is not depleted
 ]],[[
+The Oppressor
+Elegant Round Shield
+Requires Level 70, 85 Str, 85 Dex
+Implicits: 1
+120% increased Block Recovery
+-10% to amount of Suppressed Spell Damage Prevented
++(26-32)% chance to Suppress Spell Damage
+(200-250)% increased Armour and Evasion
++(9-13)% Chance to Block
+You take 20% of Damage from Blocked Hits
+]],[[
 Shattershard
 Crimson Round Shield
 League: Heist
@@ -724,6 +748,18 @@ Trigger Level 20 Shield Shatter when you Block
 (120-150)% increased Armour and Evasion
 +(80-100) to maximum Life
 +(8-12)% Chance to Block
+]],[[
+The Squire
+Elegant Round Shield
+Requires Level 70, 85 Str, 85 Dex
+Implicits: 1
+120% increased Block Recovery
+Has 3 Sockets
+All Sockets are White
++(5-8)% to Quality of Socketed Support Gems
+Socketed Support Gems can also Support Skills from your Main Hand
+(100-150)% increased Armour and Evasion
++(3-5)% Chance to Block
 ]],[[
 Vix Lunaris
 Cardinal Round Shield
@@ -876,7 +912,6 @@ Cannot Block Attacks
 ]],[[
 Springleaf
 Plank Kite Shield
-Upgrade: Upgrades to unique{The Oak} via prophecy{Nature's Resilience}
 Variant: Pre 1.1.0
 Variant: Pre 2.0.0
 Variant: Pre 2.6.0
@@ -895,9 +930,9 @@ Implicits: 2
 ]],[[
 The Oak
 Plank Kite Shield
-Source: Upgraded from unique{Springleaf} using prophecy{Nature's Resilience}
+Source: No longer obtainable
 Variant: Pre 2.6.0
-Variant: Current
+Variant: Pre 3.17.0
 Requires Level 40
 Implicits: 1
 +4% to all Elemental Resistances
@@ -987,7 +1022,7 @@ Variant: Current
 League: Heist
 Requires Level 66, 85 Dex, 85 Int
 Implicits: 1
-4% chance to Dodge Attack Hits
++5% chance to Suppress Spell Damage
 {variant:1}(500-600)% increased Evasion and Energy Shield
 {variant:2}(400-500)% increased Evasion and Energy Shield
 (25-40)% increased Mana Regeneration Rate
@@ -1002,7 +1037,7 @@ Variant: Current
 Requires Level 27, 36 Dex, 36 Int
 Implicits: 2
 {variant:1}Reflects (10-23) Physical Damage to Melee Attackers
-{variant:2}4% chance to Dodge Attacks
+{variant:2}+5% chance to Suppress Spell Damage
 (120-140)% increased Evasion and Energy Shield
 +(30-50) to maximum Life
 +(20-30) to maximum Energy Shield
@@ -1019,7 +1054,7 @@ Variant: Current
 Requires Level 70, 85 Dex, 85 Int
 Implicits: 2
 {variant:1,2}Reflects (221-260) Physical Damage to Melee Attackers
-{variant:3,4}4% chance to Dodge Spell Damage
+{variant:3,4}+5% chance to Suppress Spell Damage
 {variant:1,2,3}Grants level 20 Bear Trap Skill
 {variant:4}Grants Level 25 Bear Trap Skill
 (18-28)% increased Trap Damage
@@ -1036,7 +1071,7 @@ Variant: Pre 3.5.0
 Variant: Current
 Requires Level 66, 85 Dex, 85 Int
 Implicits: 1
-4% chance to Dodge Attacks
++5% chance to Suppress Spell Damage
 {variant:1}(130-150)% increased Evasion and Energy Shield
 {variant:2}(500-600)% increased Evasion and Energy Shield
 +(60-80) to maximum Life
@@ -1052,7 +1087,7 @@ Variant: Current
 Requires Level 45, 58 Dex, 58 Int
 Implicits: 2
 {variant:1}Reflects (51-70) Physical Damage to Melee Attackers
-{variant:2,3}2% chance to Dodge Spell Damage
+{variant:2,3}+3% chance to Suppress Spell Damage
 (10-15)% increased Attack Speed
 (10-20)% increased maximum Life
 −50% to all Elemental Resistances
@@ -1066,7 +1101,7 @@ League: Synthesis
 Source: Drops from unique{Altered/Augmented/Rewritten/Twisted Synthete}
 Requires Level 62, 85 Dex, 85 Int
 Implicits: 1
-2% chance to Dodge Spell Hits
++3% chance to Suppress Spell Damage
 +(1-3) to Level of Socketed Lightning Gems
 Triggers Level 20 Lightning Aegis when Equipped
 (1-20)% increased Attack Speed
@@ -1080,7 +1115,7 @@ Sovereign Spiked Shield
 League: Ritual
 Requires Level 54, 70 Dex, 70 Int
 Implicits: 1
-4% chance to Dodge Spell Hits
++5% chance to Suppress Spell Damage
 (160-220)% increased Evasion and Energy Shield
 +(40-60)% to Damage over Time Multiplier if you've dealt a Critical Strike in the past 8 seconds
 (2.0-2.5)% of Life Regenerated per Second if you've dealt a Critical Strike in the past 8 seconds
@@ -1091,7 +1126,7 @@ Zeel's Amplifier
 Polished Spiked Shield
 Requires Level 49, 64 Dex, 64 Int
 Implicits: 1
-4% chance to Dodge Attack Hits
++5% chance to Suppress Spell Damage
 (40-50)% increased Spell Damage
 +(60-80) to maximum Energy Shield
 +(50-70) to maximum Life
