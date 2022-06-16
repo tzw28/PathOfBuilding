@@ -185,6 +185,8 @@ function GGPKClass:GetNeededFiles()
 		"Data/CostTypes.dat",
 		"Data/PassiveJewelRadii.dat",
 		"Data/SoundEffects.dat",
+		"Data/MavenJewelRadiusKeystones.dat",
+		"Data/TableCharge.dat",
 	}
 	local datFilesCn = {
 		"Data/Simplified Chinese/Stats.dat",
