@@ -2,2835 +2,2945 @@
 -- Item data (c) Grinding Gear Games
 
 return {
-	["七伤破"] = {
+	["Absolution"] = {
 		["MERCILESS"] = {
-			"七伤破的伤害提高 25%",
-			"七伤破的晕眩持续时间延长 25%",
-			"七伤破有 16% 的几率使内伤层数 +1",
+			"20% increased Absolution Duration",
+			"8% increased Absolution Cast Speed",
+			"Summoned Sentinels of Absolution have 16% increased Area of Effect",
 		},
 		["ENDGAME"] = {
-			"七伤破的伤害提高 40%",
-			"七伤破的晕眩持续时间延长 40%",
-			"七伤破有 24% 的几率使内伤层数 +1",
+			"30% increased Absolution Duration",
+			"12% increased Absolution Cast Speed",
+			"Summoned Sentinels of Absolution have 24% increased Area of Effect",
 		},
 	},
-	["不朽怒嚎"] = {
+	["Alchemist's Mark"] = {
 		["MERCILESS"] = {
-			"【不朽怒嚎】持续时间延长 24%",
+			"20% increased Alchemist's Mark Curse Effect",
 		},
 		["ENDGAME"] = {
-			"【不朽怒嚎】持续时间延长 36%",
+			"30% increased Alchemist's Mark Curse Effect",
 		},
 	},
-	["乱剑穿心"] = {
+	["Ambush"] = {
 		["MERCILESS"] = {
-			"【乱剑穿心】的效果区域扩大 16%",
-			"【乱剑穿心】引爆其它【徘徊之刃】的范围扩大 50%",
-			"【乱剑穿心】的伤害提高 25%",
+			"20% increased Ambush Cooldown Recovery Rate",
+			"Attacks Exerted by Ambush have +25% to Critical Strike Multiplier",
 		},
 		["ENDGAME"] = {
-			"【乱剑穿心】的效果区域扩大 24%",
-			"【乱剑穿心】引爆其它【徘徊之刃】的范围扩大 75%",
-			"【乱剑穿心】的伤害提高 40%",
+			"30% increased Ambush Cooldown Recovery Rate",
+			"Attacks Exerted by Ambush have +40% to Critical Strike Multiplier",
 		},
 	},
-	["亵渎"] = {
+	["Ancestral Cry"] = {
 		["MERCILESS"] = {
-			"【亵渎】可以生成 2 个额外灵柩",
+			"Attacks Exerted by Ancestral Cry deal 35% increased Damage",
 		},
 		["ENDGAME"] = {
-			"【亵渎】可以生成 3 个额外灵柩",
+			"Attacks Exerted by Ancestral Cry deal 50% increased Damage",
+			"Ancestral Cry has a minimum of 10 Power",
 		},
 	},
-	["亵渎之矛"] = {
+	["Ancestral Protector"] = {
 		["MERCILESS"] = {
-			"【亵渎之矛】生成 +3 级的灵柩",
-			"【亵渎之矛】的伤害提高 25%",
-			"【亵渎之矛】的施放速度提高 8%",
+			"Ancestral Protector Totem deals 25% increased Damage",
+			"12% increased Ancestral Protector Totem Placement Speed",
+			"+24% to Ancestral Protector Totem Elemental Resistances",
+			"Ancestral Protector Totem grants 12% increased Attack Speed while Active",
 		},
 		["ENDGAME"] = {
-			"【亵渎之矛】生成 +5 级的灵柩",
-			"【亵渎之矛】的伤害提高 40%",
-			"【亵渎之矛】的施放速度提高 12%",
+			"Ancestral Protector Totem deals 40% increased Damage",
+			"18% increased Ancestral Protector Totem Placement Speed",
+			"+36% to Ancestral Protector Totem Elemental Resistances",
+			"Ancestral Protector Totem grants 18% increased Attack Speed while Active",
 		},
 	},
-	["伏击"] = {
+	["Ancestral Warchief"] = {
 		["MERCILESS"] = {
-			"伏击的冷却回复率提高 20%",
-			"被伏击增助的攻击其暴击伤害加成 +25%",
+			"25% increased Ancestral Warchief Totem Damage",
+			"16% increased Ancestral Warchief Totem Area of Effect",
+			"Ancestral Warchief Totem grants 20% increased Melee Damage while Active",
 		},
 		["ENDGAME"] = {
-			"伏击的冷却回复率提高 30%",
-			"被伏击增助的攻击其暴击伤害加成 +40%",
+			"40% increased Ancestral Warchief Totem Damage",
+			"24% increased Ancestral Warchief Totem Area of Effect",
+			"Ancestral Warchief Totem grants 30% increased Melee Damage while Active",
 		},
 	},
-	["优雅"] = {
+	["Anger"] = {
 		["MERCILESS"] = {
-			"优雅的保留效果降低 10%",
+			"Anger has 20% increased Mana Reservation Efficiency",
 		},
 		["ENDGAME"] = {
-			"优雅的保留效果降低 15%",
+			"Anger has 30% increased Mana Reservation Efficiency",
 		},
 	},
-	["元素净化"] = {
+	["Animate Guardian"] = {
 		["MERCILESS"] = {
-			"元素净化的保留效果降低 14%",
+			"Animated Guardians deal 25% increased Damage",
+			"+24% to Animated Guardian Elemental Resistances",
 		},
 		["ENDGAME"] = {
-			"元素净化的保留效果降低 20%",
+			"Animated Guardians deal 40% increased Damage",
+			"+36% to Animated Guardian Elemental Resistances",
 		},
 	},
-	["元素打击"] = {
+	["Animate Weapon"] = {
 		["MERCILESS"] = {
-			"【元素打击】的伤害提高 25%",
-			"【元素打击】攻击速度提高 10%",
-			"【元素打击】造成冰冻，感电，点燃的几率提高 +20%",
+			"Animated Weapons deal 25% increased Damage",
+			"20% increased Animate Weapon Duration",
+			"16% chance to create an additional Animate Weapon copy",
 		},
 		["ENDGAME"] = {
-			"【元素打击】的伤害提高 40%",
-			"【元素打击】攻击速度提高 15%",
-			"【元素打击】造成冰冻，感电，点燃的几率提高 +30%",
+			"Animated Weapons deal 40% increased Damage",
+			"30% increased Animate Weapon Duration",
+			"24% chance to create an additional Animate Weapon copy",
 		},
 	},
-	["元素要害"] = {
+	["Arc"] = {
 		["MERCILESS"] = {
-			"【元素要害】的诅咒效果提高 20%",
-			"【元素要害】持续时间延长 30%",
+			"25% increased Arc Damage",
+			"Arc has +20% chance to Shock",
+			"Arc deals 8% increased Damage for each time it has Chained",
 		},
 		["ENDGAME"] = {
-			"【元素要害】的诅咒效果提高 30%",
-			"【元素要害】持续时间延长 45%",
+			"40% increased Arc Damage",
+			"Arc Chains an additional time",
+			"Arc has +30% chance to Shock",
+			"Arc deals 12% increased Damage for each time it has Chained",
 		},
 	},
-	["充能打击"] = {
+	["Arcane Cloak"] = {
 		["MERCILESS"] = {
-			"【充能打击】的伤害提高 25%",
-			"【充能打击】持续时间延长 30%",
-			"【充能打击】范围扩大 16%",
-			"【充能打击】的最大光束目标 +1",
+			"Arcane Cloak Spends an additional 10% of current Mana",
 		},
 		["ENDGAME"] = {
-			"【充能打击】的伤害提高 40%",
-			"【充能打击】持续时间延长 45%",
-			"【充能打击】范围扩大 24%",
-			"【充能打击】的最大光束目标 +2",
+			"Arcane Cloak Spends an additional 15% of current Mana",
+			"Arcane Cloak grants Life Regeneration equal to 15% of Mana Spent per Second",
 		},
 	},
-	["先祖卫士"] = {
+	["Arcanist Brand"] = {
 		["MERCILESS"] = {
-			"先祖卫士图腾造成的伤害提高 25%",
-			"先祖卫士放置速度提高 12%",
-			"先祖卫士的元素抗性 +24%",
-			"当先祖卫士图腾存在时，攻击速度提高 12%",
+			"Arcanist Brand has 8% increased Cast Speed",
 		},
 		["ENDGAME"] = {
-			"先祖卫士图腾造成的伤害提高 40%",
-			"先祖卫士放置速度提高 18%",
-			"先祖卫士的元素抗性 +36%",
-			"当先祖卫士图腾存在时，攻击速度提高 18%",
+			"Arcanist Brand has 12% increased Cast Speed",
+			"Spells Triggered by Arcanist Brand Unnerve enemies on Hit for 4 seconds",
 		},
 	},
-	["先祖战吼"] = {
+	["Arctic Armour"] = {
 		["MERCILESS"] = {
-			"被【先祖战吼】增助的攻击造成的伤害提高 35%",
+			"Arctic Armour has 50% increased Mana Reservation Efficiency",
 		},
 		["ENDGAME"] = {
-			"被【先祖战吼】增助的攻击造成的伤害提高 50%",
-			"【先祖战吼】最少有 10 点威力值",
+			"Arctic Armour has 75% increased Mana Reservation Efficiency",
 		},
 	},
-	["先祖战士长"] = {
+	["Armageddon Brand"] = {
 		["MERCILESS"] = {
-			"先祖战士长图腾伤害提高 25%",
-			"先祖战士长图腾范围扩大 16%",
-			"先祖战士长图腾生效时，你的近战伤害提高 20%",
+			"Armageddon Brand deals 25% increased Damage",
+			"Armageddon Brand has 8% increased Activation Frequency",
+			"Armageddon Brand Damage Penetrates 8% of Branded Enemy's Fire Resistance",
 		},
 		["ENDGAME"] = {
-			"先祖战士长图腾伤害提高 40%",
-			"先祖战士长图腾范围扩大 24%",
-			"先祖战士长图腾生效时，你的近战伤害提高 30%",
+			"Armageddon Brand deals 40% increased Damage",
+			"Armageddon Brand has 12% increased Activation Frequency",
+			"Armageddon Brand Damage Penetrates 12% of Branded Enemy's Fire Resistance",
 		},
 	},
-	["冬潮烙印"] = {
+	["Artillery Ballista"] = {
 		["MERCILESS"] = {
-			"【冬潮烙印】的伤害提高 25%",
-			"冬潮烙印 +2 最大层数",
-			"【冬潮烙印】的冰缓效果提高 25%",
+			"Artillery Ballista Damage Penetrates 6% Fire Resistance",
+			"Artillery Ballista fires an additional Arrow",
 		},
 		["ENDGAME"] = {
-			"【冬潮烙印】的伤害提高 40%",
-			"冬潮烙印 +4 最大层数",
-			"【冬潮烙印】的冰缓效果提高 40%",
+			"Artillery Ballista Damage Penetrates 10% Fire Resistance",
+			"Artillery Ballista fires 2 additional Arrows",
+			"Artillery Ballista Projectiles fall in two perpendicular lines instead",
 		},
 	},
-	["冰冻陷阱"] = {
+	["Assassin's Mark"] = {
 		["MERCILESS"] = {
-			"【冰冻陷阱】的伤害提高 25%",
-			"【冰冻陷阱】范围扩大 16%",
-			"【冰冻陷阱】的伤害穿透 6% 冰霜抗性",
+			"20% increased Assassin's Mark Curse Effect",
 		},
 		["ENDGAME"] = {
-			"【冰冻陷阱】的伤害提高 40%",
-			"【冰冻陷阱】范围扩大 24%",
-			"【冰冻陷阱】的伤害穿透 10% 冰霜抗性",
+			"30% increased Assassin's Mark Curse Effect",
 		},
 	},
-	["冰墙"] = {
+	["Ball Lightning"] = {
 		["MERCILESS"] = {
-			"冰墙的冷却回复率提高 20%",
-			"【冰墙】持续时间延长 24%",
+			"25% increased Ball Lightning Damage",
+			"16% increased Ball Lightning Area of Effect",
 		},
 		["ENDGAME"] = {
-			"冰墙的冷却回复率提高 30%",
-			"【冰墙】持续时间延长 36%",
+			"40% increased Ball Lightning Damage",
+			"24% increased Ball Lightning Area of Effect",
+			"Ball Lightning fires an additional Projectile",
 		},
 	},
-	["冰川之刺"] = {
+	["Bane"] = {
 		["MERCILESS"] = {
-			"【冰川之刺】的伤害提高 25%",
-			"【冰川之刺】范围扩大 16%",
-			"冰川之刺将物理伤害的 6% 视为额外冰霜伤害",
+			"Bane deals 25% increased Damage",
+			"Bane has 16% increased Area of Effect",
+			"10% increased Effect of Curses applied by Bane",
 		},
 		["ENDGAME"] = {
-			"【冰川之刺】的伤害提高 40%",
-			"【冰川之刺】范围扩大 24%",
-			"冰川之刺将物理伤害的 10% 视为额外冰霜伤害",
+			"Bane deals 40% increased Damage",
+			"Bane has 24% increased Area of Effect",
+			"15% increased Effect of Curses applied by Bane",
 		},
 	},
-	["冰矛"] = {
+	["Barrage"] = {
 		["MERCILESS"] = {
-			"【冰矛】暴击时有 10% 的几率获得 1 个暴击球",
-			"【冰矛】第二阶段的暴击率提高 200%",
-			"在改变形态前，【冰矛】的飞行距离缩短 20%",
+			"25% increased Barrage Damage",
+			"10% increased Barrage Attack Speed",
 		},
 		["ENDGAME"] = {
-			"【冰矛】暴击时有 15% 的几率获得 1 个暴击球",
-			"【冰矛】第二阶段的暴击率提高 300%",
-			"【冰矛】会发射 1 个额外投射物",
-			"在改变形态前，【冰矛】的飞行距离缩短 30%",
+			"40% increased Barrage Damage",
+			"15% increased Barrage Attack Speed",
+			"Barrage fires an additional Projectile",
 		},
 	},
-	["冰锥地雷"] = {
+	["Battlemage's Cry"] = {
 		["MERCILESS"] = {
-			"冰锥地雷的伤害提高 25%",
-			"冰锥地雷投掷速度提高 10%",
-			"冰锥地雷 +20% 暴击伤害加成",
+			"10% increased Battlemage's Cry Buff Effect",
 		},
 		["ENDGAME"] = {
-			"冰锥地雷的伤害提高 40%",
-			"冰锥地雷投掷速度提高 15%",
-			"冰锥地雷 +30% 暴击伤害加成",
+			"15% increased Battlemage's Cry Buff Effect",
+			"Battlemage's Cry Exerts 1 additional Attack",
 		},
 	},
-	["冰霜之刃"] = {
+	["Bear Trap"] = {
 		["MERCILESS"] = {
-			"【冰霜之刃】的伤害提高 25%",
-			"【冰霜之刃】的投射物速度提高 20%",
+			"25% increased Bear Trap Damage",
+			"Bear Trap has 10% increased Cooldown Recovery Rate",
+			"Enemies affected by Bear Trap take 5% increased Damage from Trap or Mine Hits",
 		},
 		["ENDGAME"] = {
-			"【冰霜之刃】的伤害提高 40%",
-			"【冰霜之刃】的投射物速度提高 30%",
+			"40% increased Bear Trap Damage",
+			"Bear Trap has 15% increased Cooldown Recovery Rate",
+			"Enemies affected by Bear Trap take 10% increased Damage from Trap or Mine Hits",
 		},
 	},
-	["冰霜之锤"] = {
+	["Berserk"] = {
 		["MERCILESS"] = {
-			"【冰霜之锤】的伤害提高 25%",
-			"冰霜之锤有 +20% 的几率冰冻",
-			"【冰霜之锤】获得等同其 10% 物理伤害的额外冰霜伤害",
+			"Berserk has 25% reduced Rage loss per second",
+			"Berserk has 20% increased Buff Effect",
 		},
 		["ENDGAME"] = {
-			"【冰霜之锤】的伤害提高 40%",
-			"冰霜之锤有 +30% 的几率冰冻",
-			"【冰霜之锤】获得等同其 15% 物理伤害的额外冰霜伤害",
+			"Berserk has 40% reduced Rage loss per second",
+			"Berserk has 30% increased Buff Effect",
 		},
 	},
-	["冰霜净化"] = {
+	["Blade Blast"] = {
 		["MERCILESS"] = {
-			"冰霜净化的保留效果降低 14%",
+			"Blade Blast has 16% increased Area of Effect",
+			"Blade Blast detonates other Lingering Blades within an 50% increased Area",
+			"Blade Blast deals 25% increased Damage",
 		},
 		["ENDGAME"] = {
-			"冰霜净化的保留效果降低 20%",
+			"Blade Blast has 24% increased Area of Effect",
+			"Blade Blast detonates other Lingering Blades within an 75% increased Area",
+			"Blade Blast deals 40% increased Damage",
 		},
 	},
-	["冰霜射击"] = {
+	["Blade Flurry"] = {
 		["MERCILESS"] = {
-			"【冰霜射击】的伤害提高 25%",
-			"【冰霜射击】范围扩大 16%",
-			"【冰霜射击】的效果区域角度扩大 30%",
+			"25% increased Blade Flurry Damage",
+			"16% increased Blade Flurry Area of Effect",
 		},
 		["ENDGAME"] = {
-			"【冰霜射击】的伤害提高 40%",
-			"【冰霜射击】范围扩大 24%",
-			"【冰霜射击】的效果区域角度扩大 60%",
+			"40% increased Blade Flurry Damage",
+			"24% increased Blade Flurry Area of Effect",
+			"+1 to maximum Blade Flurry stages",
 		},
 	},
-	["冰霜护盾"] = {
+	["Blade Trap"] = {
 		["MERCILESS"] = {
-			"冰霜护盾每层最大生命 +125",
+			"25% increased Blade Trap Damage",
+			"16% increased Blade Trap Area of Effect",
 		},
 		["ENDGAME"] = {
-			"冰霜护盾冷却时间次数 +1",
-			"冰霜护盾每层最大生命 +180",
+			"40% increased Blade Trap Damage",
+			"24% increased Blade Trap Area of Effect",
+			"Blade Trap rotates +1 times",
 		},
 	},
-	["冰霜新星"] = {
+	["Blade Vortex"] = {
 		["MERCILESS"] = {
-			"【冰霜新星】的伤害提高 25%",
-			"冰霜新星有 +20% 冰冻几率",
-			"【冰霜新星】范围扩大 16%",
-			"【冰霜新星】击中造成的冰缓必定使目标的行动速度降低 6%",
+			"25% increased Blade Vortex Spell Damage",
+			"20% increased Blade Vortex Duration",
+			"16% increased Blade Vortex Area of Effect",
 		},
 		["ENDGAME"] = {
-			"【冰霜新星】的伤害提高 40%",
-			"冰霜新星有 +30% 冰冻几率",
-			"【冰霜新星】范围扩大 24%",
-			"【冰霜新星】击中造成的冰缓必定使目标的行动速度降低 8%",
+			"40% increased Blade Vortex Spell Damage",
+			"30% increased Blade Vortex Duration",
+			"24% increased Blade Vortex Area of Effect",
 		},
 	},
-	["冰霜脉冲"] = {
+	["Bladefall"] = {
 		["MERCILESS"] = {
-			"【冰霜脉冲】的伤害提高 25%",
-			"【冰霜脉冲】施法速度提高 8%",
-			"【冰霜脉冲】投射物速度提高 20%",
+			"25% increased Bladefall Damage",
+			"60% increased Bladefall Critical Strike Chance",
+			"16% increased Bladefall Area of Effect",
 		},
 		["ENDGAME"] = {
-			"【冰霜脉冲】的伤害提高 40%",
-			"【冰霜脉冲】施法速度提高 12%",
-			"【冰霜脉冲】投射物速度提高 30%",
+			"40% increased Bladefall Damage",
+			"90% increased Bladefall Critical Strike Chance",
+			"24% increased Bladefall Area of Effect",
+			"Bladefall has an additional Volley",
 		},
 	},
-	["冰霜闪现"] = {
+	["Bladestorm"] = {
 		["MERCILESS"] = {
-			"冰霜闪现的冷却回复速度提高 20%",
-			"冰霜闪现的最大移动距离提高 50%",
+			"Sand Bladestorms move with 50% increased speed",
+			"Bladestorm deals 25% increased Damage",
 		},
 		["ENDGAME"] = {
-			"冰霜闪现的冷却回复速度提高 30%",
-			"冰霜闪现的最大移动距离提高 75%",
+			"+1 to maximum number of Bladestorms",
+			"Sand Bladestorms move with 75% increased speed",
+			"Bladestorm deals 40% increased Damage",
 		},
 	},
-	["冲击波"] = {
+	["Blast Rain"] = {
 		["MERCILESS"] = {
-			"【冲击波】的伤害提高 25%",
-			"【冲击波】范围扩大 16%",
+			"Blast Rain deals 25% increased Damage",
+			"Blast Rain has 16% increased Area of Effect",
 		},
 		["ENDGAME"] = {
-			"【冲击波】的伤害提高 40%",
-			"【冲击波】范围扩大 24%",
+			"Blast Rain deals 40% increased Damage",
+			"Blast Rain has 24% increased Area of Effect",
+			"Blast Rain fires an additional Arrow",
 		},
 	},
-	["冲刺"] = {
+	["Blazing Salvo"] = {
 		["MERCILESS"] = {
-			"冲刺的移动距离提高 65%",
-			"【冲刺】+1 冷却时间次数",
+			"Blazing Salvo deals 25% increased Damage",
+			"Blazing Salvo Projectiles land in a 20% increased Area",
 		},
 		["ENDGAME"] = {
-			"冲刺的移动距离提高 100%",
-			"【冲刺】+2 冷却时间次数",
+			"Blazing Salvo deals 40% increased Damage",
+			"Blazing Salvo fires an additional Projectile",
+			"Blazing Salvo Projectiles land in a 30% increased Area",
 		},
 	},
-	["冻伤"] = {
+	["Blight"] = {
 		["MERCILESS"] = {
-			"【冻伤】的诅咒效果提高 20%",
-			"【冻伤】持续时间延长 30%",
+			"25% increased Blight Damage",
+			"16% increased Blight Area of Effect",
+			"Blight has 20% increased Hinder Duration",
 		},
 		["ENDGAME"] = {
-			"【冻伤】的诅咒效果提高 30%",
-			"【冻伤】持续时间延长 45%",
+			"40% increased Blight Damage",
+			"24% increased Blight Area of Effect",
+			"Blight has 30% increased Hinder Duration",
 		},
 	},
-	["净化烈焰"] = {
+	["Blink Arrow"] = {
 		["MERCILESS"] = {
-			"【净化烈焰】的伤害提高 25%",
-			"若目标区域有奉献地面，则【净化烈焰】的范围扩大 20%",
-			"净化烈焰创造的【奉献地面】可以使敌人承受的伤害提高 6%",
+			"Blink Arrow and Blink Arrow Clones have 25% increased Damage",
+			"Blink Arrow and Blink Arrow Clones have 10% increased Attack Speed",
+			"Blink Arrow has 20% increased Cooldown Recovery Rate",
 		},
 		["ENDGAME"] = {
-			"【净化烈焰】的伤害提高 40%",
-			"若目标区域有奉献地面，则【净化烈焰】的范围扩大 30%",
-			"净化烈焰创造的【奉献地面】可以使敌人承受的伤害提高 9%",
+			"Blink Arrow and Blink Arrow Clones have 40% increased Damage",
+			"Blink Arrow and Blink Arrow Clones have 15% increased Attack Speed",
+			"Blink Arrow has 30% increased Cooldown Recovery Rate",
 		},
 	},
-	["凋零步"] = {
+	["Blood Rage"] = {
 		["MERCILESS"] = {
-			"【凋零步】施加 2 个额外的【枯萎】减益效果",
-			"【凋零步】的【灵巧】效果提高 20%",
+			"Blood Rage grants additional 8% increased Attack Speed",
+			"Blood Rage grants additional 20% chance to gain a Frenzy Charge on Kill",
 		},
 		["ENDGAME"] = {
-			"【凋零步】施加 3 个额外的【枯萎】减益效果",
-			"【凋零步】的【灵巧】效果提高 30%",
+			"Blood Rage grants additional 12% increased Attack Speed",
+			"Blood Rage grants additional 30% chance to gain a Frenzy Charge on Kill",
 		},
 	},
-	["凛冬之眼"] = {
+	["Blood and Sand"] = {
 		["MERCILESS"] = {
-			"凛冬之眼的伤害提高 25%",
-			"凛冬之眼的投射物速度加快 20%",
-			"凛冬之眼在飞行途中发射霰弹投射物的频率提高 8%",
+			"Blood and Sand has 25% increased Buff Effect",
 		},
 		["ENDGAME"] = {
-			"凛冬之眼的伤害提高 40%",
-			"凛冬之眼的投射物速度加快 30%",
-			"凛冬之眼在飞行途中发射霰弹投射物的频率提高 12%",
+			"Blood and Sand has 40% increased Buff Effect",
 		},
 	},
-	["击刃"] = {
+	["Bodyswap"] = {
 		["MERCILESS"] = {
-			"【击刃】的伤害提高 25%",
-			"【击刃】冷却回复速度提高 20%",
+			"25% increased Bodyswap Damage",
+			"8% increased Bodyswap Cast Speed",
 		},
 		["ENDGAME"] = {
-			"【击刃】的伤害提高 40%",
-			"【击刃】冷却回复速度提高 30%",
+			"40% increased Bodyswap Damage",
+			"12% increased Bodyswap Cast Speed",
 		},
 	},
-	["凿击"] = {
+	["Bone Offering"] = {
 		["MERCILESS"] = {
-			"【凿击】创造 +1 根尖刺",
-			"【凿击】效果区域扩大 16%",
-			"【凿击】的伤害提高 25%",
+			"30% increased Bone Offering Duration",
+			"Bone Offering grants an additional +6% Chance to Block Attack Damage",
 		},
 		["ENDGAME"] = {
-			"【凿击】创造 +2 根尖刺",
-			"【凿击】效果区域扩大 24%",
-			"【凿击】的伤害提高 40%",
+			"45% increased Bone Offering Duration",
+			"Bone Offering grants an additional +9% Chance to Block Attack Damage",
 		},
 	},
-	["刀刃乱舞"] = {
+	["Boneshatter"] = {
 		["MERCILESS"] = {
-			"【刀刃乱舞】伤害提高 25%",
-			"【刀刃乱舞】范围扩大 16%",
-			"【刀刃乱舞】层数达到上限时，有 6% 的几率躲避攻击击中",
+			"25% increased Boneshatter Damage",
+			"25% increased Boneshatter Stun Duration",
+			"Boneshatter has 16% chance to grant +1 Trauma",
 		},
 		["ENDGAME"] = {
-			"【刀刃乱舞】伤害提高 40%",
-			"【刀刃乱舞】范围扩大 24%",
-			"【刀刃乱舞】层数达到上限时，有 9% 的几率躲避攻击击中",
+			"40% increased Boneshatter Damage",
+			"40% increased Boneshatter Stun Duration",
+			"Boneshatter has 24% chance to grant +1 Trauma",
 		},
 	},
-	["分裂箭矢"] = {
+	["Burning Arrow"] = {
 		["MERCILESS"] = {
-			"【分裂箭矢】的伤害提高 25%",
-			"【分裂箭矢】暴击率提高 60%",
-			"【分裂箭矢】可以额外发射 2 个投射物",
+			"25% increased Burning Arrow Damage",
+			"Burning Arrow has +20% chance to Ignite",
+			"10% of Burning Arrow Physical Damage gained as Extra Fire Damage",
 		},
 		["ENDGAME"] = {
-			"【分裂箭矢】的伤害提高 40%",
-			"【分裂箭矢】暴击率提高 90%",
-			"【分裂箭矢】可以额外发射 3 个投射物",
+			"40% increased Burning Arrow Damage",
+			"Burning Arrow has +30% chance to Ignite",
+			"15% of Burning Arrow Physical Damage gained as Extra Fire Damage",
 		},
 	},
-	["分裂钢刃"] = {
+	["Caustic Arrow"] = {
 		["MERCILESS"] = {
-			"分裂钢刃的伤害提高 25%",
-			"分裂钢刃的效果区域扩大 16%",
-			"分裂钢刃有 20% 的几率不消耗钢刃碎片",
+			"25% increased Caustic Arrow Damage",
+			"20% increased Caustic Arrow Duration",
+			"16% increased Caustic Arrow Area of Effect",
+			"Caustic Arrow has 14% chance to inflict Withered on Hit for 2 seconds base Duration",
 		},
 		["ENDGAME"] = {
-			"分裂钢刃的伤害提高 40%",
-			"分裂钢刃的效果区域扩大 24%",
-			"分裂钢刃有 30% 的几率不消耗钢刃碎片",
+			"40% increased Caustic Arrow Damage",
+			"30% increased Caustic Arrow Duration",
+			"24% increased Caustic Arrow Area of Effect",
+			"Caustic Arrow has 20% chance to inflict Withered on Hit for 2 seconds base Duration",
 		},
 	},
-	["剑刃陷阱"] = {
+	["Chain Hook"] = {
 		["MERCILESS"] = {
-			"剑刃陷阱的伤害提高 25%",
-			"剑刃陷阱的效果区域扩大 16%",
+			"Chain Hook has a 25% chance to grant +1 Rage if it Hits Enemies",
+			"Chain Hook deals 25% increased Damage",
 		},
 		["ENDGAME"] = {
-			"剑刃陷阱的伤害提高 40%",
-			"剑刃陷阱的效果区域扩大 24%",
-			"剑刃陷阱转动次数 +1",
+			"Chain Hook has a 40% chance to grant +1 Rage if it Hits Enemies",
+			"Chain Hook has +1 Radius per 12 Rage",
+			"Chain Hook deals 40% increased Damage",
 		},
 	},
-	["剑刃风暴"] = {
+	["Charged Dash"] = {
 		["MERCILESS"] = {
-			"黄沙剑刃风暴的移动速度提高 50%",
-			"【剑刃风暴】的伤害提高 25%",
+			"25% increased Charged Dash Damage",
+			"Charged Dash has +4 to Radius of each Wave's last damage Area",
+			"Charged Dash has 10% more Movement Speed",
 		},
 		["ENDGAME"] = {
-			"+1 剑刃风暴数量上限",
-			"黄沙剑刃风暴的移动速度提高 75%",
-			"【剑刃风暴】的伤害提高 40%",
+			"40% increased Charged Dash Damage",
+			"Charged Dash has +6 to Radius of each Wave's last damage Area",
+			"Charged Dash has 15% more Movement Speed",
 		},
 	},
-	["剧毒旋风"] = {
+	["Clarity"] = {
 		["MERCILESS"] = {
-			"【剧毒旋风】的伤害提高 25%",
-			"【剧毒旋风】击中时有 12% 的几率施加【枯萎】，持续 2 秒",
+			"Clarity has 50% increased Mana Reservation Efficiency",
 		},
 		["ENDGAME"] = {
-			"【剧毒旋风】的伤害提高 40%",
-			"【剧毒旋风】击中时有 20% 的几率施加【枯萎】，持续 2 秒",
-			"【剧毒旋风】有 25% 的几率继续抓回【回旋之刃】发射的投射物",
+			"Clarity has 75% increased Mana Reservation Efficiency",
 		},
 	},
-	["劈砍"] = {
+	["Cleave"] = {
 		["MERCILESS"] = {
-			"【劈砍】的伤害提高 25%",
-			"劈砍攻击速度提高 10%",
-			"【劈砍】范围扩大 16%",
+			"25% increased Cleave Damage",
+			"10% increased Cleave Attack Speed",
+			"16% increased Cleave Area of Effect",
 		},
 		["ENDGAME"] = {
-			"【劈砍】的伤害提高 40%",
-			"劈砍攻击速度提高 15%",
-			"【劈砍】范围扩大 24%",
+			"40% increased Cleave Damage",
+			"15% increased Cleave Attack Speed",
+			"24% increased Cleave Area of Effect",
 		},
 	},
-	["力量抽取"] = {
+	["Cobra Lash"] = {
 		["MERCILESS"] = {
-			"【力量抽取】的伤害提高 25%",
-			"使用【力量抽取】击败敌人时有 30% 的几率获得 1 个额外的暴击球",
-			"【力量抽取】攻击速度提高 10%",
-			"【力量抽取】可以额外发射 1 个投射物",
+			"Cobra Lash deals 25% increased Damage",
+			"Cobra Lash has 20% increased Projectile Speed",
+			"Cobra Lash Chains 2 additional times",
 		},
 		["ENDGAME"] = {
-			"【力量抽取】的伤害提高 40%",
-			"使用【力量抽取】击败敌人时有 45% 的几率获得 1 个额外的暴击球",
-			"【力量抽取】攻击速度提高 15%",
-			"【力量抽取】可以额外发射 2 个投射物",
+			"Cobra Lash deals 40% increased Damage",
+			"Cobra Lash has 30% increased Projectile Speed",
+			"Cobra Lash Chains 3 additional times",
 		},
 	},
-	["力量爆破"] = {
+	["Cold Snap"] = {
 		["MERCILESS"] = {
-			"【力量爆破】的伤害提高 25%",
-			"【力量爆破】范围扩大 16%",
-			"【力量爆破】有 50% 的几率增加一次爆破",
+			"25% increased Cold Snap Damage",
+			"Cold Snap has 20% increased Cooldown Recovery Rate",
+			"16% increased Cold Snap Area of Effect",
 		},
 		["ENDGAME"] = {
-			"【力量爆破】的伤害提高 40%",
-			"【力量爆破】范围扩大 24%",
-			"【力量爆破】有 75% 的几率增加一次爆破",
+			"40% increased Cold Snap Damage",
+			"Cold Snap has 30% increased Cooldown Recovery Rate",
+			"24% increased Cold Snap Area of Effect",
 		},
 	},
-	["双持打击"] = {
+	["Combust"] = {
+		["ENDGAME"] = {
+			"Combust has 30% increased Area of Effect",
+		},
+	},
+	["Conductivity"] = {
+		["MERCILESS"] = {
+			"20% increased Conductivity Curse Effect",
+			"30% increased Conductivity Duration",
+		},
+		["ENDGAME"] = {
+			"30% increased Conductivity Curse Effect",
+			"45% increased Conductivity Duration",
+		},
+	},
+	["Consecrated Path"] = {
+		["MERCILESS"] = {
+			"Consecrated Path deals 25% increased Damage",
+			"Consecrated Path has 10% increased teleport range",
+			"Consecrated Path has 16% increased Area of Effect",
+		},
+		["ENDGAME"] = {
+			"Consecrated Path deals 40% increased Damage",
+			"Consecrated Path has 15% increased teleport range",
+			"Consecrated Path has 24% increased Area of Effect",
+		},
+	},
+	["Contagion"] = {
+		["MERCILESS"] = {
+			"25% increased Contagion Damage",
+			"20% increased Contagion Duration",
+			"16% increased Contagion Area of Effect",
+		},
+		["ENDGAME"] = {
+			"40% increased Contagion Damage",
+			"30% increased Contagion Duration",
+			"24% increased Contagion Area of Effect",
+		},
+	},
+	["Conversion Trap"] = {
+		["MERCILESS"] = {
+			"Converted Enemies have 25% increased Damage",
+			"Conversion Trap 20% increased Cooldown Recovery Rate",
+		},
+		["ENDGAME"] = {
+			"Converted Enemies have 40% increased Damage",
+			"Conversion Trap 30% increased Cooldown Recovery Rate",
+		},
+	},
+	["Convocation"] = {
+		["MERCILESS"] = {
+			"Convocation has 20% increased Cooldown Recovery Rate",
+			"24% increased Convocation Buff Effect",
+		},
+		["ENDGAME"] = {
+			"Convocation has 30% increased Cooldown Recovery Rate",
+			"36% increased Convocation Buff Effect",
+		},
+	},
+	["Corrupting Fever"] = {
+		["MERCILESS"] = {
+			"Corrupting Fever deals 25% increased Damage",
+			"20% increased Corrupting Fever Duration",
+		},
+		["ENDGAME"] = {
+			"Corrupting Fever deals 40% increased Damage",
+			"30% increased Corrupting Fever Duration",
+			"Corrupting Fever has +50% chance to inflict an additional Corrupted Blood Debuff",
+		},
+	},
+	["Crackling Lance"] = {
+		["MERCILESS"] = {
+			"Crackling Lance deals 25% increased Damage",
+			"Crackling Lance has 8% increased Cast Speed",
+			"Crackling Lance has 24% increased branching angle",
+		},
+		["ENDGAME"] = {
+			"Crackling Lance deals 40% increased Damage",
+			"Crackling Lance has 16% increased Cast Speed",
+			"Crackling Lance has 36% increased branching angle",
+		},
+	},
+	["Creeping Frost"] = {
+		["MERCILESS"] = {
+			"25% increased Creeping Frost Damage",
+			"24% increased Creeping Frost Duration",
+			"16% increased Creeping Frost Area of Effect",
+		},
+		["ENDGAME"] = {
+			"40% increased Creeping Frost Damage",
+			"36% increased Creeping Frost Duration",
+			"24% increased Creeping Frost Area of Effect",
+			"Creeping Frost's Chilling Area has 38% increased Movement Speed",
+		},
+	},
+	["Cremation"] = {
+		["MERCILESS"] = {
+			"25% increased Cremation Damage",
+			"8% increased Cremation Cast Speed",
+		},
+		["ENDGAME"] = {
+			"Cremation can have up to 1 additional Geyser at a time",
+			"40% increased Cremation Damage",
+			"12% increased Cremation Cast Speed",
+		},
+	},
+	["Cyclone"] = {
+		["MERCILESS"] = {
+			"25% increased Cyclone Damage",
+			"10% increased Cyclone Attack Speed",
+		},
+		["ENDGAME"] = {
+			"40% increased Cyclone Damage",
+			"15% increased Cyclone Attack Speed",
+		},
+	},
+	["Dark Pact"] = {
+		["MERCILESS"] = {
+			"25% increased Dark Pact Damage",
+			"8% increased Dark Pact Cast Speed",
+			"16% increased Dark Pact Area of Effect",
+		},
+		["ENDGAME"] = {
+			"40% increased Dark Pact Damage",
+			"12% increased Dark Pact Cast Speed",
+			"24% increased Dark Pact Area of Effect",
+		},
+	},
+	["Dash"] = {
 		["MERCILESS"] = {
-			"【双持打击】的伤害提高 25%",
-			"【双持打击】攻击速度提高 10%",
-			"【双持打击】暴击率提高 60%",
+			"Dash travels 65% increased distance",
+			"Dash has +1 Cooldown Use",
 		},
 		["ENDGAME"] = {
-			"【双持打击】的伤害提高 40%",
-			"【双持打击】攻击速度提高 15%",
-			"【双持打击】暴击率提高 90%",
+			"Dash travels 100% increased distance",
+			"Dash has +2 Cooldown Uses",
 		},
 	},
-	["双重打击"] = {
+	["Decoy Totem"] = {
 		["MERCILESS"] = {
-			"【双重打击】的伤害提高 25%",
-			"【双重打击】攻击速度提高 10%",
-			"【双重打击】暴击率提高 60%",
-			"【双重打击】有 10% 的几率对流血敌人造成双倍伤害",
+			"40% increased Decoy Totem Life",
+			"16% increased Decoy Totem Area of Effect",
 		},
 		["ENDGAME"] = {
-			"【双重打击】的伤害提高 40%",
-			"【双重打击】攻击速度提高 15%",
-			"【双重打击】暴击率提高 90%",
-			"【双重打击】有 15% 的几率对流血敌人造成双倍伤害",
+			"60% increased Decoy Totem Life",
+			"24% increased Decoy Totem Area of Effect",
 		},
 	},
-	["召唤圣物"] = {
+	["Defiance Banner"] = {
 		["MERCILESS"] = {
-			"【召唤圣物】的伤害提高 25%",
-			"【召唤圣物】的效果区域扩大 16%",
-			"召唤的圣物的增益效果提高 75%",
+			"Defiance Banner has 25% increased Aura Effect",
 		},
 		["ENDGAME"] = {
-			"【召唤圣物】的伤害提高 40%",
-			"【召唤圣物】的效果区域扩大 24%",
-			"召唤的圣物的增益效果提高 100%",
+			"Defiance Banner has 40% increased Aura Effect",
 		},
 	},
-	["召唤寒冰魔像"] = {
+	["Desecrate"] = {
 		["MERCILESS"] = {
-			"【寒冰魔像】的伤害提高 25%",
-			"+24% 寒冰魔像的元素抗性",
-			"寒冰魔像给予你的增益效果提高 100%",
+			"Desecrate Spawns 2 additional corpses",
 		},
 		["ENDGAME"] = {
-			"【寒冰魔像】的伤害提高 40%",
-			"+36% 寒冰魔像的元素抗性",
-			"寒冰魔像给予你的增益效果提高 150%",
+			"Desecrate Spawns 3 additional corpses",
 		},
 	},
-	["召唤巨石魔像"] = {
+	["Despair"] = {
 		["MERCILESS"] = {
-			"【巨石魔像】的伤害提高 25%",
-			"+24% 巨石魔像的元素抗性",
-			"巨石魔像给予你的增益效果提高 100%",
+			"30% increased Despair Duration",
+			"20% increased Despair Curse Effect",
 		},
 		["ENDGAME"] = {
-			"【巨石魔像】的伤害提高 40%",
-			"+36% 巨石魔像的元素抗性",
-			"巨石魔像给予你的增益效果提高 150%",
+			"45% increased Despair Duration",
+			"30% increased Despair Curse Effect",
 		},
 	},
-	["召唤愤怒狂灵"] = {
+	["Destructive Link"] = {
 		["MERCILESS"] = {
-			"召唤愤怒狂灵的持续时间延长 20%",
-			"召唤愤怒狂灵时有 12% 的几率额外再召唤一只",
-			"召唤愤怒狂灵的伤害提高 25%",
+			"20% increased Destructive Link Duration",
 		},
 		["ENDGAME"] = {
-			"召唤愤怒狂灵的持续时间延长 30%",
-			"召唤愤怒狂灵时有 18% 的几率额外再召唤一只",
-			"召唤愤怒狂灵的伤害提高 40%",
+			"30% increased Destructive Link Duration",
 		},
 	},
-	["召唤混沌魔像"] = {
+	["Determination"] = {
 		["MERCILESS"] = {
-			"【混沌魔像】的伤害提高 25%",
-			"混沌魔像给予你的增益效果提高 75%",
-			"+24% 混沌魔像的元素抗性",
+			"Determination has 20% increased Mana Reservation Efficiency",
 		},
 		["ENDGAME"] = {
-			"【混沌魔像】的伤害提高 40%",
-			"混沌魔像给予你的增益效果提高 100%",
-			"+36% 混沌魔像的元素抗性",
+			"Determination has 30% increased Mana Reservation Efficiency",
 		},
 	},
-	["召唤灵体"] = {
+	["Detonate Dead"] = {
 		["MERCILESS"] = {
-			"灵体的伤害提高 25%",
-			"【灵体】的攻击和施法速度提高 8%",
-			"+24% 召唤灵体的元素抗性",
+			"25% increased Detonate Dead Damage",
+			"Detonate Dead has a 30% chance to detonate an additional corpse",
+			"16% increased Detonate Dead Area of Effect",
 		},
 		["ENDGAME"] = {
-			"灵体的伤害提高 40%",
-			"【灵体】的攻击和施法速度提高 12%",
-			"+36% 召唤灵体的元素抗性",
+			"40% increased Detonate Dead Damage",
+			"Detonate Dead has a 45% chance to detonate an additional corpse",
+			"24% increased Detonate Dead Area of Effect",
 		},
 	},
-	["召唤烈焰魔像"] = {
+	["Devouring Totem"] = {
 		["MERCILESS"] = {
-			"【烈焰魔像】的伤害提高 25%",
-			"+24% 烈焰魔像的元素抗性",
-			"烈焰魔像给予你的增益效果提高 100%",
+			"Devouring Totem has 40% Chance to Consume an additional corpse",
+			"24% increased Devouring Totem Leech per second",
 		},
 		["ENDGAME"] = {
-			"【烈焰魔像】的伤害提高 40%",
-			"+36% 烈焰魔像的元素抗性",
-			"烈焰魔像给予你的增益效果提高 150%",
+			"Devouring Totem has 60% Chance to Consume an additional corpse",
+			"36% increased Devouring Totem Leech per second",
 		},
 	},
-	["召唤腐化魔像"] = {
+	["Discharge"] = {
 		["MERCILESS"] = {
-			"召唤的腐化魔像造成的伤害提高 25%",
-			"腐化魔像给与你的增益效果提高 100%",
-			"召唤的腐化魔像获得 +24% 所有元素抗性",
+			"20% chance for Discharge to deal Damage without removing Charges",
+			"Discharge has +3 to Radius",
+			"25% increased Discharge Damage",
 		},
 		["ENDGAME"] = {
-			"召唤的腐化魔像造成的伤害提高 40%",
-			"腐化魔像给与你的增益效果提高 150%",
-			"召唤的腐化魔像获得 +36% 所有元素抗性",
+			"30% chance for Discharge to deal Damage without removing Charges",
+			"Discharge has +5 to Radius",
+			"40% increased Discharge Damage",
 		},
 	},
-	["召唤追命死灵"] = {
+	["Discipline"] = {
 		["MERCILESS"] = {
-			"召唤追命死灵的伤害提高 25%",
-			"召唤追命死灵的持续物理伤害加成 +12%",
-			"召唤追命死灵的冷却回复率提高 20%",
+			"Discipline has 30% increased Mana Reservation Efficiency",
 		},
 		["ENDGAME"] = {
-			"召唤追命死灵的伤害提高 40%",
-			"召唤追命死灵的持续物理伤害加成 +20%",
-			"召唤追命死灵的冷却回复率提高 30%",
+			"Discipline has 45% increased Mana Reservation Efficiency",
 		},
 	},
-	["召唤闪电魔像"] = {
+	["Divine Ire"] = {
 		["MERCILESS"] = {
-			"【闪电魔像】的伤害提高 25%",
-			"闪电魔像给予你的增益效果提高 100%",
-			"+24% 闪电魔像的元素抗性",
+			"Divine Ire deals 25% increased Damage",
+			"Divine Ire's beam has 10% increased width",
+			"Divine Ire Damages an additional nearby Enemy when gaining Stages",
 		},
 		["ENDGAME"] = {
-			"【闪电魔像】的伤害提高 40%",
-			"闪电魔像给予你的增益效果提高 150%",
-			"+36% 闪电魔像的元素抗性",
+			"Divine Ire deals 40% increased Damage",
+			"Divine Ire's beam has 15% increased width",
+			"Divine Ire Damages 2 additional nearby Enemies when gaining Stages",
 		},
 	},
-	["召唤飞掠者"] = {
+	["Dominating Blow"] = {
 		["MERCILESS"] = {
-			"召唤的飞掠者效果区域提高 60%",
-			"召唤飞掠者的保留效果降低 14%",
+			"20% increased Sentinel of Dominance Duration",
+			"Dominating Blow can summon 2 additional Magic Sentinels of Dominance",
 		},
 		["ENDGAME"] = {
-			"召唤的飞掠者效果区域提高 90%",
-			"召唤飞掠者的保留效果降低 20%",
+			"30% increased Sentinel of Dominance Duration",
+			"Dominating Blow can summon 3 additional Magic Sentinels of Dominance",
+			"Dominating Blow can summon an additional Rare Sentinel of Dominance",
 		},
 	},
-	["召唤魔侍"] = {
+	["Double Strike"] = {
 		["MERCILESS"] = {
-			"【魔侍造成】的伤害提高 25%",
-			"【召唤魔侍】有 20% 的几率额外召唤 1 个魔侍勇士",
+			"25% increased Double Strike Damage",
+			"10% increased Double Strike Attack Speed",
+			"60% increased Double Strike Critical Strike Chance",
+			"Double Strike has a 10% chance to deal Double Damage to Bleeding Enemies",
 		},
 		["ENDGAME"] = {
-			"【魔侍造成】的伤害提高 40%",
-			"【召唤魔侍】有 40% 的几率额外召唤 1 个魔侍勇士",
+			"40% increased Double Strike Damage",
+			"15% increased Double Strike Attack Speed",
+			"90% increased Double Strike Critical Strike Chance",
+			"Double Strike has a 15% chance to deal Double Damage to Bleeding Enemies",
 		},
 	},
-	["号召"] = {
+	["Dread Banner"] = {
 		["MERCILESS"] = {
-			"号召的冷却回复率提高 20%",
-			"【号召】的增益效果提高 24%",
+			"Dread Banner has 25% increased Aura Effect",
 		},
 		["ENDGAME"] = {
-			"号召的冷却回复率提高 30%",
-			"【号召】的增益效果提高 36%",
+			"Dread Banner has 40% increased Aura Effect",
 		},
 	},
-	["吞噬图腾"] = {
+	["Dual Strike"] = {
 		["MERCILESS"] = {
-			"【吞噬图腾】有 40% 的几率吞噬 1 个额外灵柩",
-			"吞噬图腾的每秒偷取速度提高 24%",
+			"25% increased Dual Strike Damage",
+			"10% increased Dual Strike Attack Speed",
+			"60% increased Dual Strike Critical Strike Chance",
 		},
 		["ENDGAME"] = {
-			"【吞噬图腾】有 60% 的几率吞噬 1 个额外灵柩",
-			"吞噬图腾的每秒偷取速度提高 36%",
+			"40% increased Dual Strike Damage",
+			"15% increased Dual Strike Attack Speed",
+			"90% increased Dual Strike Critical Strike Chance",
 		},
 	},
-	["回旋之刃"] = {
+	["Earthquake"] = {
 		["MERCILESS"] = {
-			"【回旋之刃】的伤害提高 25%",
-			"【回旋之刃】攻击速度提高 10%",
+			"25% increased Earthquake Damage",
+			"16% increased Earthquake Area of Effect",
+			"Earthquake deals 5% increased Damage per 0.1 seconds Duration",
 		},
 		["ENDGAME"] = {
-			"【回旋之刃】的伤害提高 40%",
-			"【回旋之刃】攻击速度提高 15%",
+			"40% increased Earthquake Damage",
+			"24% increased Earthquake Area of Effect",
+			"Earthquake deals 8% increased Damage per 0.1 seconds Duration",
 		},
 	},
-	["回春图腾"] = {
+	["Earthshatter"] = {
 		["MERCILESS"] = {
-			"回春图腾 10% 的生命回复会作为魔力回复",
-			"回春图腾的光环效果提高 30%",
+			"Earthshatter deals 25% increased Damage",
+			"Earthshatter has 16% increased Area of Effect",
 		},
 		["ENDGAME"] = {
-			"回春图腾 15% 的生命回复会作为魔力回复",
-			"回春图腾的光环效果提高 45%",
+			"Earthshatter deals 40% increased Damage",
+			"Earthshatter has 24% increased Area of Effect",
+			"Earthshatter creates +1 fissures",
 		},
 	},
-	["圣怨"] = {
+	["Elemental Hit"] = {
 		["MERCILESS"] = {
-			"【圣怨】的伤害提高 25%",
+			"Elemental Hit deals 25% increased Damage",
+			"10% increased Elemental Hit Attack Speed",
+			"Elemental Hit has +20% chance to Freeze, Shock and Ignite",
 		},
 		["ENDGAME"] = {
-			"【圣怨】的伤害提高 40%",
+			"Elemental Hit deals 40% increased Damage",
+			"15% increased Elemental Hit Attack Speed",
+			"Elemental Hit has +30% chance to Freeze, Shock and Ignite",
 		},
 	},
-	["圣焰图腾"] = {
+	["Elemental Weakness"] = {
 		["MERCILESS"] = {
-			"【圣焰图腾】的伤害提高 25%",
-			"【圣焰图腾】可以额外发射 1 个投射物",
-			"【圣焰图腾】投射物速度提高 20%",
-			"圣焰图腾创造的【奉献地面】可以使敌人承受的伤害提高 6%",
+			"20% increased Elemental Weakness Curse Effect",
+			"30% increased Elemental Weakness Duration",
 		},
 		["ENDGAME"] = {
-			"【圣焰图腾】的伤害提高 40%",
-			"【圣焰图腾】可以额外发射 2 个投射物",
-			"【圣焰图腾】投射物速度提高 30%",
-			"圣焰图腾创造的【奉献地面】可以使敌人承受的伤害提高 9%",
+			"30% increased Elemental Weakness Curse Effect",
+			"45% increased Elemental Weakness Duration",
 		},
 	},
-	["坚决战吼"] = {
+	["Enduring Cry"] = {
 		["MERCILESS"] = {
-			"坚决战吼的冷却回复率提高 20%",
+			"Enduring Cry has 20% increased Cooldown Recovery Rate",
 		},
 		["ENDGAME"] = {
-			"坚决战吼的冷却回复率提高 30%",
-			"【坚决战吼】获得 1 个额外的耐力球",
+			"Enduring Cry has 30% increased Cooldown Recovery Rate",
+			"Enduring Cry grants 1 additional Endurance Charge",
 		},
 	},
-	["坚定"] = {
+	["Energy Blade"] = {
 		["MERCILESS"] = {
-			"坚定的保留效果降低 10%",
+			"Energy Blades have 10% increased Attack Speed",
+			"Attacks with Energy Blades Penetrate 8% Lightning Resistance",
 		},
 		["ENDGAME"] = {
-			"坚定的保留效果降低 15%",
+			"Energy Blades have 15% increased Attack Speed",
+			"Attacks with Energy Blades Penetrate 12% Lightning Resistance",
 		},
 	},
-	["复仇"] = {
+	["Enfeeble"] = {
 		["MERCILESS"] = {
-			"【复仇】的伤害提高 25%",
-			"复仇的冷却回复率提高 20%",
+			"20% increased Enfeeble Curse Effect",
+			"30% increased Enfeeble Duration",
 		},
 		["ENDGAME"] = {
-			"【复仇】的伤害提高 40%",
-			"复仇的冷却回复率提高 30%",
+			"30% increased Enfeeble Curse Effect",
+			"45% increased Enfeeble Duration",
 		},
 	},
-	["天灾之箭"] = {
+	["Ensnaring Arrow"] = {
 		["MERCILESS"] = {
-			"【天灾之箭】的伤害提高 25%",
-			"每一阶【天灾之箭】有 6% 的几率造成中毒",
+			"Ensnaring Arrow has 20% increased Debuff Effect",
+			"Ensnaring Arrow has 60% increased Area of Effect",
 		},
 		["ENDGAME"] = {
-			"【天灾之箭】的伤害提高 40%",
-			"每一阶【天灾之箭】有 8% 的几率造成中毒",
-			"【天灾之箭】阶数达到最大时，额外创造一个孢囊",
+			"Ensnaring Arrow has 30% increased Debuff Effect",
+			"Ensnaring Arrow has 90% increased Area of Effect",
 		},
 	},
-	["天雷之珠"] = {
+	["Essence Drain"] = {
 		["MERCILESS"] = {
-			"【天雷之珠】伤害提高 25%",
-			"【天雷之珠】范围扩大 16%",
+			"25% increased Essence Drain Damage",
+			"20% increased Essence Drain Duration",
 		},
 		["ENDGAME"] = {
-			"【天雷之珠】伤害提高 40%",
-			"【天雷之珠】范围扩大 24%",
-			"【天雷之珠】可以额外发射 1 个投射物",
+			"40% increased Essence Drain Damage",
+			"30% increased Essence Drain Duration",
 		},
 	},
-	["奉献之路"] = {
+	["Ethereal Knives"] = {
 		["MERCILESS"] = {
-			"【奉献之路】的伤害提高 25%",
-			"【奉献之路】传送范围延长 10%",
-			"奉献之路的效果区域扩大 16%",
+			"25% increased Ethereal Knives Damage",
+			"20% increased Ethereal Knives Projectile Speed",
 		},
 		["ENDGAME"] = {
-			"【奉献之路】的伤害提高 40%",
-			"【奉献之路】传送范围延长 15%",
-			"奉献之路的效果区域扩大 24%",
+			"40% increased Ethereal Knives Damage",
+			"30% increased Ethereal Knives Projectile Speed",
+			"Ethereal Knives Pierces an additional Target",
 		},
 	},
-	["奋锐光环"] = {
+	["Explosive Arrow"] = {
 		["MERCILESS"] = {
-			"奋锐光环的保留效果降低 10%",
+			"Explosive Arrow deals 25% increased Damage",
+			"Explosive Arrow has 16% increased Area of Effect",
+			"Explosive Arrow has 10% increased Attack Speed",
+			"Explosive Arrow has 25% increased Duration",
+			"Explosive Arrow has 20% reduced Duration",
 		},
 		["ENDGAME"] = {
-			"奋锐光环的保留效果降低 15%",
+			"Explosive Arrow deals 40% increased Damage",
+			"Explosive Arrow has 24% increased Area of Effect",
+			"Explosive Arrow has 15% increased Attack Speed",
+			"Explosive Arrow has 40% increased Duration",
+			"Explosive Arrow has 30% reduced Duration",
 		},
 	},
-	["奥术斗篷"] = {
+	["Explosive Concoction"] = {
 		["MERCILESS"] = {
-			"【奥术斗篷】额外消耗 10% 当前魔力",
+			"25% increased Explosive Concoction Damage",
+			"16% increased Explosive Concoction Area of Effect",
+			"Explosive Concoction uses 8% reduced Flask Charges",
 		},
 		["ENDGAME"] = {
-			"【奥术斗篷】额外消耗 15% 当前魔力",
-			"【奥术斗篷】获得生命回复，等于每秒消耗魔力的 15%",
+			"40% increased Explosive Concoction Damage",
+			"24% increased Explosive Concoction Area of Effect",
+			"Explosive Concoction uses 12% reduced Flask Charges",
 		},
 	},
-	["奥法烙印"] = {
+	["Explosive Trap"] = {
 		["MERCILESS"] = {
-			"【奥法烙印】的施法速度加快 8%",
+			"Explosive Trap deals 25% increased Damage",
+			"Explosive Trap has 16% increased Area of Effect",
+			"Explosive Trap causes an additional smaller explosion",
 		},
 		["ENDGAME"] = {
-			"【奥法烙印】的施法速度加快 12%",
-			"击中时，被【奥法烙印】触发的法术恐惧敌人 4 秒",
+			"Explosive Trap deals 40% increased Damage",
+			"Explosive Trap has 24% increased Area of Effect",
+			"Explosive Trap causes 2 additional smaller explosions",
 		},
 	},
-	["威吓战吼"] = {
+	["Exsanguinate"] = {
 		["MERCILESS"] = {
-			"【威吓战吼】的冷却回复速度加快 20%",
-			"【威吓战吼】的效果区域扩大 16%",
+			"Exsanguinate deals 25% increased Damage",
+			"20% increased Exsanguinate Duration",
 		},
 		["ENDGAME"] = {
-			"【威吓战吼】的冷却回复速度加快 30%",
-			"【威吓战吼】的效果区域扩大 24%",
+			"Exsanguinate deals 40% increased Damage",
+			"30% increased Exsanguinate Duration",
+			"Exsanguinate has a 25% chance to Chain an additional time",
 		},
 	},
-	["威能法印"] = {
+	["Eye of Winter"] = {
 		["MERCILESS"] = {
-			"威能法印需要魔力消耗降低 10%来获取一层",
-			"每层威能法印增益效果都使暴击率提高 20%",
+			"25% increased Eye of Winter Damage",
+			"20% increased Eye of Winter Projectile Speed",
+			"Eye of Winter fires Shard projectiles with 8% increased Frequency during flight",
 		},
 		["ENDGAME"] = {
-			"威能法印需要魔力消耗降低 20%来获取一层",
-			"每层威能法印增益效果都使暴击率提高 30%",
+			"40% increased Eye of Winter Damage",
+			"30% increased Eye of Winter Projectile Speed",
+			"Eye of Winter fires Shard projectiles with 12% increased Frequency during flight",
 		},
 	},
-	["定罪波"] = {
+	["Fire Trap"] = {
 		["MERCILESS"] = {
-			"【定罪波】的伤害提高 25%",
-			"【定罪波】的特效会使元素抗性 -4%",
-			"【定罪波】持续时间延长 20%",
+			"25% increased Fire Trap Damage",
+			"40% increased Fire Trap Burning Damage",
+			"30% increased Fire Trap Burning Ground Duration",
 		},
 		["ENDGAME"] = {
-			"【定罪波】的伤害提高 40%",
-			"【定罪波】的特效会使元素抗性 -6%",
-			"【定罪波】持续时间延长 30%",
+			"40% increased Fire Trap Damage",
+			"60% increased Fire Trap Burning Damage",
+			"45% increased Fire Trap Burning Ground Duration",
 		},
 	},
-	["寒冬宝珠"] = {
+	["Fireball"] = {
 		["MERCILESS"] = {
-			"【寒冬宝珠】的伤害提高 25%",
-			"寒冬宝珠每阶可使效果区域扩大 2%",
+			"25% increased Fireball Damage",
+			"8% increased Fireball Cast Speed",
+			"Fireball has +20% chance to Ignite",
 		},
 		["ENDGAME"] = {
-			"【寒冬宝珠】的伤害提高 40%",
-			"寒冬宝珠的最大等阶 +2",
-			"寒冬宝珠每阶可使效果区域扩大 3%",
+			"40% increased Fireball Damage",
+			"12% increased Fireball Cast Speed",
+			"Fireball has +30% chance to Ignite",
 		},
 	},
-	["寒冰之捷"] = {
+	["Firestorm"] = {
 		["MERCILESS"] = {
-			"【寒冰之捷】的伤害提高 25%",
-			"寒冰之捷的保留效果降低 20%",
+			"25% increased Firestorm Damage",
+			"20% increased Firestorm Duration",
+			"16% increased Firestorm explosion Area of Effect",
 		},
 		["ENDGAME"] = {
-			"【寒冰之捷】的伤害提高 40%",
-			"寒冰之捷的保留效果降低 30%",
+			"40% increased Firestorm Damage",
+			"30% increased Firestorm Duration",
+			"24% increased Firestorm explosion Area of Effect",
 		},
 	},
-	["寒冰冲击"] = {
+	["Flame Dash"] = {
 		["MERCILESS"] = {
-			"【寒冰冲击】的伤害提高 25%",
-			"【寒冰冲击】获得等同其 10% 物理伤害的额外冰霜伤害",
-			"【寒冰冲击】范围扩大 16%",
+			"25% increased Flame Dash Damage",
+			"Flame Dash has 20% increased Cooldown Recovery Rate",
 		},
 		["ENDGAME"] = {
-			"【寒冰冲击】的伤害提高 40%",
-			"【寒冰冲击】获得等同其 15% 物理伤害的额外冰霜伤害",
-			"【寒冰冲击】范围扩大 24%",
+			"40% increased Flame Dash Damage",
+			"Flame Dash has 30% increased Cooldown Recovery Rate",
 		},
 	},
-	["寒冰弹"] = {
+	["Flame Link"] = {
 		["MERCILESS"] = {
-			"【寒冰弹】伤害提高 25%",
-			"【寒冰弹】施法速度提高 10%",
-			"【寒冰弹】有 +10% 的几率冰冻",
+			"20% increased Flame Link Duration",
 		},
 		["ENDGAME"] = {
-			"【寒冰弹】伤害提高 40%",
-			"【寒冰弹】施法速度提高 15%",
-			"【寒冰弹】有 +15% 的几率冰冻",
+			"30% increased Flame Link Duration",
 		},
 	},
-	["寒霜爆"] = {
+	["Flame Surge"] = {
 		["MERCILESS"] = {
-			"【寒霜爆】的伤害提高 25%",
-			"霜寒爆的冷却回复率提高 20%",
-			"【寒霜爆】范围扩大 16%",
-			"【寒霜爆】技能会使减益效果的持续时间延长 20%",
+			"25% increased Flame Surge Damage",
+			"60% increased Flame Surge Critical Strike Chance",
+			"40% increased Flame Surge Damage against Burning Enemies",
 		},
 		["ENDGAME"] = {
-			"【寒霜爆】的伤害提高 40%",
-			"霜寒爆的冷却回复率提高 30%",
-			"【寒霜爆】范围扩大 24%",
-			"【寒霜爆】技能会使减益效果的持续时间延长 30%",
+			"40% increased Flame Surge Damage",
+			"90% increased Flame Surge Critical Strike Chance",
+			"60% increased Flame Surge Damage against Burning Enemies",
 		},
 	},
-	["导电"] = {
+	["Flame Wall"] = {
 		["MERCILESS"] = {
-			"【导电】的诅咒效果提高 20%",
-			"【导电】持续时间延长 30%",
+			"Flame Wall deals 25% increased Damage",
+			"Flame Wall grants 19 to 28 Added Fire Damage to Projectiles",
 		},
 		["ENDGAME"] = {
-			"【导电】的诅咒效果提高 30%",
-			"【导电】持续时间延长 45%",
+			"Flame Wall deals 40% increased Damage",
+			"Flame Wall grants 31 to 47 Added Fire Damage to Projectiles",
+			"+1 to maximum number of Flame Walls",
 		},
 	},
-	["将军之吼"] = {
+	["Flameblast"] = {
 		["MERCILESS"] = {
-			"【将军之吼】的冷却回复速度加快 20%",
+			"25% increased Flameblast Damage",
+			"60% increased Flameblast Critical Strike Chance",
+			"16% increased Flameblast Area of Effect",
 		},
 		["ENDGAME"] = {
-			"【将军之吼】的冷却回复速度加快 30%",
-			"【将军之吼】 +1 蜃影武士数量上限",
+			"40% increased Flameblast Damage",
+			"90% increased Flameblast Critical Strike Chance",
+			"24% increased Flameblast Area of Effect",
 		},
 	},
-	["尊严"] = {
+	["Flamethrower Trap"] = {
 		["MERCILESS"] = {
-			"骄傲的保留效果降低 10%",
+			"Flamethrower Trap deals 25% increased Damage",
+			"Flamethrower Trap has 10% increased Cooldown Recovery Rate",
+			"Flamethrower Trap has 20% increased Skill Effect Duration",
+			"Flamethrower Trap has an additional Flame",
 		},
 		["ENDGAME"] = {
-			"骄傲的保留效果降低 15%",
+			"Flamethrower Trap deals 40% increased Damage",
+			"Flamethrower Trap has 15% increased Cooldown Recovery Rate",
+			"Flamethrower Trap has 30% increased Skill Effect Duration",
+			"Flamethrower Trap has 2 additional Flames",
 		},
 	},
-	["尖刺战吼"] = {
+	["Flammability"] = {
 		["MERCILESS"] = {
-			"【尖刺战吼】的伤害提高 25%",
-			"【尖刺战吼】的效果区域扩大 16%",
+			"20% increased Flammability Curse Effect",
+			"30% increased Flammability Duration",
 		},
 		["ENDGAME"] = {
-			"【尖刺战吼】的伤害提高 40%",
-			"【尖刺战吼】的效果区域扩大 24%",
-			"【尖刺战吼】+1 道裂缝",
+			"30% increased Flammability Curse Effect",
+			"45% increased Flammability Duration",
 		},
 	},
-	["幻化守卫"] = {
+	["Flesh Offering"] = {
 		["MERCILESS"] = {
-			"【幻化守卫】造成的伤害提高 25%",
-			"+24% 幻化守卫的元素抗性",
+			"30% increased Flesh Offering Duration",
+			"Flesh Offering grants an additional 14% increased Attack Speed",
 		},
 		["ENDGAME"] = {
-			"【幻化守卫】造成的伤害提高 40%",
-			"+36% 幻化守卫的元素抗性",
+			"45% increased Flesh Offering Duration",
+			"Flesh Offering grants an additional 21% increased Attack Speed",
 		},
 	},
-	["幻化武器"] = {
+	["Flesh and Stone"] = {
 		["MERCILESS"] = {
-			"【幻化武器】的伤害提高 25%",
-			"提高 20% 幻化武器时间",
-			"【幻化武器】有 16% 的几率额外召唤 1 个复制品",
+			"Flesh and Stone has 50% increased Mana Reservation Efficiency",
 		},
 		["ENDGAME"] = {
-			"【幻化武器】的伤害提高 40%",
-			"提高 30% 幻化武器时间",
-			"【幻化武器】有 24% 的几率额外召唤 1 个复制品",
+			"Flesh and Stone has 75% increased Mana Reservation Efficiency",
 		},
 	},
-	["弹幕"] = {
+	["Flicker Strike"] = {
 		["MERCILESS"] = {
-			"【弹幕】的伤害提高 25%",
-			"【弹幕】攻击速度提高 10%",
+			"25% increased Flicker Strike Damage",
+			"Flicker Strike has 20% increased Cooldown Recovery Rate",
+			"6% increased Flicker Strike Damage per Frenzy Charge",
 		},
 		["ENDGAME"] = {
-			"【弹幕】的伤害提高 40%",
-			"【弹幕】攻击速度提高 15%",
-			"【弹幕】可以额外发射 1 个投射物",
+			"40% increased Flicker Strike Damage",
+			"Flicker Strike has 30% increased Cooldown Recovery Rate",
+			"9% increased Flicker Strike Damage per Frenzy Charge",
 		},
 	},
-	["忏悔烙印"] = {
+	["Forbidden Rite"] = {
 		["MERCILESS"] = {
-			"【忏悔烙印】的伤害提高 25%",
-			"【忏悔烙印】的施法速度加快 8%",
-			"【忏悔烙印】的效果区域扩大 16%",
+			"25% increased Forbidden Rite Damage",
+			"20% increased Forbidden Rite Projectile Speed",
 		},
 		["ENDGAME"] = {
-			"【忏悔烙印】的伤害提高 40%",
-			"【忏悔烙印】的施法速度加快 12%",
-			"【忏悔烙印】的效果区域扩大 24%",
+			"40% increased Forbidden Rite Damage",
+			"30% increased Forbidden Rite Projectile Speed",
+			"Forbidden Rite fires an additional Projectile",
 		},
 	},
-	["念动飞箭"] = {
+	["Freezing Pulse"] = {
 		["MERCILESS"] = {
-			"【念动飞箭】的攻击速度加快 10%",
-			"【念动飞箭】的投射物速度加快 20%",
-			"【念动飞箭】额外改变 1 次方向",
+			"25% increased Freezing Pulse Damage",
+			"8% increased Freezing Pulse Cast Speed",
+			"20% increased Freezing Pulse Projectile Speed",
 		},
 		["ENDGAME"] = {
-			"【念动飞箭】的攻击速度加快 15%",
-			"【念动飞箭】的投射物速度加快 30%",
-			"【念动飞箭】额外改变 2 次方向",
+			"40% increased Freezing Pulse Damage",
+			"12% increased Freezing Pulse Cast Speed",
+			"30% increased Freezing Pulse Projectile Speed",
 		},
 	},
-	["怒火漩涡"] = {
+	["Frenzy"] = {
 		["MERCILESS"] = {
-			"怒火漩涡的伤害提高 25%",
-			"怒火漩涡的效果区域扩大 16%",
-			"怒火漩涡献祭的怒火 +3%",
+			"25% increased Frenzy Damage",
+			"20% Chance on Frenzy to gain an additional Frenzy Charge",
+			"6% increased Frenzy Damage per Frenzy Charge",
 		},
 		["ENDGAME"] = {
-			"怒火漩涡的伤害提高 40%",
-			"怒火漩涡的效果区域扩大 24%",
-			"怒火漩涡献祭的怒火 +5%",
+			"40% increased Frenzy Damage",
+			"30% Chance on Frenzy to gain an additional Frenzy Charge",
+			"9% increased Frenzy Damage per Frenzy Charge",
 		},
 	},
-	["怒炎穿心"] = {
+	["Frost Blades"] = {
 		["MERCILESS"] = {
-			"怒炎穿心的伤害提高 25%",
-			"怒炎穿心的投射物降落区域扩大 20%",
+			"25% increased Frost Blades Damage",
+			"20% increased Frost Blades Projectile Speed",
 		},
 		["ENDGAME"] = {
-			"怒炎穿心的伤害提高 40%",
-			"怒炎穿心发射一枚额外投射物",
-			"怒炎穿心的投射物降落区域扩大 30%",
+			"40% increased Frost Blades Damage",
+			"30% increased Frost Blades Projectile Speed",
 		},
 	},
-	["怒焰奔腾"] = {
+	["Frost Bomb"] = {
 		["MERCILESS"] = {
-			"【怒焰奔腾】的伤害提高 25%",
-			"【怒焰奔腾】暴击率提高 60%",
-			"【怒焰奔腾】对燃烧中敌人的伤害提高 40%",
+			"25% increased Frost Bomb Damage",
+			"Frost Bomb has 20% increased Cooldown Recovery Rate",
+			"16% increased Frost Bomb Area of Effect",
+			"Frost Bomb has 20% increased Debuff Duration",
 		},
 		["ENDGAME"] = {
-			"【怒焰奔腾】的伤害提高 40%",
-			"【怒焰奔腾】暴击率提高 90%",
-			"【怒焰奔腾】对燃烧中敌人的伤害提高 60%",
+			"40% increased Frost Bomb Damage",
+			"Frost Bomb has 30% increased Cooldown Recovery Rate",
+			"24% increased Frost Bomb Area of Effect",
+			"Frost Bomb has 30% increased Debuff Duration",
 		},
 	},
-	["怨毒光环"] = {
+	["Frost Shield"] = {
 		["MERCILESS"] = {
-			"怨毒光环的保留效果降低 10%",
+			"Frost Shield has +125 to maximum Life per Stage",
 		},
 		["ENDGAME"] = {
-			"怨毒光环的保留效果降低 15%",
+			"Frost Shield has +1 Cooldown Use",
+			"Frost Shield has +180 to maximum Life per Stage",
 		},
 	},
-	["恐怖之旗"] = {
+	["Frost Wall"] = {
 		["MERCILESS"] = {
-			"【恐怖之旗】的光环效果提高 25%",
+			"Frost Wall has 20% increased Cooldown Recovery Rate",
+			"24% increased Frost Wall Duration",
 		},
 		["ENDGAME"] = {
-			"【恐怖之旗】的光环效果提高 40%",
+			"Frost Wall has 30% increased Cooldown Recovery Rate",
+			"36% increased Frost Wall Duration",
 		},
 	},
-	["惩击"] = {
+	["Frostbite"] = {
 		["MERCILESS"] = {
-			"【惩击】的伤害提高 25%",
-			"【惩击】有 10% 的几率电击另一个目标",
-			"【惩击】的光环效果提高 20%",
+			"20% increased Frostbite Curse Effect",
+			"30% increased Frostbite Duration",
 		},
 		["ENDGAME"] = {
-			"【惩击】的伤害提高 40%",
-			"【惩击】有 15% 的几率电击另一个目标",
-			"【惩击】的光环效果提高 30%",
+			"30% increased Frostbite Curse Effect",
+			"45% increased Frostbite Duration",
 		},
 	},
-	["愤怒"] = {
+	["Frostblink"] = {
 		["MERCILESS"] = {
-			"愤怒的保留效果降低 10%",
+			"Frostblink has 20% increased Cooldown Recovery Rate",
+			"Frostblink has 50% increased maximum travel distance",
 		},
 		["ENDGAME"] = {
-			"愤怒的保留效果降低 15%",
+			"Frostblink has 30% increased Cooldown Recovery Rate",
+			"Frostblink has 75% increased maximum travel distance",
 		},
 	},
-	["憎恨"] = {
+	["Frostbolt"] = {
 		["MERCILESS"] = {
-			"憎恨的保留效果降低 10%",
+			"25% increased Frostbolt Damage",
+			"10% increased Frostbolt Cast Speed",
+			"Frostbolt has +10% chance to Freeze",
 		},
 		["ENDGAME"] = {
-			"憎恨的保留效果降低 15%",
+			"40% increased Frostbolt Damage",
+			"15% increased Frostbolt Cast Speed",
+			"Frostbolt has +15% chance to Freeze",
 		},
 	},
-	["戒备打击"] = {
+	["Galvanic Arrow"] = {
 		["MERCILESS"] = {
-			"【戒备打击】的伤害提高 25%",
-			"【戒备打击】的护体持续时间延长 30%",
+			"25% increased Galvanic Arrow Damage",
+			"10% of Galvanic Arrow Physical Damage gained as extra Lightning Damage",
+			"Galvanic Arrow has 20% increased Projectile Speed",
 		},
 		["ENDGAME"] = {
-			"【戒备打击】的伤害提高 40%",
-			"【戒备打击】的护体持续时间延长 45%",
+			"40% increased Galvanic Arrow Damage",
+			"15% of Galvanic Arrow Physical Damage gained as extra Lightning Damage",
+			"Galvanic Arrow has 30% increased Projectile Speed",
 		},
 	},
-	["战旗"] = {
+	["Galvanic Field"] = {
 		["MERCILESS"] = {
-			"【战旗】的光环效果提高 25%",
+			"Galvanic Field deals 25% increased Damage",
+			"Galvanic Field has 8% increased Cast Speed",
 		},
 		["ENDGAME"] = {
-			"【战旗】的光环效果提高 40%",
+			"Galvanic Field deals 40% increased Damage",
+			"Galvanic Field has 12% increased Cast Speed",
+			"Galvanic Field Chains an additional time",
 		},
 	},
-	["抗争之旗"] = {
+	["General's Cry"] = {
 		["MERCILESS"] = {
-			"抗争之旗的光环效果提高 25%",
+			"General's Cry has 20% increased Cooldown Recovery Rate",
 		},
 		["ENDGAME"] = {
-			"抗争之旗的光环效果提高 40%",
+			"General's Cry has 30% increased Cooldown Recovery Rate",
+			"General's Cry has +1 to maximum number of Mirage Warriors",
 		},
 	},
-	["捕熊陷阱"] = {
+	["Glacial Cascade"] = {
 		["MERCILESS"] = {
-			"【捕熊陷阱】的伤害提高 25%",
-			"捕熊陷阱的冷却回复率提高 10%",
-			"踩中【捕熊陷阱】的敌人受到陷阱或地雷的击中伤害提高 5% ",
+			"25% increased Glacial Cascade Damage",
+			"16% increased Glacial Cascade Area of Effect",
+			"Glacial Cascade gains 6% of Physical Damage as Extra Cold Damage",
 		},
 		["ENDGAME"] = {
-			"【捕熊陷阱】的伤害提高 40%",
-			"捕熊陷阱的冷却回复率提高 15%",
-			"踩中【捕熊陷阱】的敌人受到陷阱或地雷的击中伤害提高 10% ",
+			"40% increased Glacial Cascade Damage",
+			"24% increased Glacial Cascade Area of Effect",
+			"Glacial Cascade gains 10% of Physical Damage as Extra Cold Damage",
 		},
 	},
-	["掷火陷阱"] = {
+	["Glacial Hammer"] = {
 		["MERCILESS"] = {
-			"【掷火陷阱】的伤害提高 25%",
-			"【掷火陷阱】的施法速度提高 8%",
-			"【掷火陷阱】的冷却回复速度提高 10%",
-			"【掷火陷阱】的技能效果持续时间延长 20%",
-			"【掷火陷阱】会额外喷出一道烈焰",
+			"25% increased Glacial Hammer Damage",
+			"Glacial Hammer has +20% chance to Freeze",
+			"10% of Glacial Hammer Physical Damage gained as Extra Cold Damage",
 		},
 		["ENDGAME"] = {
-			"【掷火陷阱】的伤害提高 40%",
-			"【掷火陷阱】的施法速度提高 12%",
-			"【掷火陷阱】的冷却回复速度提高 15%",
-			"【掷火陷阱】的技能效果持续时间延长 30%",
-			"【掷火陷阱】会额外喷出 2 道烈焰",
+			"40% increased Glacial Hammer Damage",
+			"Glacial Hammer has +30% chance to Freeze",
+			"15% of Glacial Hammer Physical Damage gained as Extra Cold Damage",
 		},
 	},
-	["攻城炮台"] = {
+	["Grace"] = {
 		["MERCILESS"] = {
-			"【攻城炮台】的伤害提高 25%",
-			"【攻城炮台】的攻击速度提高 10%",
-			"【攻城炮台】的图腾放置速度提高 30%",
+			"Grace has 20% increased Mana Reservation Efficiency",
 		},
 		["ENDGAME"] = {
-			"【攻城炮台】的伤害提高 40%",
-			"【攻城炮台】的攻击速度提高 15%",
-			"【攻城炮台】的图腾放置速度提高 45%",
+			"Grace has 30% increased Mana Reservation Efficiency",
 		},
 	},
-	["放血"] = {
+	["Ground Slam"] = {
 		["MERCILESS"] = {
-			"【放血】的伤害提高 25%",
-			"【放血】持续时间延长 30%",
-			"【放血】击中时有 20% 的几率造成瘫痪",
+			"25% increased Ground Slam Damage",
+			"16% increased Ground Slam Area of Effect",
+			"Ground Slam has a 16% increased angle",
 		},
 		["ENDGAME"] = {
-			"【放血】的伤害提高 40%",
-			"【放血】持续时间延长 45%",
-			"【放血】击中时有 30% 的几率造成瘫痪",
+			"40% increased Ground Slam Damage",
+			"24% increased Ground Slam Area of Effect",
+			"Ground Slam has a 24% increased angle",
 		},
 	},
-	["散射弩炮"] = {
+	["Haste"] = {
 		["MERCILESS"] = {
-			"【散射弩炮】穿透 4 个额外的额外的目标",
-			"【散射弩炮】的投射物速度提高 20%",
+			"Haste has 20% increased Mana Reservation Efficiency",
 		},
 		["ENDGAME"] = {
-			"【散射弩炮】发射一支额外的箭矢",
-			"【散射弩炮】穿透 6 个额外的额外的目标",
-			"【散射弩炮】的投射物速度提高 30%",
+			"Haste has 30% increased Mana Reservation Efficiency",
 		},
 	},
-	["断金之刃"] = {
+	["Hatred"] = {
 		["MERCILESS"] = {
-			"【断金之刃】的伤害提高 25%",
-			"断金之刃有 20% 的几率视为消耗钢刃碎片，但并不实际消耗",
+			"Hatred has 20% increased Mana Reservation Efficiency",
 		},
 		["ENDGAME"] = {
-			"【断金之刃】的伤害提高 40%",
-			"断金之刃有 30% 的几率视为消耗钢刃碎片，但并不实际消耗",
-			"断金之刃发射一枚额外投射物",
+			"Hatred has 30% increased Mana Reservation Efficiency",
 		},
 	},
-	["旋风斩"] = {
+	["Heavy Strike"] = {
 		["MERCILESS"] = {
-			"【旋风斩】的伤害提高 25%",
-			"【旋风斩】攻击速度提高 10%",
+			"25% increased Heavy Strike Damage",
+			"10% increased Heavy Strike Attack Speed",
+			"Heavy Strike has a 8% chance to deal Double Damage",
 		},
 		["ENDGAME"] = {
-			"【旋风斩】的伤害提高 40%",
-			"【旋风斩】攻击速度提高 15%",
+			"40% increased Heavy Strike Damage",
+			"15% increased Heavy Strike Attack Speed",
+			"Heavy Strike has a 12% chance to deal Double Damage",
 		},
 	},
-	["时空锁链"] = {
+	["Herald of Agony"] = {
 		["MERCILESS"] = {
-			"【时空锁链】的诅咒效果提高 20%",
-			"【时空锁链】持续时间延长 30%",
+			"Herald of Agony has 50% increased Mana Reservation Efficiency",
 		},
 		["ENDGAME"] = {
-			"【时空锁链】的诅咒效果提高 30%",
-			"【时空锁链】持续时间延长 45%",
+			"Herald of Agony has 75% increased Mana Reservation Efficiency",
+			"Summoned Agony Crawler fires 2 additional Projectiles",
 		},
 	},
-	["易燃"] = {
+	["Herald of Ash"] = {
 		["MERCILESS"] = {
-			"【易燃】的诅咒效果提高 20%",
-			"【易燃】持续时间延长 30%",
+			"25% increased Herald of Ash Damage",
+			"Herald of Ash has 50% increased Mana Reservation Efficiency",
 		},
 		["ENDGAME"] = {
-			"【易燃】的诅咒效果提高 30%",
-			"【易燃】持续时间延长 45%",
+			"40% increased Herald of Ash Damage",
+			"Herald of Ash has 75% increased Mana Reservation Efficiency",
 		},
 	},
-	["暗夜血契"] = {
+	["Herald of Ice"] = {
 		["MERCILESS"] = {
-			"【暗夜血契】的伤害提高 25%",
-			"【暗夜血契】的施法速度提高 8%",
-			"【暗夜血契】的范围扩大 16%",
+			"25% increased Herald of Ice Damage",
+			"Herald of Ice has 50% increased Mana Reservation Efficiency",
 		},
 		["ENDGAME"] = {
-			"【暗夜血契】的伤害提高 40%",
-			"【暗夜血契】的施法速度提高 12%",
-			"【暗夜血契】的范围扩大 24%",
+			"40% increased Herald of Ice Damage",
+			"Herald of Ice has 75% increased Mana Reservation Efficiency",
 		},
 	},
-	["暗影印记"] = {
+	["Herald of Purity"] = {
 		["MERCILESS"] = {
-			"【暗影印记】的诅咒效果提高 20%",
-			"【暗影印记】持续时间延长 30%",
+			"Herald of Purity has 50% increased Mana Reservation Efficiency",
 		},
 		["ENDGAME"] = {
-			"【暗影印记】的诅咒效果提高 30%",
-			"【暗影印记】持续时间延长 45%",
+			"Herald of Purity has 75% increased Mana Reservation Efficiency",
+			"+1 to maximum number of Sentinels of Purity",
 		},
 	},
-	["暗影迷踪"] = {
+	["Herald of Thunder"] = {
 		["MERCILESS"] = {
-			"【暗影迷踪】延长持续时间时，有 20% 的几率不消耗狂怒球",
-			"【暗影迷踪】持续时间延长 24%",
+			"25% increased Herald of Thunder Damage",
+			"Herald of Thunder has 50% increased Mana Reservation Efficiency",
 		},
 		["ENDGAME"] = {
-			"【暗影迷踪】延长持续时间时，有 30% 的几率不消耗狂怒球",
-			"【暗影迷踪】持续时间延长 36%",
+			"40% increased Herald of Thunder Damage",
+			"Herald of Thunder has 75% increased Mana Reservation Efficiency",
 		},
 	},
-	["暴雨箭"] = {
+	["Hexblast"] = {
 		["MERCILESS"] = {
-			"暴雨箭的伤害提高 25%",
-			"暴雨箭波束频率加快 25%",
+			"Hexblast deals 25% increased Damage",
+			"Hexblast has 16% increased Area of Effect",
+			"Hexblast has 10% chance to not remove a Hex",
 		},
 		["ENDGAME"] = {
-			"暴雨箭的伤害提高 40%",
-			"暴雨箭波束频率加快 40%",
-			"暴雨箭发射一支额外箭矢",
+			"Hexblast deals 40% increased Damage",
+			"Hexblast has 24% increased Area of Effect",
+			"Hexblast has 15% chance to not remove a Hex",
 		},
 	},
-	["暴风之盾"] = {
+	["Holy Flame Totem"] = {
 		["MERCILESS"] = {
-			"【暴风之盾】的伤害提高 25%",
-			"【暴风之盾】额外连锁弹射 2 次",
+			"Holy Flame Totem deals 25% increased Damage",
+			"Holy Flame Totem fires an additional Projectile",
+			"Holy Flame Totem has 20% increased Projectile Speed",
+			"Consecrated Ground from Holy Flame Totem applies 6% increased Damage taken to Enemies",
 		},
 		["ENDGAME"] = {
-			"【暴风之盾】的伤害提高 40%",
-			"【暴风之盾】额外连锁弹射 3 次",
+			"Holy Flame Totem deals 40% increased Damage",
+			"Holy Flame Totem fires 2 additional Projectiles",
+			"Holy Flame Totem has 30% increased Projectile Speed",
+			"Consecrated Ground from Holy Flame Totem applies 9% increased Damage taken to Enemies",
 		},
 	},
-	["末日烙印"] = {
+	["Hydrosphere"] = {
 		["MERCILESS"] = {
-			"【末日烙印】的伤害提高 25%",
-			"【末日烙印】的激活频率提高 8%",
-			"【末日烙印】的伤害会穿透带有烙印敌人火焰抗性的 8%",
+			"Hydrosphere deals 25% increased Damage",
+			"Hydrosphere has 20% increased Pulse Frequency",
+			"Enemies Drenched by Hydrosphere have Cold and Lightning Exposure, applying -4% to Resistances",
 		},
 		["ENDGAME"] = {
-			"【末日烙印】的伤害提高 40%",
-			"【末日烙印】的激活频率提高 12%",
-			"【末日烙印】的伤害会穿透带有烙印敌人火焰抗性的 12%",
+			"Hydrosphere deals 40% increased Damage",
+			"Hydrosphere has 30% increased Pulse Frequency",
+			"Enemies Drenched by Hydrosphere have Cold and Lightning Exposure, applying -6% to Resistances",
 		},
 	},
-	["极地装甲"] = {
+	["Ice Crash"] = {
 		["MERCILESS"] = {
-			"【极地装甲】的增益效果提高 24%",
-			"极地装甲的保留效果降低 20%",
+			"25% increased Ice Crash Damage",
+			"10% of Ice Crash Physical Damage gained as Extra Cold Damage",
+			"16% increased Ice Crash Area of Effect",
 		},
 		["ENDGAME"] = {
-			"【极地装甲】的增益效果提高 36%",
-			"极地装甲的保留效果降低 30%",
+			"40% increased Ice Crash Damage",
+			"15% of Ice Crash Physical Damage gained as Extra Cold Damage",
+			"24% increased Ice Crash Area of Effect",
 		},
 	},
-	["枯萎"] = {
+	["Ice Nova"] = {
 		["MERCILESS"] = {
-			"【枯萎】的伤害提高 25%",
-			"【枯萎】范围扩大 16%",
-			"【枯萎】技能会使干扰持续时间延长 20%",
+			"25% increased Ice Nova Damage",
+			"Ice Nova has +20% chance to Freeze",
+			"16% increased Ice Nova Area of Effect",
+			"Chills from Ice Nova Hits always reduce Action Speed by at least 6%",
 		},
 		["ENDGAME"] = {
-			"【枯萎】的伤害提高 40%",
-			"【枯萎】范围扩大 24%",
-			"【枯萎】技能会使干扰持续时间延长 30%",
+			"40% increased Ice Nova Damage",
+			"Ice Nova has +30% chance to Freeze",
+			"24% increased Ice Nova Area of Effect",
+			"Chills from Ice Nova Hits always reduce Action Speed by at least 8%",
 		},
 	},
-	["横扫"] = {
+	["Ice Shot"] = {
 		["MERCILESS"] = {
-			"【横扫】的伤害提高 25%",
-			"【横扫】击中时有 20% 的几率获得一个耐力球",
-			"【横扫】范围扩大 16%",
+			"25% increased Ice Shot Damage",
+			"16% increased Ice Shot Area of Effect",
+			"Ice Shot has 30% increased Area of Effect angle",
 		},
 		["ENDGAME"] = {
-			"【横扫】的伤害提高 40%",
-			"【横扫】击中时有 30% 的几率获得一个耐力球",
-			"【横扫】范围扩大 24%",
+			"40% increased Ice Shot Damage",
+			"24% increased Ice Shot Area of Effect",
+			"Ice Shot has 60% increased Area of Effect angle",
 		},
 	},
-	["正义之火"] = {
+	["Ice Spear"] = {
 		["MERCILESS"] = {
-			"【正义之火】的伤害提高 25%",
-			"【正义之火】范围扩大 16%",
-			"【正义之火】的法术伤害提高 20%",
+			"10% Chance to gain a Power Charge on Critical Strike with Ice Spear",
+			"200% increased Ice Spear Critical Strike Chance in second form",
+			"Ice Spear travels 20% reduced distance before changing forms",
 		},
 		["ENDGAME"] = {
-			"【正义之火】的伤害提高 40%",
-			"【正义之火】范围扩大 24%",
-			"【正义之火】的法术伤害提高 30%",
+			"15% Chance to gain a Power Charge on Critical Strike with Ice Spear",
+			"300% increased Ice Spear Critical Strike Chance in second form",
+			"Ice Spear fires an additional Projectile",
+			"Ice Spear travels 30% reduced distance before changing forms",
 		},
 	},
-	["死亡凋零"] = {
+	["Ice Trap"] = {
 		["MERCILESS"] = {
-			"【死亡凋零】持续时间延长 24%",
-			"【死亡凋零】范围扩大 16%",
+			"25% increased Ice Trap Damage",
+			"16% increased Ice Trap Area of Effect",
+			"Ice Trap Damage Penetrates 6% Cold Resistance",
 		},
 		["ENDGAME"] = {
-			"【死亡凋零】持续时间延长 36%",
-			"【死亡凋零】范围扩大 24%",
+			"40% increased Ice Trap Damage",
+			"24% increased Ice Trap Area of Effect",
+			"Ice Trap Damage Penetrates 10% Cold Resistance",
 		},
 	},
-	["残烬"] = {
+	["Icicle Mine"] = {
 		["MERCILESS"] = {
-			"【大地震击】的伤害提高 25%",
-			"【大地震击】的效果区域扩大 16%",
-			"【大地震击】的冲击波区域间隔延迟减慢 15%",
+			"Icicle Mine deals 25% increased Damage",
+			"Icicle Mine has 10% increased Throwing Speed",
+			"Icicle Mine has +20% to Critical Strike Multiplier",
 		},
 		["ENDGAME"] = {
-			"【大地震击】的伤害提高 40%",
-			"【大地震击】的效果区域扩大 24%",
-			"【大地震击】的冲击波区域间隔延迟减慢 20%",
+			"Icicle Mine deals 40% increased Damage",
+			"Icicle Mine has 15% increased Throwing Speed",
+			"Icicle Mine has +30% to Critical Strike Multiplier",
 		},
 	},
-	["毒蛇打击"] = {
+	["Immortal Call"] = {
 		["MERCILESS"] = {
-			"【毒蛇打击】的伤害提高 25%",
-			"【毒蛇打击】暴击率提高 60%",
-			"【毒蛇打击】持续时间延长 20%",
+			"24% increased Immortal Call Duration",
 		},
 		["ENDGAME"] = {
-			"【毒蛇打击】的伤害提高 40%",
-			"【毒蛇打击】暴击率提高 90%",
-			"【毒蛇打击】持续时间延长 30%",
+			"36% increased Immortal Call Duration",
 		},
 	},
-	["毒蛇鞭击"] = {
+	["Incinerate"] = {
 		["MERCILESS"] = {
-			"【毒蛇鞭击】造成的伤害提高 25%",
-			"【毒蛇鞭击】的投射物速度提高 20%",
-			"【毒蛇鞭击】有额外 2 次连锁弹射",
+			"25% increased Incinerate Damage",
+			"Incinerate has 16% increased Area of Effect",
+			"Incinerate has +1 to maximum stages",
 		},
 		["ENDGAME"] = {
-			"【毒蛇鞭击】造成的伤害提高 40%",
-			"【毒蛇鞭击】的投射物速度提高 30%",
-			"【毒蛇鞭击】有额外 3 次连锁弹射",
+			"40% increased Incinerate Damage",
+			"Incinerate has 24% increased Area of Effect",
+			"Incinerate has +2 to maximum stages",
+			"10% increased Incinerate Damage for each stage",
 		},
 	},
-	["毒雨"] = {
+	["Infernal Blow"] = {
 		["MERCILESS"] = {
-			"【毒雨】的伤害提高 25%",
-			"【毒雨】获得额外混沌伤害，其数值等同于物理伤害的 6%",
+			"25% increased Infernal Blow Damage",
+			"10% of Infernal Blow Physical Damage gained as Extra Fire Damage",
+			"16% increased Infernal Blow Area of Effect",
+			"Infernal Blow Debuff deals an additional 3% of Damage per Charge",
 		},
 		["ENDGAME"] = {
-			"【毒雨】的伤害提高 40%",
-			"【毒雨】获得额外混沌伤害，其数值等同于物理伤害的 10%",
-			"【毒雨】可以额外发射 1 个箭矢",
+			"40% increased Infernal Blow Damage",
+			"15% of Infernal Blow Physical Damage gained as Extra Fire Damage",
+			"24% increased Infernal Blow Area of Effect",
+			"Infernal Blow Debuff deals an additional 5% of Damage per Charge",
 		},
 	},
-	["水源法球"] = {
+	["Infernal Cry"] = {
 		["MERCILESS"] = {
-			"水源法球的伤害提高 25%",
-			"水源法球的脉冲频率加快 20%",
-			"被水源法球浸湿的敌人有冰霜和闪电曝露效果，抗性 -4%",
+			"Infernal Cry has 20% increased Cooldown Recovery Rate",
 		},
 		["ENDGAME"] = {
-			"水源法球的伤害提高 40%",
-			"水源法球的脉冲频率加快 30%",
-			"被水源法球浸湿的敌人有冰霜和闪电曝露效果，抗性 -6%",
+			"Infernal Cry has 30% increased Cooldown Recovery Rate",
 		},
 	},
-	["法术节魔"] = {
+	["Intimidating Cry"] = {
 		["MERCILESS"] = {
-			"技能被【法术节魔】辅助时，其魔力保留降低 10%",
-			"技能被【法术节魔】辅助时，其冷却回复速度加快 20%",
+			"Intimidating Cry has 20% increased Cooldown Recovery Rate",
+			"Intimidating Cry has 16% increased Area of Effect",
 		},
 		["ENDGAME"] = {
-			"技能被【法术节魔】辅助时，其魔力保留降低 15%",
-			"技能被【法术节魔】辅助时，其冷却回复速度加快 30%",
+			"Intimidating Cry has 30% increased Cooldown Recovery Rate",
+			"Intimidating Cry has 24% increased Area of Effect",
 		},
 	},
-	["活力"] = {
+	["Intuitive Link"] = {
 		["MERCILESS"] = {
-			"活力的保留效果降低 20%",
+			"20% increased Intuitive Link Duration",
 		},
 		["ENDGAME"] = {
-			"活力的保留效果降低 30%",
+			"30% increased Intuitive Link Duration",
 		},
 	},
-	["混沌之毒"] = {
+	["Kinetic Blast"] = {
 		["MERCILESS"] = {
-			"【混沌之毒】的伤害提高 25%",
-			"【混沌之毒】效果区域扩大 16%",
-			"【混沌之毒】施加的诅咒效果提高 10%",
+			"25% increased Kinetic Blast Damage",
+			"16% increased Kinetic Blast Area of Effect",
+			"Kinetic Blast has a 50% chance for an additional explosion",
 		},
 		["ENDGAME"] = {
-			"【混沌之毒】的伤害提高 40%",
-			"【混沌之毒】效果区域扩大 24%",
-			"【混沌之毒】施加的诅咒效果提高 15%",
+			"40% increased Kinetic Blast Damage",
+			"24% increased Kinetic Blast Area of Effect",
+			"Kinetic Blast has a 75% chance for an additional explosion",
 		},
 	},
-	["清晰"] = {
+	["Kinetic Bolt"] = {
 		["MERCILESS"] = {
-			"清晰的保留效果降低 20%",
+			"Kinetic Bolt has 10% increased Attack Speed",
+			"Kinetic Bolt has 20% increased Projectile Speed",
+			"Kinetic Bolt changes direction 1 additional time",
 		},
 		["ENDGAME"] = {
-			"清晰的保留效果降低 30%",
+			"Kinetic Bolt has 15% increased Attack Speed",
+			"Kinetic Bolt has 30% increased Projectile Speed",
+			"Kinetic Bolt changes direction 2 additional times",
 		},
 	},
-	["清算"] = {
+	["Lacerate"] = {
 		["MERCILESS"] = {
-			"【清算】的伤害提高 25%",
-			"清算的冷却回复率提高 20%",
+			"25% increased Lacerate Damage",
+			"40% increased Lacerate Critical Strike Chance",
+			"16% increased Lacerate Area of Effect",
+			"Lacerate deals (4-8) to (10-15) added Physical Damage against Bleeding Enemies",
 		},
 		["ENDGAME"] = {
-			"【清算】的伤害提高 40%",
-			"清算的冷却回复率提高 30%",
+			"40% increased Lacerate Damage",
+			"60% increased Lacerate Critical Strike Chance",
+			"24% increased Lacerate Area of Effect",
+			"Lacerate deals (14-18) to (20-25) added Physical Damage against Bleeding Enemies",
 		},
 	},
-	["漩涡"] = {
+	["Lancing Steel"] = {
 		["MERCILESS"] = {
-			"【旋涡】伤害提高 25%",
-			"【寒冰弹】持续时间延长 20%",
-			"在【寒冰弹】上施放时，【漩涡】的效果区域扩大 30%",
-			"【漩涡】的冷却回复速度提高 20%",
+			"Lancing Steel deals 25% increased Damage",
+			"Lancing Steel has 20% chance to count as consuming Steel Shards without Consuming them",
 		},
 		["ENDGAME"] = {
-			"【旋涡】伤害提高 40%",
-			"【寒冰弹】持续时间延长 30%",
-			"在【寒冰弹】上施放时，【漩涡】的效果区域扩大 45%",
-			"【漩涡】的冷却回复速度提高 30%",
+			"Lancing Steel deals 40% increased Damage",
+			"Lancing Steel has 30% chance to count as consuming Steel Shards without Consuming them",
+			"Lancing Steel fires an additional Projectile",
 		},
 	},
-	["激励战吼"] = {
+	["Leap Slam"] = {
 		["MERCILESS"] = {
-			"【激励战吼】的增益效果提高 10%",
+			"25% increased Leap Slam Damage",
+			"10% increased Leap Slam Attack Speed",
+			"16% increased Leap Slam Area of Effect",
 		},
 		["ENDGAME"] = {
-			"【激励战吼】的增益效果提高 15%",
-			"【激励战吼】增助 1 次额外攻击",
+			"40% increased Leap Slam Damage",
+			"15% increased Leap Slam Attack Speed",
+			"24% increased Leap Slam Area of Effect",
 		},
 	},
-	["火力弩炮"] = {
+	["Lightning Arrow"] = {
 		["MERCILESS"] = {
-			"【火力弩炮】的伤害穿透 6% 的火焰抗性",
-			"【火力弩炮】发射一支额外的箭矢",
+			"25% increased Lightning Arrow Damage",
+			"16% increased Lightning Arrow Area of Effect",
+			"Lightning Arrow hits an additional Enemy",
 		},
 		["ENDGAME"] = {
-			"【火力弩炮】的伤害穿透 10% 的火焰抗性",
-			"【火力弩炮】发射 2 支额外的箭矢",
-			"【火力弩炮】的投射物改为以垂直降落的两条直线发射",
+			"40% increased Lightning Arrow Damage",
+			"24% increased Lightning Arrow Area of Effect",
+			"Lightning Arrow hits 2 additional Enemies",
 		},
 	},
-	["火屑地雷"] = {
+	["Lightning Conduit"] = {
 		["MERCILESS"] = {
-			"火屑地雷的伤害提高 25%",
-			"火屑地雷投掷速度提高 10%",
+			"Lightning Conduit deals 25% increased Damage",
+			"Lightning Conduit has 8% increased Cast Speed",
+			"Lightning Conduit has 16% increased Area of Effect",
 		},
 		["ENDGAME"] = {
-			"火屑地雷的伤害提高 40%",
-			"火屑地雷投掷速度提高 15%",
-			"火屑地雷发射一个额外的投射物",
+			"Lightning Conduit deals 40% increased Damage",
+			"Lightning Conduit has 12% increased Cast Speed",
+			"Lightning Conduit has 24% increased Area of Effect",
 		},
 	},
-	["火焰净化"] = {
+	["Lightning Spire Trap"] = {
 		["MERCILESS"] = {
-			"火焰净化的保留效果降低 14%",
+			"Lightning Spire Trap deals 25% increased Damage",
+			"8% increased Lightning Spire Trap Throwing Speed",
+			"Lightning Spire Trap has 20% increased Skill Effect Duration",
+			"Lightning Spire Trap has 10% increased Cooldown Recovery Rate",
 		},
 		["ENDGAME"] = {
-			"火焰净化的保留效果降低 20%",
+			"Lightning Spire Trap deals 40% increased Damage",
+			"12% increased Lightning Spire Trap Throwing Speed",
+			"Lightning Spire Trap has 30% increased Skill Effect Duration",
+			"Lightning Spire Trap has 15% increased Cooldown Recovery Rate",
+			"Lightning Spire Trap strikes an additional area",
 		},
 	},
-	["火焰陷阱"] = {
+	["Lightning Strike"] = {
 		["MERCILESS"] = {
-			"【火焰陷阱】的伤害提高 25%",
-			"【火焰陷阱】燃烧伤害提高 40%",
-			"【火焰陷阱】造成的燃烧地面持续时间延长 30%",
+			"25% increased Lightning Strike Damage",
+			"Lightning Strike fires 2 additional Projectiles",
+			"Lightning Strike pierces 2 additional Targets",
 		},
 		["ENDGAME"] = {
-			"【火焰陷阱】的伤害提高 40%",
-			"【火焰陷阱】燃烧伤害提高 60%",
-			"【火焰陷阱】造成的燃烧地面持续时间延长 45%",
+			"40% increased Lightning Strike Damage",
+			"Lightning Strike fires 3 additional Projectiles",
+			"Lightning Strike pierces 3 additional Targets",
 		},
 	},
-	["火球"] = {
+	["Lightning Tendrils"] = {
 		["MERCILESS"] = {
-			"【火球】的伤害提高 25%",
-			"【火球】施法速度提高 8%",
-			"火球有 +20% 的几率点燃",
+			"25% increased Lightning Tendrils Damage",
+			"16% increased Lightning Tendrils Area of Effect",
+			"40% increased Lightning Tendrils Critical Strike Chance",
 		},
 		["ENDGAME"] = {
-			"【火球】的伤害提高 40%",
-			"【火球】施法速度提高 12%",
-			"火球有 +30% 的几率点燃",
+			"40% increased Lightning Tendrils Damage",
+			"24% increased Lightning Tendrils Area of Effect",
+			"60% increased Lightning Tendrils Critical Strike Chance",
 		},
 	},
-	["火葬"] = {
+	["Lightning Trap"] = {
 		["MERCILESS"] = {
-			"【火葬】的伤害提高 25%",
-			"【火葬】的施法速度提高 8%",
+			"25% increased Lightning Trap Damage",
+			"Lightning Trap pierces 2 additional Targets",
+			"Lightning Trap Damage Penetrates 6% Lightning Resistance",
+			"25% increased Lightning Trap Lightning Ailment Effect",
 		},
 		["ENDGAME"] = {
-			"【火葬】技能最多同时可额外制造 1 个火泉",
-			"【火葬】的伤害提高 40%",
-			"【火葬】的施法速度提高 12%",
+			"40% increased Lightning Trap Damage",
+			"Lightning Trap pierces 3 additional Targets",
+			"Lightning Trap Damage Penetrates 10% Lightning Resistance",
+			"40% increased Lightning Trap Lightning Ailment Effect",
 		},
 	},
-	["灰烬之捷"] = {
+	["Lightning Warp"] = {
 		["MERCILESS"] = {
-			"【灰烬之捷】的伤害提高 25%",
-			"灰烬之捷的保留效果降低 20%",
+			"25% increased Lightning Warp Damage",
+			"8% increased Lightning Warp Cast Speed",
+			"20% reduced Lightning Warp Duration",
 		},
 		["ENDGAME"] = {
-			"【灰烬之捷】的伤害提高 40%",
-			"灰烬之捷的保留效果降低 30%",
+			"40% increased Lightning Warp Damage",
+			"12% increased Lightning Warp Cast Speed",
+			"30% reduced Lightning Warp Duration",
 		},
 	},
-	["灵体投掷"] = {
+	["Malevolence"] = {
 		["MERCILESS"] = {
-			"【灵体投掷】的伤害提高 25%",
-			"【灵体投掷】投射物的悬停时间延长 20%",
-			"【灵体投掷】投射物速度提高 20%",
+			"Malevolence has 20% increased Mana Reservation Efficiency",
 		},
 		["ENDGAME"] = {
-			"【灵体投掷】的伤害提高 40%",
-			"【灵体投掷】投射物的悬停时间延长 30%",
-			"【灵体投掷】投射物速度提高 30%",
+			"Malevolence has 30% increased Mana Reservation Efficiency",
 		},
 	},
-	["灵体火球"] = {
+	["Manabond"] = {
 		["MERCILESS"] = {
-			"【灵体火球】的伤害提高 25%",
-			"【灵体火球】的施法速度提高 8%",
+			"25% increased Manabond Damage",
+			"16% increased Manabond Area of Effect",
+			"Manabond Penetrates 8% Lightning Resistance while on Low Mana",
 		},
 		["ENDGAME"] = {
-			"【灵体火球】吞噬最多 1 个额外灵柩",
-			"【灵体火球】的伤害提高 40%",
-			"【灵体火球】的施法速度提高 12%",
+			"40% increased Manabond Damage",
+			"24% increased Manabond Area of Effect",
+			"Manabond Penetrates 12% Lightning Resistance while on Low Mana",
 		},
 	},
-	["灵体转换"] = {
+	["Mirror Arrow"] = {
 		["MERCILESS"] = {
-			"【灵体转换】的伤害提高 25%",
-			"【灵体转换】的施法速度提高 8%",
+			"Mirror Arrow and Mirror Arrow Clones deal 25% increased Damage",
+			"Mirror Arrow and Mirror Arrow Clones have 10% increased Attack Speed",
+			"Mirror Arrow has 20% increased Cooldown Recovery Rate",
 		},
 		["ENDGAME"] = {
-			"【灵体转换】的伤害提高 40%",
-			"【灵体转换】的施法速度提高 12%",
+			"Mirror Arrow and Mirror Arrow Clones deal 40% increased Damage",
+			"Mirror Arrow and Mirror Arrow Clones have 15% increased Attack Speed",
+			"Mirror Arrow has 30% increased Cooldown Recovery Rate",
 		},
 	},
-	["灵幻旋斩"] = {
+	["Molten Shell"] = {
 		["MERCILESS"] = {
-			"灵幻旋斩的伤害提高 25%",
-			"灵幻旋斩的投射物速度加快 20%",
+			"Molten Shell has 25% increased Skill Effect Duration",
 		},
 		["ENDGAME"] = {
-			"灵幻旋斩的伤害提高 40%",
-			"灵幻旋斩的投射物速度加快 30%",
-			"灵幻旋斩的投射物螺旋转动次数 +1",
+			"Molten Shell has 40% increased Skill Effect Duration",
 		},
 	},
-	["灵盾投掷"] = {
+	["Molten Strike"] = {
 		["MERCILESS"] = {
-			"【灵盾投掷】的投掷伤害提高 25%",
-			"【灵盾投掷】的投掷物速度提高 20%",
-			"【灵盾投掷】可额外发射 3 个碎片投射物",
+			"25% increased Molten Strike Damage",
+			"Molten Strike fires an additional Projectile",
+			"16% increased Molten Strike Area of Effect",
 		},
 		["ENDGAME"] = {
-			"【灵盾投掷】的投掷伤害提高 40%",
-			"【灵盾投掷】的投掷物速度提高 30%",
-			"【灵盾投掷】可额外发射 5 个碎片投射物",
+			"40% increased Molten Strike Damage",
+			"Molten Strike fires 2 additional Projectiles",
+			"24% increased Molten Strike Area of Effect",
 		},
 	},
-	["灵魂吸取"] = {
+	["Orb of Storms"] = {
 		["MERCILESS"] = {
-			"【灵魂吸取】的伤害提高 25%",
-			"【灵魂吸取】持续时间延长 20%",
+			"Orb of Storms deals 25% increased Damage",
+			"Orb of Storms has 20% increased Cast Speed",
+			"60% increased Orb of Storms Critical Strike Chance",
+			"16% increased Orb of Storms Area of Effect",
 		},
 		["ENDGAME"] = {
-			"【灵魂吸取】的伤害提高 40%",
-			"【灵魂吸取】持续时间延长 30%",
+			"Orb of Storms deals 40% increased Damage",
+			"Orb of Storms has 30% increased Cast Speed",
+			"90% increased Orb of Storms Critical Strike Chance",
+			"24% increased Orb of Storms Area of Effect",
 		},
 	},
-	["灵魂奉献"] = {
+	["Penance Brand"] = {
 		["MERCILESS"] = {
-			"【灵魂奉献】持续时间延长 30%",
-			"【灵魂奉献】给予等同 +8% 物理伤害的额外混沌伤害",
+			"Penance Brand deals 25% increased Damage",
+			"Penance Brand has 8% increased Cast Speed",
+			"Penance Brand has 16% increased Area of Effect",
 		},
 		["ENDGAME"] = {
-			"【灵魂奉献】持续时间延长 45%",
-			"【灵魂奉献】给予等同 +12% 物理伤害的额外混沌伤害",
+			"Penance Brand deals 40% increased Damage",
+			"Penance Brand has 12% increased Cast Speed",
+			"Penance Brand has 24% increased Area of Effect",
 		},
 	},
-	["灼热光线"] = {
+	["Perforate"] = {
 		["MERCILESS"] = {
-			"【灼热光线】的伤害提高 25%",
-			"【灼热光线】的施放速度提高 8%",
-			"【灼热光线】的光束长度延长 10%",
+			"Perforate creates +1 Spike",
+			"Perforate has 16% increased Area of Effect",
+			"Perforate deals 25% increased Damage",
 		},
 		["ENDGAME"] = {
-			"【灼热光线】的伤害提高 40%",
-			"【灼热光线】的施放速度提高 12%",
-			"【灼热光线】的光束长度延长 15%",
+			"Perforate creates +2 Spikes",
+			"Perforate has 24% increased Area of Effect",
+			"Perforate deals 40% increased Damage",
 		},
 	},
-	["灼热连接"] = {
+	["Pestilent Strike"] = {
 		["MERCILESS"] = {
-			"【灼热连接】的伤害提高 25%",
-			"【灼热连接】放置速度提高 40%",
-			"【灼热连接】的元素抗性提高 24%",
+			"Pestilent Strike deals 25% increased Damage",
+			"Pestilent Strike has 25% increased Duration",
+			"Pestilent Strike has 16% increased Area of Effect",
 		},
 		["ENDGAME"] = {
-			"【灼热连接】的伤害提高 40%",
-			"【灼热连接】放置速度提高 60%",
-			"【灼热连接】的元素抗性提高 36%",
+			"Pestilent Strike deals 40% increased Damage",
+			"Pestilent Strike has 40% increased Duration",
+			"Pestilent Strike has 24% increased Area of Effect",
 		},
 	},
-	["炼狱之击"] = {
+	["Petrified Blood"] = {
 		["MERCILESS"] = {
-			"【炼狱之击】的伤害提高 25%",
-			"【炼狱之击】提高等同 10% 物理伤害的火焰伤害",
-			"【炼狱之击】范围扩大 16%",
-			"【炼狱之击】的减益效果每层可额外造成 3% 伤害",
+			"Petrified Blood has 30% increased Mana Reservation Efficiency",
 		},
 		["ENDGAME"] = {
-			"【炼狱之击】的伤害提高 40%",
-			"【炼狱之击】提高等同 15% 物理伤害的火焰伤害",
-			"【炼狱之击】范围扩大 24%",
-			"【炼狱之击】的减益效果每层可额外造成 5% 伤害",
+			"Petrified Blood has 45% increased Mana Reservation Efficiency",
 		},
 	},
-	["炼狱战吼"] = {
+	["Phase Run"] = {
 		["MERCILESS"] = {
-			"【炼狱战吼】的冷却回复速度加快 20%",
+			"20% chance for Phase Run to increase Duration without removing Frenzy Charges",
+			"24% increased Phase Run Duration",
 		},
 		["ENDGAME"] = {
-			"【炼狱战吼】的冷却回复速度加快 30%",
+			"30% chance for Phase Run to increase Duration without removing Frenzy Charges",
+			"36% increased Phase Run Duration",
 		},
 	},
-	["烈炎风暴"] = {
+	["Plague Bearer"] = {
 		["MERCILESS"] = {
-			"【烈炎风暴】的伤害提高 25%",
-			"【烈炎风暴】持续时间延长 20%",
-			"【烈炎风暴】爆炸范围扩大 16%",
+			"Plague Bearer Buff grants +12% to Poison Damage over Time Multiplier while Infecting",
+			"Plague Bearer deals Damage based on an additional 3% of Plague Value",
 		},
 		["ENDGAME"] = {
-			"【烈炎风暴】的伤害提高 40%",
-			"【烈炎风暴】持续时间延长 30%",
-			"【烈炎风暴】爆炸范围扩大 24%",
+			"Plague Bearer Buff grants +20% to Poison Damage over Time Multiplier while Infecting",
+			"Plague Bearer deals Damage based on an additional 5% of Plague Value",
 		},
 	},
-	["烈焰之墙"] = {
+	["Poacher's Mark"] = {
 		["MERCILESS"] = {
-			"烈焰之墙的伤害提高 25%",
-			"烈焰之墙给投射物附加 19 到 28 点火焰伤害",
+			"20% increased Poacher's Mark Curse Effect",
 		},
 		["ENDGAME"] = {
-			"烈焰之墙的伤害提高 40%",
-			"烈焰之墙给投射物附加 31 到 47 点火焰伤害",
-			"烈焰之墙数量上限 +1",
+			"30% increased Poacher's Mark Curse Effect",
 		},
 	},
-	["烈焰冲刺"] = {
+	["Poisonous Concoction"] = {
 		["MERCILESS"] = {
-			"【烈焰冲刺】的伤害提高 25%",
-			"烈焰冲刺的冷却回复率提高 20%",
+			"25% increased Poisonous Concoction Damage",
+			"16% increased Poisonous Concoction Area of Effect",
+			"Poisonous Concoction uses 8% reduced Flask Charges",
 		},
 		["ENDGAME"] = {
-			"【烈焰冲刺】的伤害提高 40%",
-			"烈焰冲刺的冷却回复率提高 30%",
+			"40% increased Poisonous Concoction Damage",
+			"24% increased Poisonous Concoction Area of Effect",
+			"Poisonous Concoction uses 12% reduced Flask Charges",
 		},
 	},
-	["烈焰爆破"] = {
+	["Power Siphon"] = {
 		["MERCILESS"] = {
-			"【烈焰爆破】的伤害提高 25%",
-			"【烈焰爆破】暴击率提高 60%",
-			"【烈焰爆破】范围扩大 16%",
+			"25% increased Power Siphon Damage",
+			"30% Chance to gain an additional Power Charge on Kill with Power Siphon",
+			"10% increased Power Siphon Attack Speed",
+			"Power Siphon fires an additional Projectile",
 		},
 		["ENDGAME"] = {
-			"【烈焰爆破】的伤害提高 40%",
-			"【烈焰爆破】暴击率提高 90%",
-			"【烈焰爆破】范围扩大 24%",
+			"40% increased Power Siphon Damage",
+			"45% Chance to gain an additional Power Charge on Kill with Power Siphon",
+			"15% increased Power Siphon Attack Speed",
+			"Power Siphon fires 2 additional Projectiles",
 		},
 	},
-	["烟雾地雷"] = {
+	["Precision"] = {
 		["MERCILESS"] = {
-			"【烟雾地雷】持续时间延长 20%",
-			"【烟雾地雷】可使移动速度总增 20%",
+			"Precision has 50% increased Mana Reservation Efficiency",
 		},
 		["ENDGAME"] = {
-			"【烟雾地雷】持续时间延长 30%",
-			"【烟雾地雷】可使移动速度总增 30%",
+			"Precision has 75% increased Mana Reservation Efficiency",
 		},
 	},
-	["烧毁"] = {
+	["Pride"] = {
 		["MERCILESS"] = {
-			"【烧毁】的伤害提高 25%",
-			"【烧毁】效果区域扩大 16%",
-			"【烧毁】最多 +1 阶",
+			"Pride has 20% increased Mana Reservation Efficiency",
 		},
 		["ENDGAME"] = {
-			"【烧毁】的伤害提高 40%",
-			"【烧毁】效果区域扩大 24%",
-			"【烧毁】最多 +2 阶",
-			"【烧毁】的每一阶伤害提高 10%",
+			"Pride has 30% increased Mana Reservation Efficiency",
 		},
 	},
-	["熔岩之击"] = {
+	["Protective Link"] = {
 		["MERCILESS"] = {
-			"【熔岩之击】的伤害提高 25%",
-			"【熔岩之击】可以额外发射 1 个投射物",
-			"【熔岩之击】范围扩大 16%",
+			"20% increased Protective Link Duration",
 		},
 		["ENDGAME"] = {
-			"【熔岩之击】的伤害提高 40%",
-			"【熔岩之击】可以额外发射 2 个投射物",
-			"【熔岩之击】范围扩大 24%",
+			"30% increased Protective Link Duration",
 		},
 	},
-	["熔岩奔涌"] = {
+	["Puncture"] = {
 		["MERCILESS"] = {
-			"熔岩奔涌伤害提高 25%",
-			"熔岩奔涌效果区域提高 16%",
+			"25% increased Puncture Damage",
+			"30% increased Puncture Duration",
+			"20% Chance for Puncture to Maim on hit",
 		},
 		["ENDGAME"] = {
-			"熔岩奔涌伤害提高 40%",
-			"熔岩奔涌额外连锁一次",
-			"熔岩奔涌效果区域提高 24%",
+			"40% increased Puncture Damage",
+			"45% increased Puncture Duration",
+			"30% Chance for Puncture to Maim on hit",
 		},
 	},
-	["熔岩护盾"] = {
+	["Punishment"] = {
 		["MERCILESS"] = {
-			"【熔岩护盾】的技能效果持续时间延长 25%",
-			"【熔岩护盾】的增益效果提高 100%",
+			"20% increased Punishment Curse Effect",
+			"30% increased Punishment Duration",
 		},
 		["ENDGAME"] = {
-			"【熔岩护盾】的技能效果持续时间延长 40%",
-			"【熔岩护盾】的增益效果提高 150%",
+			"30% increased Punishment Curse Effect",
+			"45% increased Punishment Duration",
 		},
 	},
-	["燃尽"] = {
+	["Purifying Flame"] = {
+		["MERCILESS"] = {
+			"Purifying Flame deals 25% increased Damage",
+			"Purifying Flame has 20% increased Area of Effect if targeting Consecrated Ground",
+			"Consecrated Ground from Purifying Flame applies 6% increased Damage taken to Enemies",
+		},
 		["ENDGAME"] = {
-			"燃尽的效果区域扩大 30%",
+			"Purifying Flame deals 40% increased Damage",
+			"Purifying Flame has 30% increased Area of Effect if targeting Consecrated Ground",
+			"Consecrated Ground from Purifying Flame applies 9% increased Damage taken to Enemies",
 		},
 	},
-	["燃烧箭矢"] = {
+	["Purity of Elements"] = {
 		["MERCILESS"] = {
-			"【燃烧箭矢】的伤害提高 25%",
-			"【燃烧箭矢】有 +20% 的几率点燃",
-			"【燃烧箭矢】提高等同 10% 物理伤害的火焰伤害",
-			"【燃烧箭矢】的减益效果提高 16%",
+			"Purity of Elements has 20% increased Mana Reservation Efficiency",
 		},
 		["ENDGAME"] = {
-			"【燃烧箭矢】的伤害提高 40%",
-			"【燃烧箭矢】有 +30% 的几率点燃",
-			"【燃烧箭矢】提高等同 15% 物理伤害的火焰伤害",
-			"【燃烧箭矢】的减益效果提高 24%",
+			"Purity of Elements has 30% increased Mana Reservation Efficiency",
 		},
 	},
-	["爆灵术"] = {
+	["Purity of Fire"] = {
 		["MERCILESS"] = {
-			"【爆灵术】的伤害提高 25%",
-			"【爆灵术】有 30% 的几率引爆 1 个额外灵柩",
-			"【爆灵术】范围扩大 16%",
+			"Purity of Fire has 30% increased Mana Reservation Efficiency",
 		},
 		["ENDGAME"] = {
-			"【爆灵术】的伤害提高 40%",
-			"【爆灵术】有 45% 的几率引爆 1 个额外灵柩",
-			"【爆灵术】范围扩大 24%",
+			"Purity of Fire has 45% increased Mana Reservation Efficiency",
 		},
 	},
-	["爆炸箭矢"] = {
+	["Purity of Ice"] = {
 		["MERCILESS"] = {
-			"【爆炸箭矢】的伤害提高 25%",
-			"【爆炸箭矢】的效果区域扩大 16%",
-			"【爆炸箭矢】的攻击速度提高 10%",
-			"【爆炸箭矢】的持续时间提高 25%",
-			"【爆炸箭矢】的持续时间降低 20%",
+			"Purity of Ice has 30% increased Mana Reservation Efficiency",
 		},
 		["ENDGAME"] = {
-			"【爆炸箭矢】的伤害提高 40%",
-			"【爆炸箭矢】的效果区域扩大 24%",
-			"【爆炸箭矢】的攻击速度提高 15%",
-			"【爆炸箭矢】的持续时间提高 40%",
-			"【爆炸箭矢】的持续时间降低 30%",
+			"Purity of Ice has 45% increased Mana Reservation Efficiency",
 		},
 	},
-	["爆炸陷阱"] = {
+	["Purity of Lightning"] = {
 		["MERCILESS"] = {
-			"【爆炸陷阱】的伤害提高 25%",
-			"【爆炸陷阱】效果区域扩大 16%",
-			"【爆炸陷阱】会额外造成一次小型爆炸",
+			"Purity of Lightning has 30% increased Mana Reservation Efficiency",
 		},
 		["ENDGAME"] = {
-			"【爆炸陷阱】的伤害提高 40%",
-			"【爆炸陷阱】效果区域扩大 24%",
-			"【爆炸陷阱】会额外造成 2 次小型爆炸",
+			"Purity of Lightning has 45% increased Mana Reservation Efficiency",
 		},
 	},
-	["爆破灵药"] = {
+	["Pyroclast Mine"] = {
 		["MERCILESS"] = {
-			"爆破灵药的伤害提高 25%",
-			"爆破灵药的效果区域扩大 16%",
-			"爆破灵药的药剂充能降低 8%",
+			"Pyroclast Mine deals 25% increased Damage",
+			"Pyroclast Mine has 10% increased Throwing Speed",
 		},
 		["ENDGAME"] = {
-			"爆破灵药的伤害提高 40%",
-			"爆破灵药的效果区域扩大 24%",
-			"爆破灵药的药剂充能降低 12%",
+			"Pyroclast Mine deals 40% increased Damage",
+			"Pyroclast Mine has 15% increased Throwing Speed",
+			"Pyroclast Mine fires an additional Projectile",
 		},
 	},
-	["爆裂箭雨"] = {
+	["Rage Vortex"] = {
 		["MERCILESS"] = {
-			"【爆裂箭雨】的伤害提高 25%",
-			"【爆裂箭雨】的效果区域扩大 16%",
+			"25% increased Rage Vortex Damage",
+			"16% increased Rage Vortex Area of Effect",
+			"Rage Vortex Sacrifices +3% of Rage",
 		},
 		["ENDGAME"] = {
-			"【爆裂箭雨】的伤害提高 40%",
-			"【爆裂箭雨】的效果区域扩大 24%",
-			"【爆裂箭雨】发射一支额外箭矢",
+			"40% increased Rage Vortex Damage",
+			"24% increased Rage Vortex Area of Effect",
+			"Rage Vortex Sacrifices +5% of Rage",
 		},
 	},
-	["狂怒"] = {
+	["Rain of Arrows"] = {
 		["MERCILESS"] = {
-			"【狂怒】的伤害提高 25%",
-			"狂怒状态时有 20% 的几率获得 1 个额外的狂怒球",
-			"每个狂怒球可使狂怒伤害提高 6%",
+			"25% increased Rain of Arrows Damage",
+			"10% increased Rain of Arrows Attack Speed",
+			"16% increased Rain of Arrows Area of Effect",
+			"Rain of Arrows has 10% chance to fire an additional sequence of arrows",
 		},
 		["ENDGAME"] = {
-			"【狂怒】的伤害提高 40%",
-			"狂怒状态时有 30% 的几率获得 1 个额外的狂怒球",
-			"每个狂怒球可使狂怒伤害提高 9%",
+			"40% increased Rain of Arrows Damage",
+			"15% increased Rain of Arrows Attack Speed",
+			"24% increased Rain of Arrows Area of Effect",
+			"Rain of Arrows has 15% chance to fire an additional sequence of arrows",
 		},
 	},
-	["狂野怒火"] = {
+	["Raise Spectre"] = {
 		["MERCILESS"] = {
-			"【鲜血狂怒】会使攻击速度总增 8%",
-			"【鲜血狂怒】有额外 20% 的几率在击败敌人时获得狂怒球",
+			"Spectres have 25% increased Damage",
+			"Spectres have 8% increased Attack and Cast Speed",
+			"+24% to Raised Spectre Elemental Resistances",
 		},
 		["ENDGAME"] = {
-			"【鲜血狂怒】会使攻击速度总增 12%",
-			"【鲜血狂怒】有额外 30% 的几率在击败敌人时获得狂怒球",
+			"Spectres have 40% increased Damage",
+			"Spectres have 12% increased Attack and Cast Speed",
+			"+36% to Raised Spectre Elemental Resistances",
 		},
 	},
-	["狙击之印"] = {
+	["Raise Zombie"] = {
 		["MERCILESS"] = {
-			"狙击之印的诅咒效果提高 20%",
-			"狙击之印的持续时间延长 30%",
+			"Raised Zombies deal 25% increased Damage",
+			"Raised Zombies have 10% increased Attack Speed",
+			"Raised Zombies have +24% to Elemental Resistances",
 		},
 		["ENDGAME"] = {
-			"狙击之印的诅咒效果提高 30%",
-			"狙击之印的持续时间延长 45%",
+			"Raised Zombies deal 40% increased Damage",
+			"Raised Zombies have 15% increased Attack Speed",
+			"Raised Zombies have +36% to Elemental Resistances",
 		},
 	},
-	["瓦尔.飞刃风暴"] = {
+	["Rallying Cry"] = {
 		["MERCILESS"] = {
-			"【飞刃风暴】的每片刀刃 +2% 攻击和法术暴击伤害加成",
+			"10% increased Rallying Cry Buff Effect",
 		},
 		["ENDGAME"] = {
-			"【飞刃风暴】的每片刀刃 +3% 攻击和法术暴击伤害加成",
+			"15% increased Rallying Cry Buff Effect",
+			"Rallying Cry Exerts 1 additional Attack",
 		},
 	},
-	["电光寒霜"] = {
+	["Reap"] = {
 		["MERCILESS"] = {
-			"【电光寒霜】的伤害提高 25%",
-			"【电光寒霜】的持续时间延长 24%",
-			"【电光寒霜】的效果区域提高 16%",
+			"Reap deals 25% increased Damage",
+			"16% increased Reap Area of Effect",
 		},
 		["ENDGAME"] = {
-			"【电光寒霜】的伤害提高 40%",
-			"【电光寒霜】的持续时间延长 36%",
-			"【电光寒霜】的效果区域提高 24%",
-			"【电光寒霜】的冰缓区域中移动速度加快 38%",
+			"Reap deals 40% increased Damage",
+			"24% increased Reap Area of Effect",
+			"+1 to Maximum Blood Charges",
 		},
 	},
-	["电光箭"] = {
+	["Reave"] = {
 		["MERCILESS"] = {
-			"【电光箭】的伤害提高 25%",
-			"【电光箭】获得等同其 10% 物理伤害的额外闪电伤害",
-			"【电光箭】的投射物速度提高 20%",
+			"25% increased Reave Damage",
+			"16% increased Reave Radius",
 		},
 		["ENDGAME"] = {
-			"【电光箭】的伤害提高 40%",
-			"【电光箭】获得等同其 15% 物理伤害的额外闪电伤害",
-			"【电光箭】的投射物速度提高 30%",
+			"40% increased Reave Damage",
+			"24% increased Reave Radius",
 		},
 	},
-	["电塔陷阱"] = {
+	["Reckoning"] = {
 		["MERCILESS"] = {
-			"【电塔陷阱】的伤害提高 25%",
-			"【电塔陷阱】的施法速度提高 8%",
-			"【电塔陷阱】的技能效果持续时间延长 20%",
-			"【电塔陷阱】的冷却回复速度提高 10%",
+			"25% increased Reckoning Damage",
+			"Reckoning has 20% increased Cooldown Recovery Rate",
 		},
 		["ENDGAME"] = {
-			"【电塔陷阱】的伤害提高 40%",
-			"【电塔陷阱】的施法速度提高 12%",
-			"【电塔陷阱】的技能效果持续时间延长 30%",
-			"【电塔陷阱】的冷却回复速度提高 15%",
-			"【电塔陷阱】会攻击一片额外区域",
+			"40% increased Reckoning Damage",
+			"Reckoning has 30% increased Cooldown Recovery Rate",
 		},
 	},
-	["电弧"] = {
+	["Rejuvenation Totem"] = {
 		["MERCILESS"] = {
-			"【电弧】的伤害提高 25%",
-			"【电弧】有 +20% 的几率感电",
-			"【电弧】每连锁弹射 1 次，伤害便提高 8%",
+			"Gain 10% of Rejuvenation Totem Life Regeneration as extra Mana Regeneration",
+			"30% increased Rejuvenation Totem Aura Effect",
 		},
 		["ENDGAME"] = {
-			"【电弧】的伤害提高 40%",
-			"【电弧】额外连锁弹射 1 次",
-			"【电弧】有 +30% 的几率感电",
-			"【电弧】每连锁弹射 1 次，伤害便提高 12%",
+			"Gain 15% of Rejuvenation Totem Life Regeneration as extra Mana Regeneration",
+			"45% increased Rejuvenation Totem Aura Effect",
 		},
 	},
-	["电殛长枪"] = {
+	["Righteous Fire"] = {
 		["MERCILESS"] = {
-			"电殛长枪的伤害提高 25%",
-			"电殛长枪的施法速度加快 8%",
-			"电殛长枪的分支角度扩大 24%",
+			"25% increased Righteous Fire Damage",
+			"16% increased Righteous Fire Area of Effect",
+			"Righteous Fire grants 20% increased Spell Damage",
 		},
 		["ENDGAME"] = {
-			"电殛长枪的伤害提高 40%",
-			"电殛长枪的施法速度加快 16%",
-			"电殛长枪的分支角度扩大 36%",
+			"40% increased Righteous Fire Damage",
+			"24% increased Righteous Fire Area of Effect",
+			"Righteous Fire grants 30% increased Spell Damage",
 		},
 	},
-	["电球"] = {
+	["Riposte"] = {
 		["MERCILESS"] = {
-			"【电球】的伤害提高 25%",
-			"【电球】可以额外发射 2 个投射物",
-			"【电球】投射物速度提高 20%",
+			"25% increased Riposte Damage",
+			"Riposte has 20% increased Cooldown Recovery Rate",
 		},
 		["ENDGAME"] = {
-			"【电球】的伤害提高 40%",
-			"【电球】可以额外发射 3 个投射物",
-			"【电球】投射物速度提高 30%",
+			"40% increased Riposte Damage",
+			"Riposte has 30% increased Cooldown Recovery Rate",
 		},
 	},
-	["电能释放"] = {
+	["Rolling Magma"] = {
 		["MERCILESS"] = {
-			"【电能释放】的伤害提高 25%",
-			"【电能释放】范围扩大 16%",
-			"【电能释放】的暴击率提高 40%",
+			"25% increased Rolling Magma Damage",
+			"16% increased Rolling Magma Area of Effect",
 		},
 		["ENDGAME"] = {
-			"【电能释放】的伤害提高 40%",
-			"【电能释放】范围扩大 24%",
-			"【电能释放】的暴击率提高 60%",
+			"40% increased Rolling Magma Damage",
+			"Rolling Magma Chains an additional time",
+			"24% increased Rolling Magma Area of Effect",
 		},
 	},
-	["瘟疫"] = {
+	["Scorching Ray"] = {
 		["MERCILESS"] = {
-			"【瘟疫】的伤害提高 25%",
-			"【瘟疫】持续时间延长 20%",
-			"【瘟疫】范围扩大 16%",
+			"25% increased Scorching Ray Damage",
+			"8% increased Scorching Ray Cast Speed",
+			"10% increased Scorching Ray beam length",
 		},
 		["ENDGAME"] = {
-			"【瘟疫】的伤害提高 40%",
-			"【瘟疫】持续时间延长 30%",
-			"【瘟疫】范围扩大 24%",
+			"40% increased Scorching Ray Damage",
+			"12% increased Scorching Ray Cast Speed",
+			"15% increased Scorching Ray beam length",
 		},
 	},
-	["瘟疫使徒"] = {
+	["Scourge Arrow"] = {
 		["MERCILESS"] = {
-			"传染时，【瘟疫使徒】增益效果 +12% 中毒持续伤害加成",
-			"【瘟疫使徒】基于瘟疫值的 3% 造成额外伤害",
+			"Scourge Arrow deals 25% increased Damage",
+			"Scourge Arrow has 6% chance to Poison per Stage",
 		},
 		["ENDGAME"] = {
-			"传染时，【瘟疫使徒】增益效果 +20% 中毒持续伤害加成",
-			"【瘟疫使徒】基于瘟疫值的 5% 造成额外伤害",
+			"Scourge Arrow deals 40% increased Damage",
+			"Scourge Arrow has 8% chance to Poison per Stage",
+			"Scourge Arrow creates an additional spore pod at Maximum Stages",
 		},
 	},
-	["盗猎者印记"] = {
+	["Searing Bond"] = {
 		["MERCILESS"] = {
-			"【盗猎者印记】的诅咒效果提高 20%",
-			"【盗猎者印记】持续时间延长 30%",
+			"25% increased Searing Bond Damage",
+			"40% increased Searing Bond Totem Placement Speed",
+			"24% increased Searing Bond Totem Elemental Resistances",
 		},
 		["ENDGAME"] = {
-			"【盗猎者印记】的诅咒效果提高 30%",
-			"【盗猎者印记】持续时间延长 45%",
+			"40% increased Searing Bond Damage",
+			"60% increased Searing Bond Totem Placement Speed",
+			"36% increased Searing Bond Totem Elemental Resistances",
 		},
 	},
-	["盛怒"] = {
+	["Seismic Cry"] = {
 		["MERCILESS"] = {
-			"【盛怒】的怒火衰减速度每秒降低 25%",
-			"【盛怒】的增益效果提高 20%",
+			"Attacks Exerted by Seismic Cry deal 35% increased Damage",
 		},
 		["ENDGAME"] = {
-			"【盛怒】的怒火衰减速度每秒降低 40%",
-			"【盛怒】的增益效果提高 30%",
+			"Attacks Exerted by Seismic Cry deal 50% increased Damage",
+			"Seismic Cry has a minimum of 10 Power",
 		},
 	},
-	["盾牌碾压"] = {
+	["Seismic Trap"] = {
 		["MERCILESS"] = {
-			"盾牌碾压的伤害提高 25%",
-			"盾牌碾压的攻击速度加快 10%",
-			"盾牌碾压中心震波的效果区域总增 16%",
+			"Seismic Trap deals 25% increased Damage",
+			"Seismic Trap has 20% increased Skill Effect Duration",
+			"Seismic Trap has 10% increased Cooldown Recovery Rate",
 		},
 		["ENDGAME"] = {
-			"盾牌碾压的伤害提高 40%",
-			"盾牌碾压的攻击速度加快 15%",
-			"盾牌碾压中心震波的效果区域总增 24%",
+			"Seismic Trap deals 40% increased Damage",
+			"Seismic Trap has 30% increased Skill Effect Duration",
+			"Seismic Trap has 15% increased Cooldown Recovery Rate",
+			"Seismic Trap releases an additional Wave",
 		},
 	},
-	["督军印记"] = {
+	["Shattering Steel"] = {
 		["MERCILESS"] = {
-			"【督军印记】的诅咒效果提高 20%",
-			"【督军印记】持续时间延长 30%",
+			"Shattering Steel deals 25% increased Damage",
+			"Shattering Steel has 20% chance to not consume Steel Shards",
 		},
 		["ENDGAME"] = {
-			"【督军印记】的诅咒效果提高 30%",
-			"【督军印记】持续时间延长 45%",
+			"Shattering Steel deals 40% increased Damage",
+			"Hits at Close Range with Shattering Steel Fortify",
+			"Shattering Steel has 30% chance to not consume Steel Shards",
 		},
 	},
-	["破碎铁刃"] = {
+	["Shield Charge"] = {
 		["MERCILESS"] = {
-			"【断金之刃】的伤害提高 25%",
-			"破碎铁刃有 20% 的几率不消耗钢刃碎片",
+			"25% increased Shield Charge Damage",
+			"10% increased Shield Charge Attack Speed",
 		},
 		["ENDGAME"] = {
-			"【断金之刃】的伤害提高 40%",
-			"【破碎铁刃】若在近距离击中敌人，则获得【护体】",
-			"破碎铁刃有 30% 的几率不消耗钢刃碎片",
+			"40% increased Shield Charge Damage",
+			"15% increased Shield Charge Attack Speed",
 		},
 	},
-	["破空斩"] = {
+	["Shield Crush"] = {
 		["MERCILESS"] = {
-			"【破空斩】伤害提高 25%",
-			"【破空斩】暴击率提高 40%",
-			"【破空斩】范围扩大 16%",
-			"【破空斩】对流血敌人附加 (4-8) - (10-15) 基础物理伤害",
+			"25% increased Shield Crush Damage",
+			"10% increased Shield Crush Attack Speed",
+			"Shield Crush central wave has 16% more Area of Effect",
 		},
 		["ENDGAME"] = {
-			"【破空斩】伤害提高 40%",
-			"【破空斩】暴击率提高 60%",
-			"【破空斩】范围扩大 24%",
-			"【破空斩】对流血敌人附加 (14-18) - (20-25) 基础物理伤害",
+			"40% increased Shield Crush Damage",
+			"15% increased Shield Crush Attack Speed",
+			"Shield Crush central wave has 24% more Area of Effect",
 		},
 	},
-	["破釜一击"] = {
+	["Shock Nova"] = {
 		["MERCILESS"] = {
-			"【破釜一击】的伤害提高 25%",
-			"【破釜一击】效果区域扩大 16%",
-			"破釜一击 +12% 裂缝分叉几率",
+			"25% increased Shock Nova Damage",
+			"Shock Nova ring deals 40% increased Damage",
+			"16% increased Shock Nova Area of Effect",
 		},
 		["ENDGAME"] = {
-			"【破釜一击】的伤害提高 40%",
-			"【破釜一击】效果区域扩大 24%",
-			"破釜一击 +20% 裂缝分叉几率",
+			"40% increased Shock Nova Damage",
+			"Shock Nova ring deals 60% increased Damage",
+			"24% increased Shock Nova Area of Effect",
 		},
 	},
-	["神圣寒冰"] = {
+	["Shockwave Totem"] = {
 		["MERCILESS"] = {
-			"【圣怨】的光波宽度扩大 10%",
-			"堆叠层数时，【圣怨】会对周围的一个额外敌人造成伤害",
+			"25% increased Shockwave Totem Damage",
+			"10% increased Shockwave Totem Cast Speed",
+			"16% increased Shockwave Totem Area of Effect",
 		},
 		["ENDGAME"] = {
-			"【圣怨】的光波宽度扩大 15%",
-			"堆叠层数时，【圣怨】会对周围的 2 个额外敌人造成伤害",
+			"40% increased Shockwave Totem Damage",
+			"15% increased Shockwave Totem Cast Speed",
+			"24% increased Shockwave Totem Area of Effect",
 		},
 	},
-	["禁断典仪"] = {
+	["Shrapnel Ballista"] = {
 		["MERCILESS"] = {
-			"禁断典仪的伤害提高 25%",
-			"禁断典仪的投射物速度加快 20%",
+			"Shrapnel Ballista Pierces 4 additional Targets",
+			"Shrapnel Ballista has 20% increased Projectile Speed",
 		},
 		["ENDGAME"] = {
-			"禁断典仪的伤害提高 40%",
-			"禁断典仪的投射物速度加快 30%",
-			"禁断典仪发射一枚额外投射物",
+			"Shrapnel Ballista fires an additional Arrow",
+			"Shrapnel Ballista Pierces 6 additional Targets",
+			"Shrapnel Ballista has 30% increased Projectile Speed",
 		},
 	},
-	["精准"] = {
+	["Siege Ballista"] = {
 		["MERCILESS"] = {
-			"精准的保留效果降低 20%",
+			"Siege Ballista deals 25% increased Damage",
+			"Siege Ballista has 10% increased Attack Speed",
+			"Siege Ballista has 30% increased Totem Placement Speed",
 		},
 		["ENDGAME"] = {
-			"精准的保留效果降低 30%",
+			"Siege Ballista deals 40% increased Damage",
+			"Siege Ballista has 15% increased Attack Speed",
+			"Siege Ballista has 45% increased Totem Placement Speed",
 		},
 	},
-	["纪律"] = {
+	["Sigil of Power"] = {
 		["MERCILESS"] = {
-			"纪律的保留效果降低 14%",
+			"Sigil of Power requires 10% reduced Mana Spent to gain a Stage",
+			"Sigil of Power's Buff also grants 20% increased Critical Strike Chance per Stage",
 		},
 		["ENDGAME"] = {
-			"纪律的保留效果降低 20%",
+			"Sigil of Power requires 20% reduced Mana Spent to gain a Stage",
+			"Sigil of Power's Buff also grants 30% increased Critical Strike Chance per Stage",
 		},
 	},
-	["纯净之捷"] = {
+	["Siphoning Trap"] = {
 		["MERCILESS"] = {
-			"纯净之捷的保留效果降低 20%",
+			"Siphoning Trap deals 25% increased Damage",
+			"Siphoning Trap has 30% increased Skill Effect Duration",
+			"Siphoning Trap has 25% increased Chill Effect",
 		},
 		["ENDGAME"] = {
-			"纯净之捷的保留效果降低 30%",
-			"+1 纯净哨兵数量上限",
+			"Siphoning Trap deals 40% increased Damage",
+			"Siphoning Trap has 45% increased Skill Effect Duration",
+			"Siphoning Trap's beam to you grants 1% reduced Damage taken for each other beam",
+			"Siphoning Trap has 40% increased Chill Effect",
 		},
 	},
-	["绝命之镰"] = {
+	["Smite"] = {
+		["MERCILESS"] = {
+			"Smite deals 25% increased Damage",
+			"Smite has a 10% chance for lightning to strike another target",
+			"Smite has 20% increased Aura Effect",
+		},
 		["ENDGAME"] = {
-			"赤炼球上限 +1",
+			"Smite deals 40% increased Damage",
+			"Smite has a 15% chance for lightning to strike another target",
+			"Smite has 30% increased Aura Effect",
 		},
 	},
-	["绝望"] = {
+	["Smoke Mine"] = {
 		["MERCILESS"] = {
-			"【绝望】的诅咒持续时间延长 30%",
-			"【绝望】的诅咒效果提高 20% ",
+			"20% increased Smoke Mine Duration",
+			"Smoke Mine grants additional 20% increased Movement Speed",
 		},
 		["ENDGAME"] = {
-			"【绝望】的诅咒持续时间延长 45%",
-			"【绝望】的诅咒效果提高 30% ",
+			"30% increased Smoke Mine Duration",
+			"Smoke Mine grants additional 30% increased Movement Speed",
 		},
 	},
-	["缚雷之纹"] = {
+	["Sniper's Mark"] = {
 		["MERCILESS"] = {
-			"【缚雷之纹】的效果区域扩大 16%",
-			"【缚雷之纹】的伤害提高 25%",
-			"你若在过去 1 秒内没有引爆符纹，则【爆裂符纹】将你传送至被引爆的符纹处",
+			"Sniper's Mark has 20% increased Curse Effect",
 		},
 		["ENDGAME"] = {
-			"【缚雷之纹】的效果区域扩大 24%",
-			"【缚雷之纹】的伤害提高 40%",
-			"你若在过去 1.5 秒内没有引爆符纹，则【爆裂符纹】将你传送至被引爆的符纹处",
+			"Sniper's Mark has 30% increased Curse Effect",
 		},
 	},
-	["缚魔电殛"] = {
+	["Soul Link"] = {
 		["MERCILESS"] = {
-			"缚魔电殛的伤害提高 25%",
-			"缚魔电殛的效果区域扩大 16%",
-			"缚魔电殛在低魔状态下穿透 8% 的闪电抗性",
+			"20% increased Soul Link Duration",
 		},
 		["ENDGAME"] = {
-			"缚魔电殛的伤害提高 40%",
-			"缚魔电殛的效果区域扩大 24%",
-			"缚魔电殛在低魔状态下穿透 12% 的闪电抗性",
+			"30% increased Soul Link Duration",
 		},
 	},
-	["脆弱"] = {
+	["Soulrend"] = {
 		["MERCILESS"] = {
-			"【脆弱】的诅咒效果提高 20%",
-			"【脆弱】持续时间延长 30%",
+			"Soulrend deals 25% increased Damage",
+			"Soulrend also Hinders Enemies, with 25% reduced Movement Speed",
 		},
 		["ENDGAME"] = {
-			"【脆弱】的诅咒效果提高 30%",
-			"【脆弱】持续时间延长 45%",
+			"Soulrend deals 40% increased Damage",
+			"Soulrend also Hinders Enemies, with 40% reduced Movement Speed",
+			"Soulrend fires an additional Projectile",
 		},
 	},
-	["腐灼热瘟"] = {
+	["Spark"] = {
 		["MERCILESS"] = {
-			"腐灼热瘟的伤害提高 25%",
-			"腐灼热瘟的持续时间延长 20%",
+			"25% increased Spark Damage",
+			"Spark fires 2 additional Projectiles",
+			"20% increased Spark Projectile Speed",
 		},
 		["ENDGAME"] = {
-			"腐灼热瘟的伤害提高 40%",
-			"腐灼热瘟的持续时间延长 30%",
-			"腐灼热瘟额外施加一个腐化之血减益效果的几率 +50%",
+			"40% increased Spark Damage",
+			"Spark fires 3 additional Projectiles",
+			"30% increased Spark Projectile Speed",
 		},
 	},
-	["腐蚀箭矢"] = {
+	["Spectral Helix"] = {
 		["MERCILESS"] = {
-			"【腐蚀箭矢】的伤害提高 25%",
-			"【腐蚀箭矢】持续时间延长 20%",
-			"【腐蚀箭矢】范围扩大 16%",
-			"【腐蚀箭矢】击中后有 14% 的几率造成【死亡凋零】，持续 2 秒",
+			"25% increased Spectral Helix Damage",
+			"20% increased Spectral Helix Projectile Speed",
 		},
 		["ENDGAME"] = {
-			"【腐蚀箭矢】的伤害提高 40%",
-			"【腐蚀箭矢】持续时间延长 30%",
-			"【腐蚀箭矢】范围扩大 24%",
-			"【腐蚀箭矢】击中后有 20% 的几率造成【死亡凋零】，持续 2 秒",
+			"40% increased Spectral Helix Damage",
+			"30% increased Spectral Helix Projectile Speed",
+			"Spectral Helix Projectile spirals through +1 rotations",
 		},
 	},
-	["致疫打击"] = {
+	["Spectral Shield Throw"] = {
 		["MERCILESS"] = {
-			"【致疫打击】的伤害提高 25%",
-			"【致疫打击】的技能持续时间提高 25%",
-			"【致疫打击】的效果区域扩大 16%",
+			"25% increased Spectral Shield Throw Damage",
+			"20% increased Spectral Shield Throw Projectile Speed",
+			"Spectral Shield Throw fires 2 additional Shard Projectiles",
 		},
 		["ENDGAME"] = {
-			"【致疫打击】的伤害提高 40%",
-			"【致疫打击】的技能持续时间提高 40%",
-			"【致疫打击】的效果区域扩大 24%",
+			"40% increased Spectral Shield Throw Damage",
+			"30% increased Spectral Shield Throw Projectile Speed",
+			"Spectral Shield Throw fires 3 additional Shard Projectiles",
 		},
 	},
-	["苦痛之捷"] = {
+	["Spectral Throw"] = {
 		["MERCILESS"] = {
-			"苦痛之捷的保留效果降低 20%",
+			"25% increased Spectral Throw Damage",
+			"20% reduced Spectral Throw Projectile Deceleration",
+			"20% increased Spectral Throw Projectile Speed",
 		},
 		["ENDGAME"] = {
-			"苦痛之捷的保留效果降低 30%",
-			"召唤的苦痛爬行者额外发射 2 的投射物",
+			"40% increased Spectral Throw Damage",
+			"30% reduced Spectral Throw Projectile Deceleration",
+			"30% increased Spectral Throw Projectile Speed",
 		},
 	},
-	["蓄力疾风闪"] = {
+	["Spellslinger"] = {
 		["MERCILESS"] = {
-			"【蓄力疾风闪】的伤害提高 25%",
-			"若你近期内完成过【蓄力疾风闪】的吟唱施放，则有 4% 的几率躲避攻击击中",
-			"【蓄力疾风闪】最终伤害范围 +4",
-			"【蓄力疾风闪】的移动速度总增 10%",
+			"20% increased Mana Reservation Efficiency of Skills Supported by Spellslinger",
+			"Skills Supported by Spellslinger have 20% increased Cooldown Recovery Rate",
 		},
 		["ENDGAME"] = {
-			"【蓄力疾风闪】的伤害提高 40%",
-			"若你近期内完成过【蓄力疾风闪】的吟唱施放，则有 6% 的几率躲避攻击击中",
-			"【蓄力疾风闪】最终伤害范围 +6",
-			"【蓄力疾风闪】的移动速度总增 15%",
+			"30% increased Mana Reservation Efficiency of Skills Supported by Spellslinger",
+			"Skills Supported by Spellslinger have 30% increased Cooldown Recovery Rate",
 		},
 	},
-	["虚空刀雨"] = {
+	["Spirit Offering"] = {
 		["MERCILESS"] = {
-			"【虚空刀雨】的伤害提高 25%",
-			"【虚空刀雨】暴击率提高 60%",
-			"【虚空刀雨】范围扩大 16%",
+			"30% increased Spirit Offering Duration",
+			"Spirit Offering grants +8% to Critical Strike Multiplier",
 		},
 		["ENDGAME"] = {
-			"【虚空刀雨】的伤害提高 40%",
-			"【虚空刀雨】暴击率提高 90%",
-			"【虚空刀雨】范围扩大 24%",
-			"【虚空刀雨】会额外发射一波飞刃",
+			"45% increased Spirit Offering Duration",
+			"Spirit Offering grants +12% to Critical Strike Multiplier",
 		},
 	},
-	["虚空匕首"] = {
+	["Split Arrow"] = {
 		["MERCILESS"] = {
-			"【虚空匕首】的伤害提高 25%",
-			"【虚空匕首】投射物速度提高 20%",
+			"25% increased Split Arrow Damage",
+			"60% increased Split Arrow Critical Strike Chance",
+			"Split Arrow fires 2 additional Projectiles",
 		},
 		["ENDGAME"] = {
-			"【虚空匕首】的伤害提高 40%",
-			"【虚空匕首】投射物速度提高 30%",
-			"【虚空匕首】穿透 1 个额外目标",
+			"40% increased Split Arrow Damage",
+			"90% increased Split Arrow Critical Strike Chance",
+			"Split Arrow fires 3 additional Projectiles",
 		},
 	},
-	["虚空法球"] = {
+	["Splitting Steel"] = {
 		["MERCILESS"] = {
-			"虚空法球的冷却回复率提高 20%",
-			"虚空法球射程内的敌人基于跟虚空法球的距离，承受的伤害最多提高 6%",
-			"虚空法球的脉冲频率提高 12%",
+			"Splitting Steel deals 25% increased Damage",
+			"Splitting Steel has 16% increased Area of Effect",
+			"Splitting Steel has 20% chance to not consume Steel Shards",
 		},
 		["ENDGAME"] = {
-			"虚空法球的冷却回复率提高 30%",
-			"虚空法球射程内的敌人基于跟虚空法球的距离，承受的伤害最多提高 10%",
-			"虚空法球的脉冲频率提高 18%",
+			"Splitting Steel deals 40% increased Damage",
+			"Splitting Steel has 24% increased Area of Effect",
+			"Splitting Steel has 30% chance to not consume Steel Shards",
 		},
 	},
-	["虹吸陷阱"] = {
+	["Static Strike"] = {
 		["MERCILESS"] = {
-			"【虹吸陷阱】的伤害提高 25%",
-			"【虹吸陷阱】的技能效果持续时间延长 30%",
-			"【虹吸陷阱】的冰缓效果提高 25%",
+			"25% increased Static Strike Damage",
+			"30% increased Static Strike Duration",
+			"16% increased Static Strike Area of Effect",
+			"Static Strike has +1 maximum Beam Targets",
 		},
 		["ENDGAME"] = {
-			"【虹吸陷阱】的伤害提高 40%",
-			"【虹吸陷阱】的技能效果持续时间延长 45%",
-			"【虹吸陷阱】的光线连接到你，每有一条其他光线，都会使你承受的伤害降低 1%",
-			"【虹吸陷阱】的冰缓效果提高 40%",
+			"40% increased Static Strike Damage",
+			"45% increased Static Strike Duration",
+			"24% increased Static Strike Area of Effect",
+			"Static Strike has +2 maximum Beam Targets",
 		},
 	},
-	["血与沙"] = {
+	["Steelskin"] = {
 		["MERCILESS"] = {
-			"【血与沙】的增益效果提高 25%",
+			"Steelskin grants 8% additional Physical Damage Reduction",
+			"Steelskin Buff can take 30% increased amount of Damage",
 		},
 		["ENDGAME"] = {
-			"【血与沙】的增益效果提高 40%",
+			"Steelskin grants 12% additional Physical Damage Reduction",
+			"Steelskin Buff can take 45% increased amount of Damage",
 		},
 	},
-	["血肉与岩石"] = {
+	["Storm Brand"] = {
 		["MERCILESS"] = {
-			"血肉与岩石的保留效果降低 20%",
+			"Storm Brand deals 25% increased Damage",
+			"Storm Brand has a 12% chance to Chain an additional time",
+			"Storm Brand Damage Penetrates 8% of Branded Enemy's Lightning Resistance",
 		},
 		["ENDGAME"] = {
-			"血肉与岩石的保留效果降低 30%",
+			"Storm Brand deals 40% increased Damage",
+			"Storm Brand has a 18% chance to Chain an additional time",
+			"Storm Brand Damage Penetrates 12% of Branded Enemy's Lightning Resistance",
 		},
 	},
-	["血肉奉献"] = {
+	["Storm Burst"] = {
 		["MERCILESS"] = {
-			"【血肉奉献】持续时间延长 30%",
-			"【血肉奉献】提供的召唤生物攻击速度提高 14%",
+			"25% increased Storm Burst Damage",
+			"16% increased Storm Burst Area of Effect",
+			"Storm Burst has a 10% chance to create an additional Orb",
 		},
 		["ENDGAME"] = {
-			"【血肉奉献】持续时间延长 45%",
-			"【血肉奉献】提供的召唤生物攻击速度提高 21%",
+			"40% increased Storm Burst Damage",
+			"24% increased Storm Burst Area of Effect",
+			"Storm Burst has a 15% chance to create an additional Orb",
 		},
 	},
-	["衰弱"] = {
+	["Storm Call"] = {
 		["MERCILESS"] = {
-			"【衰弱】的诅咒效果提高 20%",
-			"【衰弱】持续时间延长 30%",
+			"25% increased Storm Call Damage",
+			"20% reduced Storm Call Duration",
+			"16% increased Storm Call Area of Effect",
 		},
 		["ENDGAME"] = {
-			"【衰弱】的诅咒效果提高 30%",
-			"【衰弱】持续时间延长 45%",
+			"40% increased Storm Call Damage",
+			"30% reduced Storm Call Duration",
+			"24% increased Storm Call Area of Effect",
 		},
 	},
-	["裂地之击"] = {
+	["Storm Rain"] = {
 		["MERCILESS"] = {
-			"【裂地之击】的伤害提高 25%",
-			"【裂地之击】范围扩大 16%",
-			"【裂地之击】的角度扩大 16%",
+			"25% increased Storm Rain Damage",
+			"Storm Rain has 25% increased Beam frequency",
 		},
 		["ENDGAME"] = {
-			"【裂地之击】的伤害提高 40%",
-			"【裂地之击】范围扩大 24%",
-			"【裂地之击】的角度扩大 24%",
+			"40% increased Storm Rain Damage",
+			"Storm Rain has 40% increased Beam frequency",
+			"Storm Rain fires an additional Arrow",
 		},
 	},
-	["裂风雷球"] = {
+	["Stormbind"] = {
 		["MERCILESS"] = {
-			"【裂风雷球】的伤害提高 25%",
-			"【裂风雷球】的范围扩大 16%",
-			"【裂风雷球】有 10% 的几率创造一个额外的雷球",
+			"Stormbind has 16% increased Area of Effect",
+			"Stormbind deals 25% increased Damage",
+			"Rune Blast teleports you to the detonated Rune if you have not detonated Runes in the past 1 second",
 		},
 		["ENDGAME"] = {
-			"【裂风雷球】的伤害提高 40%",
-			"【裂风雷球】的范围扩大 24%",
-			"【裂风雷球】有 15% 的几率创造一个额外的雷球",
+			"Stormbind has 24% increased Area of Effect",
+			"Stormbind deals 40% increased Damage",
+			"Rune Blast teleports you to the detonated Rune if you have not detonated Runes in the past 1.5 seconds",
 		},
 	},
-	["裂魂术"] = {
+	["Stormblast Mine"] = {
 		["MERCILESS"] = {
-			"【裂魂术】的伤害提高 25%",
-			"【裂魂术】也会使敌人缓速，移动速度降低 25%",
+			"Stormblast Mine deals 25% increased Damage",
+			"Stormblast Mine has 10% increased Throwing Speed",
+			"Stormblast Mine has 20% increased Aura Effect",
 		},
 		["ENDGAME"] = {
-			"【裂魂术】的伤害提高 40%",
-			"【裂魂术】也会使敌人缓速，移动速度降低 40%",
-			"【裂魂术】可以额外发射 1 个投射物",
+			"Stormblast Mine deals 40% increased Damage",
+			"Stormblast Mine has 15% increased Throwing Speed",
+			"Stormblast Mine has 40% increased Aura Effect",
 		},
 	},
-	["解放"] = {
+	["Summon Carrion Golem"] = {
 		["MERCILESS"] = {
-			"【解放】造成伤害时，有 20% 的几率不消耗能量球",
-			"解放范围 +3",
-			"【解放】的伤害提高 25%",
+			"Summoned Carrion Golems deal 25% increased Damage",
+			"100% increased Effect of the Buff granted by your Carrion Golems",
+			"Summoned Carrion Golems have +24% to all Elemental Resistances",
 		},
 		["ENDGAME"] = {
-			"【解放】造成伤害时，有 30% 的几率不消耗能量球",
-			"解放范围 +5",
-			"【解放】的伤害提高 40%",
+			"Summoned Carrion Golems deal 40% increased Damage",
+			"150% increased Effect of the Buff granted by your Carrion Golems",
+			"Summoned Carrion Golems have +36% to all Elemental Resistances",
 		},
 	},
-	["诱捕之箭"] = {
+	["Summon Chaos Golem"] = {
 		["MERCILESS"] = {
-			"【诱捕之箭】的减益效果提高 20%",
-			"【诱捕之箭】的效果区域扩大 60%",
+			"Chaos Golems deal 25% increased Damage",
+			"75% increased Effect of the Buff granted by your Chaos Golems",
+			"+24% to Chaos Golem Elemental Resistances",
 		},
 		["ENDGAME"] = {
-			"【诱捕之箭】的减益效果提高 30%",
-			"【诱捕之箭】的效果区域扩大 90%",
+			"Chaos Golems deal 40% increased Damage",
+			"100% increased Effect of the Buff granted by your Chaos Golems",
+			"+36% to Chaos Golem Elemental Resistances",
 		},
 	},
-	["诱饵图腾"] = {
+	["Summon Flame Golem"] = {
 		["MERCILESS"] = {
-			"诱饵图腾的生命提高 40%",
-			"【诱饵图腾】范围扩大 16%",
+			"Flame Golems have 25% increased Damage",
+			"+24% increased Flame Golem Elemental Resistances",
+			"100% increased Effect of the Buff granted by your Flame Golems",
 		},
 		["ENDGAME"] = {
-			"诱饵图腾的生命提高 60%",
-			"【诱饵图腾】范围扩大 24%",
+			"Flame Golems have 40% increased Damage",
+			"+36% increased Flame Golem Elemental Resistances",
+			"150% increased Effect of the Buff granted by your Flame Golems",
 		},
 	},
-	["赤炼绝命"] = {
+	["Summon Holy Relic"] = {
 		["MERCILESS"] = {
-			"绝命之镰的伤害提高 25%",
-			"绝命之镰的效果区域扩大 16%",
+			"Summoned Holy Relics deal 25% increased Damage",
+			"Summoned Holy Relics have 16% increased Area of Effect",
+			"Summoned Holy Relics have 40% increased Buff Effect",
 		},
 		["ENDGAME"] = {
-			"绝命之镰的伤害提高 40%",
-			"绝命之镰的效果区域扩大 24%",
+			"Summoned Holy Relics deal 40% increased Damage",
+			"Summoned Holy Relics have 24% increased Area of Effect",
+			"Summoned Holy Relics have 60% increased Buff Effect",
 		},
 	},
-	["赤炼魔光"] = {
+	["Summon Ice Golem"] = {
 		["MERCILESS"] = {
-			"赤炼魔光的伤害提高 25%",
-			"赤炼魔光的持续时间延长 20%",
+			"Ice Golems deal 25% increased Damage",
+			"+24% to Ice Golem Elemental Resistances",
+			"100% increased Effect of the Buff granted by your Ice Golems",
 		},
 		["ENDGAME"] = {
-			"赤炼魔光的伤害提高 40%",
-			"赤炼魔光的持续时间延长 30%",
-			"赤炼魔光有 25% 的几率额外连锁一次",
+			"Ice Golems deal 40% increased Damage",
+			"+36% to Ice Golem Elemental Resistances",
+			"150% increased Effect of the Buff granted by your Ice Golems",
 		},
 	},
-	["赤血凝结"] = {
+	["Summon Lightning Golem"] = {
 		["MERCILESS"] = {
-			"赤血凝结的保留效果降低 14%",
+			"Lightning Golems deal 25% increased Damage",
+			"100% increased Effect of the Buff granted by your Lightning Golems",
+			"+24% to Lightning Golem Elemental Resistances",
 		},
 		["ENDGAME"] = {
-			"赤血凝结的保留效果降低 20%",
+			"Lightning Golems deal 40% increased Damage",
+			"150% increased Effect of the Buff granted by your Lightning Golems",
+			"+36% to Lightning Golem Elemental Resistances",
 		},
 	},
-	["赦罪"] = {
+	["Summon Raging Spirit"] = {
 		["MERCILESS"] = {
-			"赦罪持续时间延长 20%",
-			"赦罪施法速度加快 8%",
-			"赦罪召唤的哨卫效果区域扩大 16%",
+			"Summon Raging Spirit has 20% increased Duration",
+			"Summon Raging Spirit has 16% chance to summon an extra Minion",
+			"Summoned Raging Spirits deal 25% increased Damage",
 		},
 		["ENDGAME"] = {
-			"赦罪持续时间延长 30%",
-			"赦罪施法速度加快 12%",
-			"赦罪召唤的哨卫效果区域扩大 24%",
+			"Summon Raging Spirit has 30% increased Duration",
+			"Summon Raging Spirit has 24% chance to summon an extra Minion",
+			"Summoned Raging Spirits deal 40% increased Damage",
 		},
 	},
-	["跃击"] = {
+	["Summon Reaper"] = {
 		["MERCILESS"] = {
-			"【跃击】的伤害提高 25%",
-			"【跃击】攻击速度提高 10%",
-			"【跃击】范围扩大 16%",
+			"Summoned Reaper deals 25% increased Damage",
+			"Summoned Reaper has +12% to Physical Damage over Time Multiplier",
+			"20% increased Summon Reaper Cooldown Recovery Rate",
 		},
 		["ENDGAME"] = {
-			"【跃击】的伤害提高 40%",
-			"【跃击】攻击速度提高 15%",
-			"【跃击】范围扩大 24%",
+			"Summoned Reaper deals 40% increased Damage",
+			"Summoned Reaper has +20% to Physical Damage over Time Multiplier",
+			"30% increased Summon Reaper Cooldown Recovery Rate",
 		},
 	},
-	["迅捷"] = {
+	["Summon Skeleton"] = {
 		["MERCILESS"] = {
-			"迅捷的保留效果降低 10%",
+			"Skeletons deal 25% increased Damage",
+			"20% chance to Summon an additional Skeleton Warrior with Summon Skeleton",
 		},
 		["ENDGAME"] = {
-			"迅捷的保留效果降低 15%",
+			"Skeletons deal 40% increased Damage",
+			"40% chance to Summon an additional Skeleton Warrior with Summon Skeleton",
 		},
 	},
-	["迷魅陷阱"] = {
+	["Summon Skitterbots"] = {
 		["MERCILESS"] = {
-			"被你迷魅的敌人的伤害提高 25%",
-			"迷魅陷阱的冷却回复率提高 20%",
+			"Summoned Skitterbots have 60% increased Area of Effect",
+			"Summon Skitterbots has 30% increased Mana Reservation Efficiency",
 		},
 		["ENDGAME"] = {
-			"被你迷魅的敌人的伤害提高 40%",
-			"迷魅陷阱的冷却回复率提高 30%",
+			"Summoned Skitterbots have 90% increased Area of Effect",
+			"Summon Skitterbots has 45% increased Mana Reservation Efficiency",
 		},
 	},
-	["重击"] = {
+	["Summon Stone Golem"] = {
 		["MERCILESS"] = {
-			"【重击】的伤害提高 25%",
-			"【重击】攻击速度提高 10%",
-			"【重击】有 8% 的几率造成双倍伤害",
+			"Stone Golems deal 25% increased Damage",
+			"+24% to Stone Golem Elemental Resistances",
+			"100% increased Effect of the Buff granted by your Stone Golems",
 		},
 		["ENDGAME"] = {
-			"【重击】的伤害提高 40%",
-			"【重击】攻击速度提高 15%",
-			"【重击】有 12% 的几率造成双倍伤害",
+			"Stone Golems deal 40% increased Damage",
+			"+36% to Stone Golem Elemental Resistances",
+			"150% increased Effect of the Buff granted by your Stone Golems",
 		},
 	},
-	["重盾冲锋"] = {
+	["Sunder"] = {
 		["MERCILESS"] = {
-			"【重盾冲锋】的伤害提高 25%",
-			"【重盾冲锋】攻击速度提高 10%",
+			"Sunder has 25% increased Damage",
+			"Sunder has 16% increased Area of Effect",
+			"Sunder has 15% reduced delay between Areas in the Wave",
 		},
 		["ENDGAME"] = {
-			"【重盾冲锋】的伤害提高 40%",
-			"【重盾冲锋】攻击速度提高 15%",
+			"Sunder has 40% increased Damage",
+			"Sunder has 24% increased Area of Effect",
+			"Sunder has 20% reduced delay between Areas in the Wave",
 		},
 	},
-	["野性打击"] = {
+	["Sweep"] = {
 		["MERCILESS"] = {
-			"【野性打击】的伤害提高 25%",
-			"【野性打击】的射线会额外连锁 4 次",
-			"【野性打击】范围扩大 24%",
+			"25% increased Sweep Damage",
+			"Sweep has a 20% chance to grant an Endurance Charge on Hit",
+			"16% increased Sweep Area of Effect",
 		},
 		["ENDGAME"] = {
-			"【野性打击】的伤害提高 40%",
-			"【野性打击】的射线会额外连锁 6 次",
-			"【野性打击】范围扩大 36%",
+			"40% increased Sweep Damage",
+			"Sweep has a 30% chance to grant an Endurance Charge on Hit",
+			"24% increased Sweep Area of Effect",
 		},
 	},
-	["钢铁之肤"] = {
+	["Tectonic Slam"] = {
 		["MERCILESS"] = {
-			"钢铁之肤会使玩家获得额外 8% 物理伤害减免",
-			"钢铁之肤可以承受的伤害提高 30%",
+			"Tectonic Slam deals 25% increased Damage",
+			"Tectonic Slam has 16% increased Area of Effect",
+			"Tectonic Slam has +12% fissure branching chance",
 		},
 		["ENDGAME"] = {
-			"钢铁之肤会使玩家获得额外 12% 物理伤害减免",
-			"钢铁之肤可以承受的伤害提高 45%",
+			"Tectonic Slam deals 40% increased Damage",
+			"Tectonic Slam has 24% increased Area of Effect",
+			"Tectonic Slam has +20% fissure branching chance",
 		},
 	},
-	["钩链攻击"] = {
+	["Tempest Shield"] = {
 		["MERCILESS"] = {
-			"钩链攻击有 25% 的几率在击中敌人后获得怒火 +1",
-			"【钩链攻击】的伤害提高 25%",
+			"25% increased Tempest Shield Damage",
+			"Tempest Shield chains an additional 2 times",
 		},
 		["ENDGAME"] = {
-			"钩链攻击有 40% 的几率在击中敌人后获得怒火 +1",
-			"每有 12 点怒火，钩链攻击范围 +1",
-			"【钩链攻击】的伤害提高 40%",
+			"40% increased Tempest Shield Damage",
+			"Tempest Shield chains an additional 3 times",
 		},
 	},
-	["闪烁新星"] = {
+	["Temporal Chains"] = {
 		["MERCILESS"] = {
-			"【闪电新星】的电圈伤害提高 40%",
+			"20% increased Temporal Chains Curse Effect",
+			"30% increased Temporal Chains Duration",
 		},
 		["ENDGAME"] = {
-			"【闪电新星】的电圈伤害提高 60%",
+			"30% increased Temporal Chains Curse Effect",
+			"45% increased Temporal Chains Duration",
 		},
 	},
-	["闪现射击"] = {
+	["Temporal Rift"] = {
 		["MERCILESS"] = {
-			"【闪现射击】和其召唤生物的伤害提高 25%",
-			"【闪现射击】攻击速度提高 10%",
-			"闪现射击的冷却回复率提高 20%",
+			"Temporal Rift has 20% increased Cooldown Recovery Rate",
 		},
 		["ENDGAME"] = {
-			"【闪现射击】和其召唤生物的伤害提高 40%",
-			"【闪现射击】攻击速度提高 15%",
-			"闪现射击的冷却回复率提高 30%",
+			"Temporal Rift has 30% increased Cooldown Recovery Rate",
 		},
 	},
-	["闪现打击"] = {
+	["Tornado"] = {
 		["MERCILESS"] = {
-			"【闪现打击】的伤害提高 25%",
-			"闪现打击的冷却回复率提高 20%",
-			"每个狂怒球可使【闪现打击】的伤害提高 6%",
+			"25% increased Tornado Damage",
+			"16% increased Tornado Area of Effect",
+			"Tornado has 20% increased Movement Speed",
 		},
 		["ENDGAME"] = {
-			"【闪现打击】的伤害提高 40%",
-			"闪现打击的冷却回复率提高 30%",
-			"每个狂怒球可使【闪现打击】的伤害提高 9%",
+			"40% increased Tornado Damage",
+			"24% increased Tornado Area of Effect",
+			"Tornado has 30% increased Movement Speed",
 		},
 	},
-	["闪电之捷"] = {
+	["Tornado Shot"] = {
 		["MERCILESS"] = {
-			"【闪电之捷】的伤害提高 25%",
-			"闪电之捷的保留效果降低 20%",
+			"25% increased Tornado Shot Damage",
+			"60% increased Tornado Shot Critical Strike Chance",
 		},
 		["ENDGAME"] = {
-			"【闪电之捷】的伤害提高 40%",
-			"闪电之捷的保留效果降低 30%",
+			"40% increased Tornado Shot Damage",
+			"90% increased Tornado Shot Critical Strike Chance",
+			"Tornado Shot fires an additional secondary Projectile",
 		},
 	},
-	["闪电传送"] = {
+	["Toxic Rain"] = {
 		["MERCILESS"] = {
-			"【闪电传送】的伤害提高 25%",
-			"【闪电传送】施法速度提高 8%",
-			"【闪电传送】持续时间缩短 20%",
+			"Toxic Rain deals 25% increased Damage",
+			"Toxic Rain gains 6% of Physical Damage as Extra Chaos Damage",
 		},
 		["ENDGAME"] = {
-			"【闪电传送】的伤害提高 40%",
-			"【闪电传送】施法速度提高 12%",
-			"【闪电传送】持续时间缩短 30%",
+			"Toxic Rain deals 40% increased Damage",
+			"Toxic Rain gains 10% of Physical Damage as Extra Chaos Damage",
+			"Toxic Rain fires 1 additional Arrow",
 		},
 	},
-	["闪电净化"] = {
+	["Unearth"] = {
 		["MERCILESS"] = {
-			"闪电净化的保留效果降低 14%",
+			"Unearth Spawns corpses with +3 Level",
+			"25% increased Unearth Damage",
+			"8% increased Unearth Cast Speed",
 		},
 		["ENDGAME"] = {
-			"闪电净化的保留效果降低 20%",
+			"Unearth Spawns corpses with +5 Level",
+			"40% increased Unearth Damage",
+			"12% increased Unearth Cast Speed",
 		},
 	},
-	["闪电打击"] = {
+	["Vaal Blade Vortex"] = {
 		["MERCILESS"] = {
-			"【闪电打击】的伤害提高 25%",
-			"【闪电打击】可以额外发射 2 个投射物",
-			"【闪电打击】穿透 2 个额外目标",
+			"Blade Vortex has +2% to Critical Strike Multiplier for each blade",
 		},
 		["ENDGAME"] = {
-			"【闪电打击】的伤害提高 40%",
-			"【闪电打击】可以额外发射 3 个投射物",
-			"【闪电打击】穿透 3 个额外目标",
+			"Blade Vortex has +3% to Critical Strike Multiplier for each blade",
 		},
 	},
-	["闪电新星"] = {
+	["Vampiric Link"] = {
 		["MERCILESS"] = {
-			"【闪电新星】的伤害提高 25%",
-			"【闪电新星】范围扩大 16%",
+			"20% increased Vampiric Link Duration",
 		},
 		["ENDGAME"] = {
-			"【闪电新星】的伤害提高 40%",
-			"【闪电新星】范围扩大 24%",
+			"30% increased Vampiric Link Duration",
 		},
 	},
-	["闪电箭矢"] = {
+	["Vengeance"] = {
 		["MERCILESS"] = {
-			"【闪电箭矢】的伤害提高 25%",
-			"【闪电箭矢】范围扩大 16%",
-			"【闪电箭矢】可以击中目标周围的一名额外敌人",
+			"25% increased Vengeance Damage",
+			"Vengeance has 20% increased Cooldown Recovery Rate",
 		},
 		["ENDGAME"] = {
-			"【闪电箭矢】的伤害提高 40%",
-			"【闪电箭矢】范围扩大 24%",
-			"【闪电箭矢】可以击中目标周围的 2 名额外敌人",
+			"40% increased Vengeance Damage",
+			"Vengeance has 30% increased Cooldown Recovery Rate",
 		},
 	},
-	["闪电陷阱"] = {
+	["Venom Gyre"] = {
 		["MERCILESS"] = {
-			"闪电陷阱的伤害提高 25%",
-			"【闪电陷阱】穿透 2 个额外目标",
-			"【闪电陷阱】的伤害穿透 6% 闪电抗性",
-			"闪电陷阱的闪电异常状态效果提高 25%",
+			"Venom Gyre deals 25% increased Damage",
+			"Venom Gyre has a 12% chance to inflict Withered for 2 seconds on Hit",
 		},
 		["ENDGAME"] = {
-			"闪电陷阱的伤害提高 40%",
-			"【闪电陷阱】穿透 3 个额外目标",
-			"【闪电陷阱】的伤害穿透 10% 闪电抗性",
-			"闪电陷阱的闪电异常状态效果提高 40%",
+			"Venom Gyre deals 40% increased Damage",
+			"Venom Gyre has a 20% chance to inflict Withered for 2 seconds on Hit",
+			"Venom Gyre has a 25% chance to keep caught Projectiles fired by using Whirling Blades",
 		},
 	},
-	["雷暴地雷"] = {
+	["Vigilant Strike"] = {
 		["MERCILESS"] = {
-			"雷暴地雷的伤害提高 25%",
-			"雷暴地雷的投掷速度提高 10%",
-			"雷暴地雷光环效果提高 20%",
+			"25% increased Vigilant Strike Damage",
+			"Vigilant Strike has 30% increased Fortification Duration",
 		},
 		["ENDGAME"] = {
-			"雷暴地雷的伤害提高 40%",
-			"雷暴地雷的投掷速度提高 15%",
-			"雷暴地雷光环效果提高 40%",
+			"40% increased Vigilant Strike Damage",
+			"Vigilant Strike has 45% increased Fortification Duration",
 		},
 	},
-	["雷电魔爆"] = {
+	["Viper Strike"] = {
 		["MERCILESS"] = {
-			"电殛魔爆的伤害提高 25%",
-			"电殛魔爆的效果区域扩大 16%",
-			"电殛魔爆每有 0.1 秒持续时间就使它的伤害提高 2%",
+			"25% increased Viper Strike Damage",
+			"60% increased Viper Strike Critical Strike Chance",
+			"20% increased Viper Strike Duration",
 		},
 		["ENDGAME"] = {
-			"电殛魔爆的伤害提高 40%",
-			"电殛魔爆的效果区域扩大 24%",
-			"电殛魔爆每有 0.1 秒持续时间就使它的伤害提高 3%",
+			"40% increased Viper Strike Damage",
+			"90% increased Viper Strike Critical Strike Chance",
+			"30% increased Viper Strike Duration",
 		},
 	},
-	["雷霆"] = {
+	["Vitality"] = {
 		["MERCILESS"] = {
-			"雷霆的保留效果降低 10%",
+			"Vitality has 50% increased Mana Reservation Efficiency",
 		},
 		["ENDGAME"] = {
-			"雷霆的保留效果降低 15%",
+			"Vitality has 75% increased Mana Reservation Efficiency",
 		},
 	},
-	["震地"] = {
+	["Void Sphere"] = {
 		["MERCILESS"] = {
-			"【震地】的伤害提高 25%",
-			"【震地】范围扩大 16%",
-			"每 0.1 秒持续时间都使【震地】的伤害提高 5%",
+			"Void Sphere has 20% increased Cooldown Recovery Rate",
+			"Enemies in Void Sphere's range take up to 6% increased Damage, based on distance from the Void Sphere",
+			"Void Sphere has 12% increased Pulse Frequency",
 		},
 		["ENDGAME"] = {
-			"【震地】的伤害提高 40%",
-			"【震地】范围扩大 24%",
-			"每 0.1 秒持续时间都使【震地】的伤害提高 8%",
+			"Void Sphere has 30% increased Cooldown Recovery Rate",
+			"Enemies in Void Sphere's range take up to 10% increased Damage, based on distance from the Void Sphere",
+			"Void Sphere has 18% increased Pulse Frequency",
 		},
 	},
-	["震地战吼"] = {
+	["Volatile Dead"] = {
 		["MERCILESS"] = {
-			"被【震地战吼】增助的攻击其伤害提高 35%",
+			"25% increased Volatile Dead Damage",
+			"8% increased Volatile Dead Cast Speed",
 		},
 		["ENDGAME"] = {
-			"被【震地战吼】增助的攻击其伤害提高 50%",
-			"【震地战吼】最少有 10 点威力值",
+			"Volatile Dead Consumes up to 1 additional corpse",
+			"40% increased Volatile Dead Damage",
+			"12% increased Volatile Dead Cast Speed",
 		},
 	},
-	["震波图腾"] = {
+	["Voltaxic Burst"] = {
 		["MERCILESS"] = {
-			"【震波图腾】的伤害提高 25%",
-			"【震波图腾】的施放速度提高 10%",
-			"【震波图腾】范围扩大 16%",
+			"25% increased Voltaxic Burst Damage",
+			"16% increased Voltaxic Burst Area of Effect",
+			"Voltaxic Burst deals 2% increased Damage per 0.1 seconds of Duration",
 		},
 		["ENDGAME"] = {
-			"【震波图腾】的伤害提高 40%",
-			"【震波图腾】的施放速度提高 15%",
-			"【震波图腾】范围扩大 24%",
+			"40% increased Voltaxic Burst Damage",
+			"24% increased Voltaxic Burst Area of Effect",
+			"Voltaxic Burst deals 3% increased Damage per 0.1 seconds of Duration",
 		},
 	},
-	["震波陷阱"] = {
+	["Vortex"] = {
 		["MERCILESS"] = {
-			"【震波陷阱】的伤害提高 25%",
-			"【震波陷阱】的技能效果持续时间延长 20%",
-			"【震波陷阱】的冷却回复速度提高 10%",
+			"25% increased Vortex Damage",
+			"20% increased Vortex Duration",
+			"Vortex has 30% increased Area of Effect when Cast on Frostbolt",
+			"Vortex has 20% increased Cooldown Recovery Rate",
 		},
 		["ENDGAME"] = {
-			"【震波陷阱】的伤害提高 40%",
-			"【震波陷阱】的技能效果持续时间延长 30%",
-			"【震波陷阱】的冷却回复速度提高 15%",
-			"【震波陷阱】会额外释放一股震荡波",
+			"40% increased Vortex Damage",
+			"30% increased Vortex Duration",
+			"Vortex has 45% increased Area of Effect when Cast on Frostbolt",
+			"Vortex has 30% increased Cooldown Recovery Rate",
 		},
 	},
-	["霜暴"] = {
+	["Vulnerability"] = {
 		["MERCILESS"] = {
-			"【霜暴】的伤害提高 25%",
-			"霜暴的冷却回复率提高 20%",
-			"【霜暴】范围扩大 16%",
+			"20% increased Vulnerability Curse Effect",
+			"30% increased Vulnerability Duration",
 		},
 		["ENDGAME"] = {
-			"【霜暴】的伤害提高 40%",
-			"霜暴的冷却回复率提高 30%",
-			"【霜暴】范围扩大 24%",
+			"30% increased Vulnerability Curse Effect",
+			"45% increased Vulnerability Duration",
 		},
 	},
-	["霸气之击"] = {
+	["War Banner"] = {
 		["MERCILESS"] = {
-			"【统御哨兵】持续时间延长 20%",
-			"【霸气之击】可以召唤 2 个【魔法统御哨兵】",
+			"War Banner has 25% increased Aura Effect",
 		},
 		["ENDGAME"] = {
-			"【统御哨兵】持续时间延长 30%",
-			"【霸气之击】可以召唤 3 个【魔法统御哨兵】",
-			"【霸气之击】可以召唤 1 个【稀有统御哨兵】",
+			"War Banner has 40% increased Aura Effect",
 		},
 	},
-	["风暴呼唤"] = {
+	["Warlord's Mark"] = {
 		["MERCILESS"] = {
-			"【风暴呼唤】的伤害提高 25%",
-			"【风暴呼唤】持续时间缩短 20%",
-			"【风暴呼唤】范围扩大 16%",
+			"20% increased Warlord's Mark Curse Effect",
 		},
 		["ENDGAME"] = {
-			"【风暴呼唤】的伤害提高 40%",
-			"【风暴呼唤】持续时间缩短 30%",
-			"【风暴呼唤】范围扩大 24%",
+			"30% increased Warlord's Mark Curse Effect",
 		},
 	},
-	["风暴漩涡"] = {
+	["Wave of Conviction"] = {
 		["MERCILESS"] = {
-			"【风暴漩涡】的伤害提高 25%",
-			"【风暴漩涡】的施法速度提高 20%",
-			"【风暴漩涡】暴击率提高 60%",
-			"【风暴漩涡】范围扩大 16%",
+			"Wave of Conviction deals 25% increased Damage",
+			"Wave of Conviction's Exposure applies an extra -4% to Elemental Resistance",
+			"Wave of Conviction has 20% increased Duration",
 		},
 		["ENDGAME"] = {
-			"【风暴漩涡】的伤害提高 40%",
-			"【风暴漩涡】的施法速度提高 30%",
-			"【风暴漩涡】暴击率提高 90%",
-			"【风暴漩涡】范围扩大 24%",
+			"Wave of Conviction deals 40% increased Damage",
+			"Wave of Conviction's Exposure applies an extra -6% to Elemental Resistance",
+			"Wave of Conviction has 30% increased Duration",
 		},
 	},
-	["风暴烙印"] = {
+	["Whirling Blades"] = {
 		["MERCILESS"] = {
-			"【风暴烙印】的伤害提高 25%",
-			"【风暴烙印】有 12% 的几率额外弹射一次",
-			"【风暴烙印】的伤害会穿透带有烙印敌人闪电抗性的 8%",
+			"25% increased Whirling Blades Damage",
+			"10% increased Whirling Blades Attack Speed",
 		},
 		["ENDGAME"] = {
-			"【风暴烙印】的伤害提高 40%",
-			"【风暴烙印】有 18% 的几率额外弹射一次",
-			"【风暴烙印】的伤害会穿透带有烙印敌人闪电抗性的 12%",
+			"40% increased Whirling Blades Damage",
+			"15% increased Whirling Blades Attack Speed",
 		},
 	},
-	["飞刃风暴"] = {
+	["Wild Strike"] = {
 		["MERCILESS"] = {
-			"【飞刃风暴】的法术伤害提高 25%",
-			"【飞刃风暴】持续时间延长 20%",
-			"【飞刃风暴】范围扩大 16%",
+			"25% increased Wild Strike Damage",
+			"Wild Strike's Beam Chains an additional 4 times",
+			"24% increased Wild Strike Area of Effect",
 		},
 		["ENDGAME"] = {
-			"【飞刃风暴】的法术伤害提高 40%",
-			"【飞刃风暴】持续时间延长 30%",
-			"【飞刃风暴】范围扩大 24%",
+			"40% increased Wild Strike Damage",
+			"Wild Strike's Beam Chains an additional 6 times",
+			"36% increased Wild Strike Area of Effect",
 		},
 	},
-	["骸骨奉献"] = {
+	["Winter Orb"] = {
 		["MERCILESS"] = {
-			"【骸骨奉献】持续时间延长 30%",
-			"【骸骨奉献】提供的额外攻击伤害格挡几率 +6%",
+			"Winter Orb deals 25% increased Damage",
+			"Winter Orb has 2% increased Area of Effect per Stage",
 		},
 		["ENDGAME"] = {
-			"【骸骨奉献】持续时间延长 45%",
-			"【骸骨奉献】提供的额外攻击伤害格挡几率 +9%",
+			"Winter Orb deals 40% increased Damage",
+			"Winter Orb has +2 Maximum Stages",
+			"Winter Orb has 3% increased Area of Effect per Stage",
 		},
 	},
-	["魅影射击"] = {
+	["Wintertide Brand"] = {
 		["MERCILESS"] = {
-			"【魅影射击】和其召唤生物的伤害提高 25%",
-			"【魅影射击】和该技能的召唤生物攻击速度提高 10%",
-			"镜像射击的冷却回复率提高 20%",
+			"Wintertide Brand deals 25% increased Damage",
+			"Wintertide Brand has +2 to maximum Stages",
+			"Wintertide Brand has 25% increased Chill Effect",
 		},
 		["ENDGAME"] = {
-			"【魅影射击】和其召唤生物的伤害提高 40%",
-			"【魅影射击】和该技能的召唤生物攻击速度提高 15%",
-			"镜像射击的冷却回复率提高 30%",
+			"Wintertide Brand deals 40% increased Damage",
+			"Wintertide Brand has +4 to maximum Stages",
+			"Wintertide Brand has 40% increased Chill Effect",
 		},
 	},
-	["魔卫复苏"] = {
+	["Wither"] = {
 		["MERCILESS"] = {
-			"魔卫复苏伤害提高 25%",
-			"魔卫复苏攻击速度提高 10%",
-			"+24% 魔卫复苏元素抗性 ",
+			"Wither has 24% increased Duration",
+			"Wither has 16% increased Area of Effect",
 		},
 		["ENDGAME"] = {
-			"魔卫复苏伤害提高 40%",
-			"魔卫复苏攻击速度提高 15%",
-			"+36% 魔卫复苏元素抗性 ",
+			"Wither has 36% increased Duration",
+			"Wither has 24% increased Area of Effect",
 		},
 	},
-	["魔武战号"] = {
+	["Withering Step"] = {
 		["MERCILESS"] = {
-			"魔武战号的增益效果提高 10%",
+			"Withering Step inflicts 2 additional Withered Debuffs",
+			"Withering Step has 20% increased Elusive Effect",
 		},
 		["ENDGAME"] = {
-			"魔武战号的增益效果提高 15%",
-			"魔武战号增助额外 1 次攻击",
+			"Withering Step inflicts 3 additional Withered Debuffs",
+			"Withering Step has 30% increased Elusive Effect",
 		},
 	},
-	["魔蛊爆炸"] = {
+	["Wrath"] = {
 		["MERCILESS"] = {
-			"魔蛊爆炸的伤害提高 25%",
-			"魔蛊爆炸的效果区域扩大 16%",
-			"魔蛊爆炸有 10% 的几率不移除魔蛊",
+			"Wrath has 20% increased Mana Reservation Efficiency",
 		},
 		["ENDGAME"] = {
-			"魔蛊爆炸的伤害提高 40%",
-			"魔蛊爆炸的效果区域扩大 24%",
-			"魔蛊爆炸有 15% 的几率不移除魔蛊",
+			"Wrath has 30% increased Mana Reservation Efficiency",
 		},
 	},
-	["龙卷射击"] = {
+	["Zealotry"] = {
 		["MERCILESS"] = {
-			"【龙卷射击】的伤害提高 25%",
-			"【龙卷射击】暴击率提高 60%",
+			"Zealotry has 20% increased Mana Reservation Efficiency",
 		},
 		["ENDGAME"] = {
-			"【龙卷射击】的伤害提高 40%",
-			"【龙卷射击】暴击率提高 90%",
-			"【龙卷射击】可以额外发射 1 个附属投射物",
+			"Zealotry has 30% increased Mana Reservation Efficiency",
 		},
 	},
 }

@@ -146,6 +146,7 @@ function GGPKClass:GetNeededFiles()
 		"Data/Characters.dat",
 		"Data/BuffDefinitions.dat",
 		"Data/BuffCategories.dat",
+		"Data/BuffTemplates.dat",
 		"Data/BuffVisuals.dat",
 		"Data/BuffVisualSets.dat",
 		"Data/BuffVisualSetEntries.dat",
@@ -187,6 +188,10 @@ function GGPKClass:GetNeededFiles()
 		"Data/SoundEffects.dat",
 		"Data/MavenJewelRadiusKeystones.dat",
 		"Data/TableCharge.dat",
+		"Data/GrantedEffectStatSets.dat",
+		"Data/GrantedEffectStatSetsPerLevel.dat",
+		"Data/MonsterMapDifficulty.dat",
+		"Data/MonsterMapBossDifficulty.dat",
 	}
 	local datFilesCn = {
 		"Data/Simplified Chinese/Stats.dat",

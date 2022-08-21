@@ -25,5 +25,8 @@ manifest-updated.xml
 # GGPK Export
 src/Export/ggpk/Metadata/
 src/Export/ggpk/Data/
+src/Export/ggpk/*.exe
+src/Export/ggpk/*.dll
 
-!Exporter.lnk
+# Timeless Jewels
+src/Data/TimelessJewelData/*.bin
