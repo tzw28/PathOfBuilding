@@ -56,8 +56,10 @@ function main:Init()
 	MakeDir(self.buildPath)
 
 	if launch.devMode and IsKeyDown("CTRL") then
-		self.rebuildModCache = true
-	else
+		-- If modLib.parseMod doesn't find a cache entry it generates it.
+		-- Not loading pre-generated cache causes it to be rebuilt
+		self.saveNewModCache = true
+	elseif not launch.continuousIntegrationMode then -- Forces regeneration of modCache if ran from CI
 		-- Load mod cache
 		LoadModule("Data/ModCache", modLib.parseModCache)
 	end
@@ -65,6 +67,47 @@ function main:Init()
 	if launch.devMode and IsKeyDown("CTRL") and IsKeyDown("SHIFT") then
 		self.allowTreeDownload = true
 	end
+
+	self.sharedItemList = { }
+	self.sharedItemSetList = { }
+
+	self.inputEvents = { }
+	self.popups = { }
+	self.tooltipLines = { }
+
+	self.gameAccounts = { }
+
+	self.buildSortMode = "NAME"
+	self.connectionProtocol = 0
+	self.nodePowerTheme = "RED/BLUE"
+	self.showThousandsSeparators = true
+	self.thousandsSeparator = ","
+	self.decimalSeparator = "."
+	self.defaultItemAffixQuality = 0.5
+	self.showTitlebarName = true
+	self.showWarnings = true
+	self.slotOnlyTooltips = true
+	self.POESESSID = ""
+
+	local ignoreBuild
+	if arg[1] then
+		buildSites.DownloadBuild(arg[1], nil, function(isSuccess, data)
+			if not isSuccess then
+				self:SetMode("BUILD", false, data)
+			else
+				local xmlText = Inflate(common.base64.decode(data:gsub("-","+"):gsub("_","/")))
+				self:SetMode("BUILD", false, "Imported Build", xmlText)
+				self.newModeChangeToTree = true
+			end
+		end)
+		arg[1] = nil -- Protect against downloading again this session.
+		ignoreBuild = true
+	end
+
+	if not ignoreBuild then
+		self:SetMode("BUILD", false, "Unnamed build")
+	end
+	self:LoadSettings(ignoreBuild)
 
 	self.tree = { }
 	self:LoadTree(latestTreeVersion)
@@ -76,6 +119,7 @@ function main:Init()
 			local newItem = new("Item", "Rarity: Unique\n"..raw)
 			if newItem.base then
 				newItem:NormaliseQuality()
+				newItem:BuildAndParseRaw()
 				self.uniqueDB.list[newItem.name] = newItem
 			elseif launch.devMode then
 				ConPrintf("Unique DB unrecognised item of type '%s':\n%s", type, raw)
@@ -90,8 +134,10 @@ function main:Init()
 			if newItem.crafted then
 				if newItem.base.implicit and #newItem.implicitModLines == 0 then
 					-- Automatically add implicit
+					local implicitIndex = 1
 					for line in newItem.base.implicit:gmatch("[^\n]+") do
-						t_insert(newItem.implicitModLines, { line = line })
+						t_insert(newItem.implicitModLines, { line = line, modTags = newItem.base.implicitModTypes and newItem.base.implicitModTypes[implicitIndex] or { } })
+						implicitIndex = implicitIndex + 1
 					end
 				end
 				newItem:Craft()
@@ -101,31 +147,10 @@ function main:Init()
 			ConPrintf("Rare DB unrecognised item:\n%s", raw)
 		end
 	end
-
-	if self.rebuildModCache then
-		-- Update mod cache
-		local out = io.open("Data/ModCache.lua", "w")
-		out:write('local c=...')
-		for line, dat in pairs(modLib.parseModCache) do
-			if not dat[1] or not dat[1][1] or dat[1][1].name ~= "JewelFunc" then
-				out:write('c["', line:gsub("\n","\\n"), '"]={')
-				if dat[1] then
-					writeLuaTable(out, dat[1])
-				else
-					out:write('nil')
-				end
-				if dat[2] then
-					out:write(',"', dat[2]:gsub("\n","\\n"), '"}\n')
-				else
-					out:write(',nil}\n')
-				end
-			end
-		end
-		out:close()
+	
+	if self.saveNewModCache then
+		self:SaveModCache()
 	end
-
-	self.sharedItemList = { }
-	self.sharedItemSetList = { }
 
 	self.anchorMain = new("Control", nil, 4, 0, 0, 0)
 	self.anchorMain.y = function()
@@ -190,42 +215,29 @@ please reinstall using one of the installers from
 the "Releases" section of the GitHub page.]])
 	end
 
-	self.inputEvents = { }
-	self.popups = { }
-	self.tooltipLines = { }
+	self.onFrameFuncs = { }
+end
 
-	self.gameAccounts = { }
-
-	self.buildSortMode = "NAME"
-	self.connectionProtocol = 0
-	self.nodePowerTheme = "RED/BLUE"
-	self.showThousandsSeparators = true
-	self.thousandsSeparator = ","
-	self.decimalSeparator = "."
-	self.defaultItemAffixQuality = 0.5
-	self.showTitlebarName = true
-	self.showWarnings = true
-	self.slotOnlyTooltips = true
-
-	local ignoreBuild
-	if arg[1] then
-		buildSites.DownloadBuild(arg[1], nil, function(isSuccess, data)
-			if not isSuccess then
-				self:SetMode("BUILD", false, data)
+function main:SaveModCache()
+	-- Update mod cache
+	local out = io.open("Data/ModCache.lua", "w")
+	out:write('local c=...')
+	for line, dat in pairs(modLib.parseModCache) do
+		if not dat[1] or not dat[1][1] or dat[1][1].name ~= "JewelFunc" then
+			out:write('c["', line:gsub("\n","\\n"), '"]={')
+			if dat[1] then
+				writeLuaTable(out, dat[1])
 			else
-				local xmlText = Inflate(common.base64.decode(data:gsub("-","+"):gsub("_","/")))
-				self:SetMode("BUILD", false, "Imported Build", xmlText)
-				self.newModeChangeToTree = true
+				out:write('nil')
 			end
-		end)
-		arg[1] = nil -- Protect against downloading again this session.
-		ignoreBuild = true
+			if dat[2] then
+				out:write(',"', dat[2]:gsub("\n","\\n"), '"}\n')
+			else
+				out:write(',nil}\n')
+			end
+		end
 	end
-
-	if not ignoreBuild then
-		self:SetMode("BUILD", false, "Unnamed build")
-	end
-	self:LoadSettings(ignoreBuild)
+	out:close()
 end
 
 function main:LoadTree(treeVersion)
@@ -386,6 +398,11 @@ function main:OnFrame()
 	DrawImage(nil, 500, par + 200, 759, 2)]]
 
 	wipeTable(self.inputEvents)
+
+	-- TODO: this pattern may pose memory management issues for classes that don't exist for the lifetime of the program
+	for _, onFrameFunc in pairs(self.onFrameFuncs) do
+		onFrameFunc()
+	end
 end
 
 function main:OnKeyDown(key, doubleClick)
@@ -532,10 +549,12 @@ function main:LoadSettings(ignoreBuild)
 				if node.attrib.slotOnlyTooltips then
 					self.slotOnlyTooltips = node.attrib.slotOnlyTooltips == "true"
 				end
+				if node.attrib.POESESSID then
+					self.POESESSID = node.attrib.POESESSID or ""
+				end
 				if node.attrib.invertSliderScrollDirection then
 					self.invertSliderScrollDirection = node.attrib.invertSliderScrollDirection == "true"
 				end
-				
 			end
 		end
 	end
@@ -590,6 +609,7 @@ function main:SaveSettings()
 		lastExportWebsite = self.lastExportWebsite,
 		showWarnings = tostring(self.showWarnings),
 		slotOnlyTooltips = tostring(self.slotOnlyTooltips),
+		POESESSID = self.POESESSID,
 		invertSliderScrollDirection = tostring(self.invertSliderScrollDirection),
 	} })
 	local res, errMsg = common.xml.SaveXMLFile(setXML, self.userPath.."Settings.xml")
