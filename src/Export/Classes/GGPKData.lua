@@ -328,6 +328,5 @@ function GGPKClass:GetNeededFiles()
 		"Metadata/Items/Equipment.it",
 		"Metadata/Items/Weapons/AbstractWeapon.it",
 	}
-	-- return datFiles, txtFiles, otFiles
-	return datFilesCn, txtFiles, otFiles
+	return datFiles, txtFiles, itFiles
 end
