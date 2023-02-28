@@ -70,6 +70,9 @@ function GGPKClass:ExtractFiles()
 	
 	local cmd = 'cd ' .. self.oozPath .. ' && bun_extract_file.exe extract-files "' .. self.path .. '" . ' .. fileList
 	ConPrintf(cmd)
+	local cmdFile = io.open(self.oozPath .. 'cmd.txt', "w")
+	cmdFile:write(cmd)
+	cmdFile:close()
 	os.execute(cmd)
 end
 
@@ -196,6 +199,8 @@ function GGPKClass:GetNeededFiles()
 	}
 	local datFilesCn = {
 		"Data/Simplified Chinese/Stats.dat",
+		"Data/Simplified Chinese/StatSemantics.dat",
+		"Data/Simplified Chinese/VirtualStatContextFlags.dat",
 		"Data/Simplified Chinese/BaseItemTypes.dat",
 		"Data/Simplified Chinese/WeaponTypes.dat",
 		"Data/Simplified Chinese/ArmourTypes.dat",
@@ -204,7 +209,10 @@ function GGPKClass:GetNeededFiles()
 		"Data/Simplified Chinese/ComponentCharges.dat",
 		"Data/Simplified Chinese/ComponentAttributeRequirements.dat",
 		"Data/Simplified Chinese/PassiveSkills.dat",
-		"Data/Simplified Chinese/PassiveSkillBuffs.dat",
+		"Data/Simplified Chinese/PassiveSkillTypes.dat",
+		"Data/Simplified Chinese/PassiveSkillStatCategories.dat",
+		"Data/Simplified Chinese/PassiveSkillMasteryGroups.dat",
+		"Data/Simplified Chinese/PassiveSkillMasteryEffects.dat",
 		"Data/Simplified Chinese/PassiveTreeExpansionJewelSizes.dat",
 		"Data/Simplified Chinese/PassiveTreeExpansionJewels.dat",
 		"Data/Simplified Chinese/PassiveJewelSlots.dat",
@@ -219,6 +227,7 @@ function GGPKClass:GetNeededFiles()
 		"Data/Simplified Chinese/ActiveSkills.dat",
 		"Data/Simplified Chinese/ActiveSkillTargetTypes.dat",
 		"Data/Simplified Chinese/ActiveSkillType.dat",
+		"Data/Simplified Chinese/AlternateSkillTargetingBehaviours.dat",
 		"Data/Simplified Chinese/Ascendancy.dat",
 		"Data/Simplified Chinese/ClientStrings.dat",
 		"Data/Simplified Chinese/ItemClasses.dat",
@@ -230,7 +239,15 @@ function GGPKClass:GetNeededFiles()
 		"Data/Simplified Chinese/Characters.dat",
 		"Data/Simplified Chinese/BuffDefinitions.dat",
 		"Data/Simplified Chinese/BuffCategories.dat",
+		"Data/Simplified Chinese/BuffTemplates.dat",
 		"Data/Simplified Chinese/BuffVisuals.dat",
+		"Data/Simplified Chinese/BuffVisualSets.dat",
+		"Data/Simplified Chinese/BuffVisualSetEntries.dat",
+		"Data/Simplified Chinese/BuffVisualsArtVariations.dat",
+		"Data/Simplified Chinese/BuffVisualOrbs.dat",
+		"Data/Simplified Chinese/BuffVisualOrbTypes.dat",
+		"Data/Simplified Chinese/BuffVisualOrbArt.dat",
+		"Data/Simplified Chinese/GenericBuffAuras.dat",
 		"Data/Simplified Chinese/HideoutNPCs.dat",
 		"Data/Simplified Chinese/NPCs.dat",
 		"Data/Simplified Chinese/CraftingBenchOptions.dat",
@@ -259,7 +276,16 @@ function GGPKClass:GetNeededFiles()
 		"Data/Simplified Chinese/GrantedEffectQualityStats.dat",
 		"Data/Simplified Chinese/GrantedEffectGroups.dat",
 		"Data/Simplified Chinese/AegisVariations.dat",
-		"Data/Simplified Chinese/CostTypes.dat"
+		"Data/Simplified Chinese/CostTypes.dat",
+		"Data/Simplified Chinese/PassiveJewelRadii.dat",
+		"Data/Simplified Chinese/SoundEffects.dat",
+		"Data/Simplified Chinese/MavenJewelRadiusKeystones.dat",
+		"Data/Simplified Chinese/TableCharge.dat",
+		"Data/Simplified Chinese/GrantedEffectStatSets.dat",
+		"Data/Simplified Chinese/GrantedEffectStatSetsPerLevel.dat",
+		"Data/Simplified Chinese/MonsterMapDifficulty.dat",
+		"Data/Simplified Chinese/MonsterMapBossDifficulty.dat",
+		"Data/Simplified Chinese/ReminderText.dat",
 	}
 	local txtFiles = {
 		"Metadata/StatDescriptions/passive_skill_aura_stat_descriptions.txt",
@@ -328,5 +354,5 @@ function GGPKClass:GetNeededFiles()
 		"Metadata/Items/Equipment.it",
 		"Metadata/Items/Weapons/AbstractWeapon.it",
 	}
-	return datFiles, txtFiles, itFiles
+	return datFilesCn, txtFiles, itFiles
 end

@@ -210,6 +210,7 @@ local skillMap = {
 
 local skillMapCN = {
 	["Summone?d?RagingSpirit"] = "召唤愤怒狂灵",
+	["SpiritOffering"] = "灵魂奉献",
 	["Discharge"] = "解放",
 	["AncestorTotem[^S][^l]"] = "先祖卫士",
 	["AncestorTotemSlamMelee"] = "先祖战士长",
@@ -235,7 +236,7 @@ local skillMapCN = {
 	["DominatingBlow"] = "霸气之击",
 	["FireBeam"] = "灼热光线",
 	["Firestorm"] = "烈炎风暴",
-	["FreezeMine"] = "Freeze Mine",
+	["FreezeMine"] = "冰冻地雷",
 	["EnchantmentFrenzy"] = "狂怒",
 	["GroundSlam"] = "裂地之击",
 	["HeavyStrike"] = "重击",
@@ -335,10 +336,18 @@ local skillMapCN = {
 	["EnergyBlade"] = "能量之刃",
 	["Tornado"] = "龙卷风",
 	["TornadoShot"] = "龙卷射击",
+	["VolcanicFissure"] = "火山裂缝",
 }
+
+function string.starts(String,Start)
+	return string.sub(String,1,string.len(Start))==Start
+end
 
 local bySkill = { }
 for _, mod in ipairs(dat("Mods"):GetRowList("GenerationType", 10)) do
+	if mod.Id:starts("EnchantmentEthe") then
+		printf("%s", mod.Id)
+	end
 	if mod.Family[1].Id == "SkillEnchantment" and mod.SpawnWeights[1] > 0 then
 		local stats = { mod.Stat1, mod.Stat2, mod.Stat3, mod.Stat4, mod.Stat5, mod.Stat6 }
 		local skill
