@@ -444,11 +444,11 @@
 	<File name="TreeData/3_15/groups-3.png" part="tree" sha1="ad86bd7b8d189d37eb1aa3e5bdc1f3c6c5e7aadc" />
 	<File name="TreeData/3_15/skills-3.jpg" part="tree" sha1="a2fb3f5bab2819204b80afbde7a27ba3e3b7f08e" />
 	<File name="TreeData/3_15/skills-disabled-3.jpg" part="tree" sha1="d1fcdec9f039bc9f16fb1bac837804bed42df6d7" />
-	<File name="TreeData/3_16/tree.lua" part="tree" sha1="2ab739ecc3948f6606d697b66759254da1c8b12d" />
-	<File name="TreeData/3_16/mastery-active-effect-3.png" part="tree" sha1="a8e601372f8d1a23cc4207c6fc1785d28ff1b785" />
-	<File name="TreeData/3_16/mastery-active-selected-3.png" part="tree" sha1="82f60ce60ad385225f81b3205e08e55c492cf776" />
-	<File name="TreeData/3_16/mastery-connected-3.png" part="tree" sha1="14d5dceab5c7ccce7d3474c33ba43d9c90c39da2" />
-	<File name="TreeData/3_16/mastery-disabled-3.png" part="tree" sha1="6794c43750e802a8dea881b83592627cdbfbc63b" />
-	<File name="TreeData/3_16/skills-3.jpg" part="tree" sha1="0e6eeaae880385742bbb25730f83d01bcc0f7872" />
-	<File name="TreeData/3_16/skills-disabled-3.jpg" part="tree" sha1="4c3ab145a0dea2232a850cf09b9bb5d085e468d9" />
+	<File name="TreeData/3_16/tree.lua" part="tree" sha1="6558feaf4e34ec4cddfc6ffa10a88c2e212c7abd" />
+	<File name="TreeData/3_16/mastery-active-effect-3.png" part="tree" sha1="3842bee3d952f6363b1f88e546519d2b0691849b" />
+	<File name="TreeData/3_16/mastery-active-selected-3.png" part="tree" sha1="3838d80b08d8789b455558e814dcbde686a1df14" />
+	<File name="TreeData/3_16/mastery-connected-3.png" part="tree" sha1="5b13e5f2d88d5118421f97042ce91e7ba3f80f1f" />
+	<File name="TreeData/3_16/mastery-disabled-3.png" part="tree" sha1="2401a6162eb0a9d831c15f987d972145e530bb77" />
+	<File name="TreeData/3_16/skills-3.jpg" part="tree" sha1="c638888d1c61852c9fbcafd49a54a9f9c7208598" />
+	<File name="TreeData/3_16/skills-disabled-3.jpg" part="tree" sha1="f637d86d9457c569e3327a424f34586b93bd1753" />
 </PoBVersion>
